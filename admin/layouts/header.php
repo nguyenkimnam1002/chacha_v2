@@ -77,7 +77,7 @@
                             </li>
                             <li class="divider"></li>
                             <li>
-                                <a href="/tutphp/dang-xuat.php"><i class="fa fa-fw fa-power-off"></i> Đăng xuất</a>
+                                <a href="/chacha_v2/dang-xuat.php"><i class="fa fa-fw fa-power-off"></i> Đăng xuất</a>
                             </li>
                         </ul>
                     </li>

@@ -68,7 +68,7 @@ require "connect.php";
                   <div class="item slick-slide slick-active" style="width: 168px;" tabindex="-1" role="option" aria-describedby="slick-slide11" data-slick-index="1" aria-hidden="false">
                     <div class="khungAnh">
                       <a href="danh-muc-san-pham.php?id=<?php echo $item['id'] ?>" title="<?php echo $item['name'] ?>" class="khungAnhCrop0" tabindex="0">
-                        <img src="https://sunhouse.com.vn/pic/thumb/compact/product/keyshot.566.png" data-src="https://sunhouse.com.vn/pic/thumb/compact/product/keyshot.566.png" alt="<?php echo $item['name'] ?>" class=" lazyloaded">
+                        <img src="/chacha_v2/public/uploads/product/<?php echo $item['image']?>" data-src="/chacha_v2/public/uploads/product/<?php echo $item['image']?>" alt="<?php echo $item['name'] ?>" class=" lazyloaded">
                       </a>
                     </div>
                     <h2 class="reset">

@@ -16,6 +16,17 @@
             "number"        => postInput("number"),
             "content"       => postInput("content")
         ]; 
+        $dataImg = 
+        [
+            "updated_at"       => date('Y-m-d H:i:s')
+        ]; 
+        
+        $data['updated_at']= date('Y-m-d H:i:s');
+        $num = $db->maxIdTable("product");
+        $index1 = $num['id'];
+        $index2 = $num['id'];
+        $data['id']= $index1 += 1;
+        $dataImg['product_id']= $index2 += 1;
 
         $error=[];
 
@@ -44,33 +55,60 @@
         }
 
 
-        if(! isset($_FILES['thunbar']))
-        {
-            $error['thunbar']="mời bạn chọn hình ảnh";           
-        }
+        // if(! isset($_FILES['thunbar']))
+        // {
+        //     $error['thunbar']="mời bạn chọn hình ảnh";           
+        // }
         //error trống có nghĩa ko có lỗi
         if (empty($error)) 
         {
-            if (isset($_FILES['thunbar'])) 
-            {
-                $file_name=$_FILES['thunbar']['name'];
-                $file_tmp=$_FILES['thunbar']['tmp_name'];
-                $file_type=$_FILES['thunbar']['type'];
-                $file_erro=$_FILES['thunbar']['erro'];
+            // Count # of uploaded files in array
+            $total = count($_FILES['upload']['name']);
 
-                if($file_erro==0)
-                {
-                    //lưu ảnh vào produc
-                    $part=ROOT ."product/";
-                    //lấy tên của ảnh
-                    $data['thunbar']=$file_name;
-                }                
+            // Loop through each file
+            for( $i=0 ; $i < $total ; $i++ ) {
+
+                //Get the temp file path
+                $tmpFilePath = $_FILES['upload']['tmp_name'][$i];
+
+                //Make sure we have a file path
+                if ($tmpFilePath != ""){
+                    //Setup our new file path
+                    $newFilePath = ROOT ."product/" . $_FILES['upload']['name'][$i];
+
+                    //Upload the file into the temp dir
+                    if(move_uploaded_file($tmpFilePath, $newFilePath)) {
+
+                    //Handle other code here
+                    $dataImg['thunbar']=$_FILES['upload']['name'][$i];
+                    $data['thunbar']=$_FILES['upload']['name'][1];
+                    
+                    $id_insert=$db->insert("image_file",$dataImg);
+
+                    }
+                }
             }
+            
+            // if (isset($_FILES['thunbar'])) 
+            // {
+            //     $file_name=$_FILES['thunbar']['name'];
+            //     $file_tmp=$_FILES['thunbar']['tmp_name'];
+            //     $file_type=$_FILES['thunbar']['type'];
+            //     $file_erro=$_FILES['thunbar']['erro'];
+
+            //     if($file_erro==0)
+            //     {
+            //         //lưu ảnh vào produc
+            //         $part=ROOT ."product/";
+            //         //lấy tên của ảnh
+            //         $data['thunbar']=$file_name;
+            //     }                
+            // }
             $id_insert=$db->insert("product",$data);
             if ($id_insert) 
             {
-                move_uploaded_file($file_tmp,$part.$file_name);
-                $_SESSION['success']="Thêm mới thành công";
+                // move_uploaded_file($file_tmp,$part.$file_name);
+                $_SESSION['success']="Thêm mới thành công ok".$num['id'];
                 redirectAdmin("product");                                    
             }
             else 
@@ -169,7 +207,8 @@
 
                 <label for="inputEmail3" class="col-sm-2 control-label">Hình ảnh</label>
                 <div class="col-sm-4">
-                    <input type="file" class="form-control" id="inputEmail3"  name="thunbar">
+                    <!-- <input type="file" class="form-control" id="inputEmail3"  name="thunbar"> -->
+                    <input name="upload[]" type="file" multiple="multiple" />
                     <?php if (isset($error['thunbar'])) : ?>
                     <p class="text-danger"> <?php echo $error['thunbar'] ?></p>   
                     <?php endif ?>            

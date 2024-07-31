@@ -209,6 +209,16 @@ INSERT INTO `users` (`id`, `name`, `email`, `phone`, `address`, `password`, `ava
 (1, 'minhthaodev01', 'minhthaodev01@gmail.com', '0898485596', 'sai gòn', '57837a14c1abe81ebf0100ffd577255e', NULL, 1, NULL, NULL, NULL),
 (2, 'Thảo lê', 'admin@gmail.com', '0898485597', 'sài gòn', '25d55ad283aa400af464c76d713c07ad', NULL, 1, NULL, NULL, NULL);
 
+
+--
+CREATE TABLE `image_file` (
+  `id` int(11) NOT NULL,
+  `product_id` int(11) NOT NULL,
+  `thunbar` varchar(100) DEFAULT NULL,
+  `status` tinyint(4) DEFAULT '1',
+  `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 --
 -- Indexes for dumped tables
 --
@@ -235,6 +245,9 @@ ALTER TABLE `orders`
 -- Indexes for table `product`
 --
 ALTER TABLE `product`
+  ADD PRIMARY KEY (`id`);
+  
+  ALTER TABLE `image_file`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -275,6 +288,12 @@ ALTER TABLE `orders`
 -- AUTO_INCREMENT for table `product`
 --
 ALTER TABLE `product`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+
+  --
+-- AUTO_INCREMENT for table `image_file`
+--
+ALTER TABLE `image_file`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --

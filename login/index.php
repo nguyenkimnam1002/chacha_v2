@@ -30,7 +30,7 @@
                 //dang nhap thanh cong
                 $_SESSION['admin_name'] = $is_check['name'];
                 $_SESSION['admin_id'] = $is_check['id'];
-                echo "<script> alert('Đăng nhập thành công!'); location.href='/tutphp/admin/' </script>";
+                echo "<script> alert('Đăng nhập thành công!'); location.href='/chacha_v2/admin/' </script>";
             }
             else
             {

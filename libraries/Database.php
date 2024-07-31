@@ -96,6 +96,15 @@
             return $num;
         }
 
+        
+        public function maxIdTable($table)
+        {
+            $sql = "SELECT max(id) as id FROM  {$table}";
+            $result = mysqli_query($this->link, $sql) or die("Lỗi Truy Vấn countTable----" .mysqli_error($this->link));
+            $num = mysqli_fetch_assoc($result);
+            return $num;
+        }
+
 
         /**
          * [delete description] hàm delete

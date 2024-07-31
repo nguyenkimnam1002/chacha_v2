@@ -12,6 +12,9 @@
     
     $sql = "SELECT * FROM product WHERE category_id = $cateid ORDER BY ID DESC LIMIT 4";
     $spkemtheo = $db->fetchsql($sql);
+
+    $sql2 = "SELECT * FROM image_file WHERE product_id = $id ORDER BY ID DESC LIMIT 4";
+    $image = $db->fetchsql($sql2);
    
    
 ?>
@@ -25,18 +28,12 @@
                                 <img src="<?php echo uploads()?>product/<?php echo $product['thunbar']?>" class="img-responsive bor" id="imgmain" width="100%" height="370" data-zoom-image="images/n5378.jpg">
                                 
                                 <ul class="text-center bor clearfix" id="imgdetail">
+                                    <?php foreach($image as $item) :?>
                                     <li>
-                                        <img src="<?php echo base_url()?>public/frontend/images/laptop.jpg" class="img-responsive pull-left" width="80" height="80">
+                                        <img src="<?php echo base_url()?>public/uploads/product/<?php echo $item['thunbar']?>" class="img-responsive pull-left" width="80" height="80">
                                     </li>
-                                    <li>
-                                        <img src="<?php echo base_url()?>public/frontend/images/laptop5.jpg" class="img-responsive pull-left" width="80" height="80">
-                                    </li>
-                                     <li>
-                                        <img src="<?php echo base_url()?>public/frontend/images/laptop6.jpg" class="img-responsive pull-left" width="80" height="80">
-                                    </li>
-                                    <li>
-                                        <img src="<?php echo base_url()?>public/frontend/images/laptop7.jpg" class="img-responsive pull-left" width="80" height="80">
-                                    </li>
+                                    <?php endforeach ?>
+                                    
                                 </ul>
                             </div>
                             <div class="col-md-6 bor" style="margin-top: 20px;padding: 30px;">
