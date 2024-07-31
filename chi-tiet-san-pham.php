@@ -28,9 +28,9 @@
                                 <img src="<?php echo uploads()?>product/<?php echo $product['thunbar']?>" class="img-responsive bor" id="imgmain" width="100%" height="370" data-zoom-image="images/n5378.jpg">
                                 
                                 <ul class="text-center bor clearfix" id="imgdetail">
-                                    <?php foreach($image as $item) :?>
+                                    <?php foreach($image as $item1) :?>
                                     <li>
-                                        <img src="<?php echo base_url()?>public/uploads/product/<?php echo $item['thunbar']?>" class="img-responsive pull-left" width="80" height="80">
+                                        <img src="<?php echo base_url()?>public/uploads/product/<?php echo $item1['thunbar']?>" class="img-responsive pull-left" width="80" height="80">
                                     </li>
                                     <?php endforeach ?>
                                     
