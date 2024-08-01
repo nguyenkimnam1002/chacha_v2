@@ -17,7 +17,8 @@
        [
            "name" => postInput('name'),
            //Chuyen thanh khong dau , cach thanh -
-           "slug" =>  to_slug(postInput("name"))
+           "slug" =>  to_slug(postInput("name")),
+           "image" => postInput('image')
        ];
        
        $error = [];
@@ -41,46 +42,44 @@
                 }
                 else
                 {
-                    // Check ten file image
-                    $isset = $db->fetchOne("category", "image='".$data['image']."'");
-           
-                    if(($isset)>0)
+                    if (isset($_FILES['image'])) 
                     {
-                        $_SESSION['error']="Trùng tên ảnh!";
+                        $file_name=$_FILES['image']['name'];
+                        $file_tmp=$_FILES['image']['tmp_name'];
+                        $file_type=$_FILES['image']['type'];
+                        $file_erro=$_FILES['image']['erro'];
 
-                    }else{
+                        // Check ten file image
+                        $isset = $db->fetchOne("category", "image='".$file_name."'");
 
-                        if (isset($_FILES['image'])) 
+                        if(($isset)>0)
                         {
-                            $file_name=$_FILES['image']['name'];
-                            $file_tmp=$_FILES['image']['tmp_name'];
-                            $file_type=$_FILES['image']['type'];
-                            $file_erro=$_FILES['image']['erro'];
+                            $_SESSION['error']="Trùng tên ảnh! =>".$file_name;
 
+                        }else{
                             if($file_erro==0)
                             {
                                 //lưu ảnh vào produc
                                 $part=ROOT ."product/";
                                 //lấy tên của ảnh
                                 $data['image']=$file_name;
-                            }                
-                        }
-
-                        $id_update = $db->update("category",$data,array("id"=>$id));
-                        if($id_update > 0)
-                        {
-                            move_uploaded_file($file_tmp,$part.$file_name);
-                            $_SESSION['success']= "Cập nhật thành công!";
-                            //Quay tro lai trang category
-                            redirectAdmin("category");
-                        }
-                        else
-                        {
-                            //Them that bai
-                            $_SESSION['error']= "Dữ liệu không thay đổi";
-                            redirectAdmin("category");
-                        }
-                        
+                            }
+                            // Update thong tin new   
+                            $id_update = $db->update("category",$data,array("id"=>$id));
+                            if($id_update > 0)
+                            {
+                                move_uploaded_file($file_tmp,$part.$file_name);
+                                $_SESSION['success']= "Cập nhật thành công!";
+                                //Quay tro lai trang category
+                                redirectAdmin("category");
+                            }
+                            else
+                            {
+                                //Them that bai
+                                $_SESSION['error']= "Dữ liệu không thay đổi";
+                                redirectAdmin("category");
+                            }  
+                        }           
                     }
                 }       
            }
