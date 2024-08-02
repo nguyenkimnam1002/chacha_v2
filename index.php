@@ -9,12 +9,7 @@ require "connect.php";
       background-color: rgba(12, 112, 130, 0.8);
     }
   </style>
-  <div class="master_page">
-    <div class="bannerHome slick-initialized slick-slider">
-      <!-- <a class="prev controls slick-arrow" style="display: block;">
-        <i class="fa fa-chevron-left" aria-hidden="true"></i>
-      </a> -->
-      <style>
+  <style>
         html, body{
           background: #102131;
         }
@@ -28,47 +23,36 @@ require "connect.php";
           img{display: block;margin:auto;}
         }
       </style>
-      <div class="slider">
-        <!-- <button type="button" class="slick-prev" style="display: block;"></button> -->
-        <div class="" style="">
-          <a class="khungAnhCrop" href="https://sunhouse.com.vn/dien-gia-dung/quat-tran" title="quạt mát 2024" tabindex="-1">
-            <img src="https://sunhouse.com.vn/pic/banner/Website(1).jpg" alt="quạt mát 2024" class="">
-          </a>
-        </div>
-        <div class="" style="">
-          <a class="khungAnhCrop" href="https://khuyenmai.sunhouse.com.vn/tunhua2024" title=" " tabindex="0">
-            <img src="https://sunhouse.com.vn/pic/banner/Website(2).jpg" alt=" " class="">
-          </a>
-        </div>
-        <div class="" style="">
-          <a class="khungAnhCrop" href="https://sunhouse.com.vn/khuyen-mai-hot/chuong-trinh-doi-bep-cu-len-doi-bep-sang.html" title=" " tabindex="-1">
-            <img src="https://sunhouse.com.vn/pic/banner/Website-1920x900(3).jpg" alt=" " class="">
-          </a>
-        </div>
-        <div class="" style="">
-          <a class="khungAnhCrop" href="https://sunhouse.com.vn/dien-gia-dung/quat-tran" title="quạt mát 2024" tabindex="-1">
-            <img src="https://sunhouse.com.vn/pic/banner/Website(1).jpg" alt="quạt mát 2024" class="">
-          </a>
-        </div>
-        <div class="" style="">
-          <a class="khungAnhCrop" href="https://khuyenmai.sunhouse.com.vn/tunhua2024" title=" " tabindex="-1">
-            <img src="https://sunhouse.com.vn/pic/banner/Website(2).jpg" alt=" " class="">
-          </a>
-        </div>
-        <!-- <button type="button" class="slick-next" style="display: block;"></button> -->
-      </div>
       
       <script>
         window.onload=function(){
           $('.slider').slick({
           autoplay:true,
-          autoplaySpeed:1500,
+          autoplaySpeed:3500,
           arrows:true,
           prevArrow:'<button type="button" class="slick-prev"></button>',
           nextArrow:'<button type="button" class="slick-next"></button>',
           centerMode:true,
-          slidesToShow:3,
+          slidesToShow:1,
           slidesToScroll:1
+          });
+          $('.slick-track1').slick({
+              dots: !1,
+            infinite: !0,
+            speed: 1e3,
+            autoplaySpeed: 5e3,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: !0,
+            autoplay: !0,
+            prevArrow: '<a class="prev controls"><i class="fa fa-chevron-left" aria-hidden="true"><\/i><\/a>',
+            nextArrow: '<a class="next controls"><i class="fa fa-chevron-right" aria-hidden="true"><\/i><\/a>',
+            responsive: [{
+                breakpoint: 1200,
+                settings: {
+                    draggable: !1
+                }
+            }]
           });
           $('.slick-track').slick({
           autoplay:true,
@@ -82,35 +66,43 @@ require "connect.php";
           });
         };
       </script>
-      <div aria-live="polite" class="slick-list draggable">
-        <div class="slick-track1" style="opacity: 1; width: 9515px; transform: translate3d(0px, 0px, 0px); transition: transform 1000ms;" role="listbox">
-          <div class="khungAnh slick-slide slick-cloned" style="width: 1903px;" tabindex="-1" role="option" aria-describedby="slick-slide02" data-slick-index="-1" aria-hidden="true">
+  <div class="master_page">
+    <div class="bannerHome slick-initialized slick-slider">
+      <!-- <a class="prev controls slick-arrow" style="display: block;">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+      </a> -->
+      
+      <!-- <div aria-live="polite" class="slick-list draggable"> -->
+        
+      
+      <div class="slick-track1"role="listbox">
+          <div class="khungAnh slick-slide slick-cloned">
             <a class="khungAnhCrop" href="https://sunhouse.com.vn/dien-gia-dung/quat-tran" title="quạt mát 2024" tabindex="-1">
               <img src="https://sunhouse.com.vn/pic/banner/Website(1).jpg" alt="quạt mát 2024" class="tall">
             </a>
           </div>
-          <div class="khungAnh slick-slide" style="width: 1903px;" tabindex="-1" role="option" aria-describedby="slick-slide00" data-slick-index="0" aria-hidden="true">
+          <div class="khungAnh slick-slide">
             <a class="khungAnhCrop" href="https://khuyenmai.sunhouse.com.vn/tunhua2024" title=" " tabindex="0">
               <img src="https://sunhouse.com.vn/pic/banner/Website(2).jpg" alt=" " class="tall">
             </a>
           </div>
-          <div class="khungAnh slick-slide slick-current slick-active" style="width: 1903px;" tabindex="-1" role="option" aria-describedby="slick-slide01" data-slick-index="1" aria-hidden="false">
+          <div class="khungAnh slick-slide slick-current slick-active">
             <a class="khungAnhCrop" href="https://sunhouse.com.vn/khuyen-mai-hot/chuong-trinh-doi-bep-cu-len-doi-bep-sang.html" title=" " tabindex="-1">
               <img src="https://sunhouse.com.vn/pic/banner/Website-1920x900(3).jpg" alt=" " class="tall">
             </a>
           </div>
-          <div class="khungAnh slick-slide" style="width: 1903px;" tabindex="-1" role="option" aria-describedby="slick-slide02" data-slick-index="2" aria-hidden="true">
+          <div class="khungAnh slick-slide" style="width: 1903px;">
             <a class="khungAnhCrop" href="https://sunhouse.com.vn/dien-gia-dung/quat-tran" title="quạt mát 2024" tabindex="-1">
               <img src="https://sunhouse.com.vn/pic/banner/Website(1).jpg" alt="quạt mát 2024" class="tall">
             </a>
           </div>
-          <div class="khungAnh slick-slide slick-cloned" style="width: 1903px;" tabindex="-1" role="option" aria-describedby="slick-slide00" data-slick-index="3" aria-hidden="true">
+          <div class="khungAnh slick-slide slick-cloned">
             <a class="khungAnhCrop" href="https://khuyenmai.sunhouse.com.vn/tunhua2024" title=" " tabindex="-1">
               <img src="https://sunhouse.com.vn/pic/banner/Website(2).jpg" alt=" " class="tall">
             </a>
           </div>
         </div>
-      </div>
+      <!-- </div> -->
       <!-- <a class="next controls slick-arrow" style="display: block;">
         <i class="fa fa-chevron-right" aria-hidden="true"></i>
       </a> -->
@@ -131,7 +123,7 @@ require "connect.php";
           </div>
           <div class="listCate slick_7 slick-initialized slick-slider slick-dotted" id="DanhMucSanPham" role="toolbar">
             <div aria-live="polite" class="slick-list draggable">
-              <div class="slick-track" style="opacity: 1; width: 1680px; transform: translate3d(0px, 0px, 0px);" role="listbox">
+              <div class="slick-track3" style="opacity: 1; width: 1680px; transform: translate3d(0px, 0px, 0px);" role="listbox">
                 <?php foreach($category as $item) :?>
                   <div class="item slick-slide slick-active" style="width: 168px;" tabindex="-1" role="option" aria-describedby="slick-slide11" data-slick-index="1" aria-hidden="false">
                     <div class="khungAnh">
