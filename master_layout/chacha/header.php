@@ -29,18 +29,18 @@ session_start();
   <meta name="robots" content="noodp,index,follow">
   <meta name="theme-color" content="#DA2128">
   <!-- #endregion -->
-  <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
-  <script type="text/javascript" async="" src="https://analytics.tiktok.com/i18n/pixel/static/identify_c2008b8c.js"></script>
-  <script type="text/javascript" async="" src="https://analytics.tiktok.com/i18n/pixel/static/main.MWViM2RlMTc3MA.js" data-id="COTJ5OBC77UF83EUTFJ0"></script>
-  <script type="text/javascript" async="" src="https://analytics.tiktok.com/i18n/pixel/static/main.MWViM2RlMTc3MA.js" data-id="COTJ5OBC77UF83EUTFJ0"></script>
-  <script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script>
+  <!-- <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script> -->
+  <!-- <script type="text/javascript" async="" src="https://analytics.tiktok.com/i18n/pixel/static/identify_c2008b8c.js"></script> -->
+  <!-- <script type="text/javascript" async="" src="https://analytics.tiktok.com/i18n/pixel/static/main.MWViM2RlMTc3MA.js" data-id="COTJ5OBC77UF83EUTFJ0"></script> -->
+  <!-- <script type="text/javascript" async="" src="https://analytics.tiktok.com/i18n/pixel/static/main.MWViM2RlMTc3MA.js" data-id="COTJ5OBC77UF83EUTFJ0"></script> -->
+  <!-- <script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script> -->
   <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/destination?id=AW-966402230&amp;l=dataLayer&amp;cx=c"></script>
   <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-X3C2KPMQ0S&amp;l=dataLayer&amp;cx=c"></script>
   <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-CY6D834NL1&amp;l=dataLayer&amp;cx=c"></script>
-  <script type="text/javascript" async="" src="https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=COTJ5OBC77UF83EUTFJ0&amp;lib=ttq"></script>
+  <!-- <script type="text/javascript" async="" src="https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=COTJ5OBC77UF83EUTFJ0&amp;lib=ttq"></script>
   <script type="text/javascript" async="" src="https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=COTJ5OBC77UF83EUTFJ0&amp;lib=ttq"></script>
   <script type="text/javascript" async="" src="https://widget.botstar.com/static/js/widget.js"></script>
-  <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-MTDD9VG"></script>
+  <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-MTDD9VG"></script> -->
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -115,6 +115,7 @@ session_start();
   <link rel="preload" crossorigin="anonymous" href="./themes/1000000/assets/css/fonts/StagSansVU-Semibold.woff2" as="font" type="font/woff2">
   <link rel="preload" crossorigin="anonymous" href="./themes/1000000/assets/css/fonts/StagSansVU-Medium.woff2" as="font" type="font/woff2">
   <link href="./themes/1000000/assets/css/main.min.css" rel="stylesheet">
+  <link href="./assets/css/custom/slick-theme.css" rel="stylesheet">
   <!-- #endregion -->
   <!-- #region Các file JS -->
   <script src="./Theme/1000000/Assets/js/home.min.js" defer=""></script>

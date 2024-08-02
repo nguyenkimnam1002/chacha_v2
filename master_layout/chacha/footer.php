@@ -5,7 +5,6 @@
 <!-- jQuery --> 
  
 <script src="./assets/js/custom/slideshow.js"></script>
-<!-- <script src="./Theme/1000000/Assets/js/home.min.js"></script>  -->
 
 <!-- <script src="./assets/js/custom/flatsome.js"></script>
   <script src="./assets/js/custom/flatsome-lazy.js"></script> -->

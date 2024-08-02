@@ -1,0 +1,109 @@
+/*
+
+[Master Stylesheet]
+
+Project: webtintuc
+Version: 1.0
+Author : NamVPC
+
+*/
+
+/*------------------------------------*\
+    1-GENERAL STYLES
+\*------------------------------------*/
+
+/*1-1 PRELOADER*/
+
+
+.header-main {
+    z-index: 10;
+    position: relative;
+}
+.header .flex-row {
+    height: 100%;
+}
+.flex-row {
+    -js-display: flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+}
+#logo {
+    width: 218px;
+}
+.logo {
+    line-height: 1;
+    margin: 0;
+}
+.logo-left .logo {
+    margin-left: 0;
+    margin-right: 30px;
+}
+.flex-col {
+    max-height: 100%;
+}
+.header-wrapper:not(.stuck) .logo img {
+    transition: max-height .5s;
+}
+.logo img {
+    display: block;
+    width: auto;
+}
+.flex-left {
+    margin-right: auto;
+}
+@media (min-width: 850px) {
+    [data-show="show-for-medium"], .show-for-medium {
+        display: none !important;
+    }
+}
+.flex-grow {
+    -ms-flex: 1;
+    flex: 1;
+    -ms-flex-negative: 1;
+    -ms-flex-preferred-size: auto !important;
+}
+.nav-left {
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+.nav {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.nav, .nav ul:not(.nav-dropdown) {
+    margin: 0;
+    padding: 0;
+}
+.nav li:last-child {
+    margin-right: 0 !important;
+}
+.nav li:first-child {
+    margin-left: 0 !important;
+}
+.nav-spacing-medium>li {
+    margin: 0 9px;
+}
+.nav>li {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    margin: 0 7px;
+    transition: background-color .3s;
+}
+
