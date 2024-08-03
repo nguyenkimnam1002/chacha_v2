@@ -27,7 +27,7 @@ foreach ($CategoryHome as $item)
 }
 ?>
 <head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 </head>
 
 
@@ -687,11 +687,6 @@ foreach ($CategoryHome as $item)
                       </a>
                     </div>
                   <?php endforeach ?>
-                  <div class="khungAnh menu-banner" data-parent-id="cate_1091">
-                    <a class="khungAnhCrop0" href="/chao-chong-dinh/sunhouse-mama-sfp28ma-key" title="Chảo Trơn Sunhouse Mama Đáy Từ Sfp28ma" rel="nofollow">
-                      <img src="/pic/banner/Noi.478.png" data-src="/pic/banner/Noi.478.png" alt="Chảo Trơn Sunhouse Mama Đáy Từ Sfp28ma" class=" lazyloaded">
-                    </a>
-                  </div>
                 </div>
               </div>
             </div>

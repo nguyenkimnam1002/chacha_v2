@@ -4,7 +4,7 @@
 ?>
 <!-- jQuery --> 
  
-<script src="./assets/js/custom/slideshow.js"></script>
+<!-- <script src="./assets/js/custom/slideshow.js"></script> -->
 
 <!-- <script src="./assets/js/custom/flatsome.js"></script>
   <script src="./assets/js/custom/flatsome-lazy.js"></script> -->
@@ -38,6 +38,6 @@
 <!--media queries to js--> 
 <script src="./assets/js/enquire.js"></script> 
 <!--custom functions--> 
-<script src="./assets/js/custom-fun.js"></script>
+<!-- <script src="./assets/js/custom-fun.js"></script> -->
 </body>
 </html>

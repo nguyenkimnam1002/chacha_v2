@@ -6740,7 +6740,7 @@ body {
   font-family: Arial;
   color: #333;
   font-size: 15px;
-  background: #fff;
+  background: #fff !important;
   line-height: 24px;
   margin: 0;
   padding: 0;

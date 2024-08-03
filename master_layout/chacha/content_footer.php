@@ -670,27 +670,27 @@
   <iframe allow="join-ad-interest-group" data-tagging-id="AW-11006955196" data-load-time="1722323530310" height="0" width="0" src="https://td.doubleclick.net/td/rul/11006955196?random=1722323530297&amp;cv=11&amp;fst=1722323530297&amp;fmt=3&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be47t0v898488184za200&amp;gcd=13l3l3l3l1&amp;dma=0&amp;tag_exp=95250752&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fsunhouse.com.vn%2F&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=Website%20ch%C3%ADnh%20th%E1%BB%A9c%20c%E1%BB%A7a%20T%E1%BA%ADp%20%C4%91o%C3%A0n%20SUNHOUSE%20-%20SUNHOUSE%20GROUP&amp;npa=0&amp;pscdl=noapi&amp;auid=393881066.1722212751&amp;uaa=x86&amp;uab=64&amp;uafvl=Not)A%253BBrand%3B99.0.0.0%7CGoogle%2520Chrome%3B127.0.6533.72%7CChromium%3B127.0.6533.72&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=10.0.0&amp;uaw=0&amp;fledge=1&amp;data=event%3Dgtag.config" style="display: none; visibility: hidden;"></iframe>
   <iframe id="_hjSafeContext_91786251" title="_hjSafeContext" tabindex="-1" aria-hidden="true" src="about:blank" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe>
   <script type="text/javascript" id="">
-    ! function(b, e, f, g, a, c, d) {
-      b.fbq || (a = b.fbq = function() {
-        a.callMethod ? a.callMethod.apply(a, arguments) : a.queue.push(arguments)
-      }, b._fbq || (b._fbq = a), a.push = a, a.loaded = !0, a.version = "2.0", a.queue = [], c = e.createElement(f), c.async = !0, c.src = g, d = e.getElementsByTagName(f)[0], d.parentNode.insertBefore(c, d))
-    }(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
-    fbq("init", "2659254590859412");
-    fbq("set", "agent", "tmgoogletagmanager", "2659254590859412");
-    fbq("track", "PageView");
+    // ! function(b, e, f, g, a, c, d) {
+    //   b.fbq || (a = b.fbq = function() {
+    //     a.callMethod ? a.callMethod.apply(a, arguments) : a.queue.push(arguments)
+    //   }, b._fbq || (b._fbq = a), a.push = a, a.loaded = !0, a.version = "2.0", a.queue = [], c = e.createElement(f), c.async = !0, c.src = g, d = e.getElementsByTagName(f)[0], d.parentNode.insertBefore(c, d))
+    // }(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+    // fbq("init", "2659254590859412");
+    // fbq("set", "agent", "tmgoogletagmanager", "2659254590859412");
+    // fbq("track", "PageView");
   </script>
   <noscript>
     <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2659254590859412&amp;ev=PageView&amp;noscript=1">
   </noscript>
-  <iframe allow="join-ad-interest-group" data-tagging-id="G-CY6D834NL1" data-load-time="1722323530806" height="0" width="0" src="https://td.doubleclick.net/td/ga/rul?tid=G-CY6D834NL1&amp;gacid=1841374620.1722212752&amp;gtm=45je47t0v889029372z8830103098za200zb830103098&amp;dma=0&amp;gcd=13l3l3l3l1&amp;npa=0&amp;pscdl=noapi&amp;aip=1&amp;fledge=1&amp;frm=0&amp;tag_exp=95250752&amp;z=936446523" style="display: none; visibility: hidden;"></iframe>
+  <!-- <iframe allow="join-ad-interest-group" data-tagging-id="G-CY6D834NL1" data-load-time="1722323530806" height="0" width="0" src="https://td.doubleclick.net/td/ga/rul?tid=G-CY6D834NL1&amp;gacid=1841374620.1722212752&amp;gtm=45je47t0v889029372z8830103098za200zb830103098&amp;dma=0&amp;gcd=13l3l3l3l1&amp;npa=0&amp;pscdl=noapi&amp;aip=1&amp;fledge=1&amp;frm=0&amp;tag_exp=95250752&amp;z=936446523" style="display: none; visibility: hidden;"></iframe>
   <iframe allow="join-ad-interest-group" data-tagging-id="G-X3C2KPMQ0S" data-load-time="1722323530861" height="0" width="0" src="https://td.doubleclick.net/td/ga/rul?tid=G-X3C2KPMQ0S&amp;gacid=1841374620.1722212752&amp;gtm=45je47t0v9122405193z8830103098za200zb830103098&amp;dma=0&amp;gcd=13l3l3l3l1&amp;npa=0&amp;pscdl=noapi&amp;aip=1&amp;fledge=1&amp;frm=0&amp;tag_exp=95250753&amp;z=1522503918" style="display: none; visibility: hidden;"></iframe>
-  <iframe allow="join-ad-interest-group" data-tagging-id="AW-966402230" data-load-time="1722323530895" height="0" width="0" src="https://td.doubleclick.net/td/rul/966402230?random=1722323530886&amp;cv=11&amp;fst=1722323530886&amp;fmt=3&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be47t0v9182292099z8830103098za201zb830103098&amp;gcd=13l3l3l3l1&amp;dma=0&amp;tag_exp=95250752&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fsunhouse.com.vn%2F&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=Website%20ch%C3%ADnh%20th%E1%BB%A9c%20c%E1%BB%A7a%20T%E1%BA%ADp%20%C4%91o%C3%A0n%20SUNHOUSE%20-%20SUNHOUSE%20GROUP&amp;npa=0&amp;pscdl=noapi&amp;auid=393881066.1722212751&amp;uaa=x86&amp;uab=64&amp;uafvl=Not)A%253BBrand%3B99.0.0.0%7CGoogle%2520Chrome%3B127.0.6533.72%7CChromium%3B127.0.6533.72&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=10.0.0&amp;uaw=0&amp;fledge=1" style="display: none; visibility: hidden;"></iframe>
-  <script type="text/javascript" id="">
+  <iframe allow="join-ad-interest-group" data-tagging-id="AW-966402230" data-load-time="1722323530895" height="0" width="0" src="https://td.doubleclick.net/td/rul/966402230?random=1722323530886&amp;cv=11&amp;fst=1722323530886&amp;fmt=3&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be47t0v9182292099z8830103098za201zb830103098&amp;gcd=13l3l3l3l1&amp;dma=0&amp;tag_exp=95250752&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fsunhouse.com.vn%2F&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=Website%20ch%C3%ADnh%20th%E1%BB%A9c%20c%E1%BB%A7a%20T%E1%BA%ADp%20%C4%91o%C3%A0n%20SUNHOUSE%20-%20SUNHOUSE%20GROUP&amp;npa=0&amp;pscdl=noapi&amp;auid=393881066.1722212751&amp;uaa=x86&amp;uab=64&amp;uafvl=Not)A%253BBrand%3B99.0.0.0%7CGoogle%2520Chrome%3B127.0.6533.72%7CChromium%3B127.0.6533.72&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=10.0.0&amp;uaw=0&amp;fledge=1" style="display: none; visibility: hidden;"></iframe> -->
+  <!-- <script type="text/javascript" id="">
     dataLayer.push({
       pageCategory: document.querySelector("body \x3e div.master_page.thuvienPage.thuVienTinPage \x3e div.breadcrums \x3e div \x3e div \x3e ul \x3e li:nth-child(3)").innerText
     });
-  </script>
-  <div id="bs-chatbot-widget-container__21E7F" class="website-chat-plugin__ON4Sg livechat__2vclc">
+  </script> -->
+  <!-- <div id="bs-chatbot-widget-container__21E7F" class="website-chat-plugin__ON4Sg livechat__2vclc">
     <div class="">
       <iframe id="bs-chatbot-frame__Xd3eS" class="bs-chatbot-frame__Xd3eS" name="bs-chatbot-widget-frame" frameborder="0" allowfullscreen="true" allowtransparency="true" autoplay="true" src="https://widget.botstar.com/sa6733f5b-6382-4838-865a-9f28f06fb3cf?embedded=1&amp;host=%7B%22ancestorOrigins%22%3A%7B%7D%2C%22href%22%3A%22https%3A%2F%2Fsunhouse.com.vn%2F%22%2C%22origin%22%3A%22https%3A%2F%2Fsunhouse.com.vn%22%2C%22protocol%22%3A%22https%3A%22%2C%22host%22%3A%22sunhouse.com.vn%22%2C%22hostname%22%3A%22sunhouse.com.vn%22%2C%22port%22%3A%22%22%2C%22pathname%22%3A%22%2F%22%2C%22search%22%3A%22%22%2C%22hash%22%3A%22%22%7D&amp;mode=livechat&amp;initData=%7B%7D"></iframe>
       <div class="bs-chatbot-fab__nJAOV" style="background: linear-gradient(135deg, rgb(218, 32, 40), rgb(8, 113, 129));">
@@ -698,4 +698,4 @@
         <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTEwLjcgMTAuNWw1LjctNS42YS41LjUgMCAwIDAtLjgtLjhMMTAgOS44IDQuNCA0YS41LjUgMCAwIDAtLjguOGw1LjcgNS42TDMuNiAxNmEuNS41IDAgMCAwIC44LjhsNS42LTUuNyA1LjYgNS43YS41LjUgMCAwIDAgLjggMGMuMS0uMi4xLS42IDAtLjhsLTUuNy01LjZ6Ii8+PC9zdmc+" class="bs-chatbot-fab--icon__22tcL close__30Msb">
       </div>
     </div>
-  </div>
+  </div> -->

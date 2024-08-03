@@ -7,22 +7,22 @@ session_start();
 
 <head>
 <title> Website chính thức của Tập đoàn CHACHA - CHACHA GROUP </title>
-  <link rel="alternate" hreflang="vi-vn" href="https://CHACHA.com.vn">
+  <!-- <link rel="alternate" hreflang="vi-vn" href="https://sunhouse.com.vn"> -->
   <!-- #region Các thẻ meta và link -->
   <meta name="keywords" content="Sunhoue">
   <meta name="description" content="CHACHA GROUP - thương hiệu gia dụng hàng đầu Việt Nam, người bạn đồng hành của mọi gia đình Việt. BẠN đang tìm kiếm đại lý CHACHA, click NGAY vào ĐÂY">
-  <link rel="canonical" href="https://CHACHA.com.vn">
+  <!-- <link rel="canonical" href="https://sunhouse.com.vn"> -->
   <meta property="og:title" content="Website chính thức của Tập đoàn CHACHA - CHACHA GROUP">
-  <meta property="og:site_name" content="https://CHACHA.com.vn/">
-  <meta property="og:url" content="https://CHACHA.com.vn">
+  <!-- <meta property="og:site_name" content="https://sunhouse.com.vn/"> -->
+  <!-- <meta property="og:url" content="https://sunhouse.com.vn"> -->
   <meta property="og:description" content="CHACHA GROUP - thương hiệu gia dụng hàng đầu Việt Nam, người bạn đồng hành của mọi gia đình Việt. BẠN đang tìm kiếm đại lý CHACHA, click NGAY vào ĐÂY">
   <meta property="og:type" content="article">
-  <meta property="og:image" content="https://CHACHA.com.vn/pic/setting/1920x1000-27-11.jpg">
+  <!-- <meta property="og:image" content="/chacha_v2/pic/setting/1920x1000-27-11.jpg"> -->
   <meta property="og:image:width" content="1920">
   <meta property="og:image:height" content="1000">
   <meta property="og:image:alt" content="Website chính thức của Tập đoàn CHACHA - CHACHA GROUP">
   <!-- #endregion -->
-  <link rel="icon" href="https://CHACHA.com.vn/favicon.ico">
+  <!-- <link rel="icon" href="https://sunhouse.com.vn/favicon.ico"> -->
   <!-- #region Các thẻ meta tĩnh -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -48,8 +48,8 @@ session_start();
         "@type": "Organization",
         "name": "CHACHA",
         "alternateName": "CHACHA Group",
-        "url": "https://CHACHA.com.vn",
-        "logo": "https://CHACHA.com.vn/pic/banner/logo.png",
+        "url": "https://sunhouse.com.vn",
+        "logo": "/chacha_v2/pic/banner/logo.png",
         "contactPoint": [{
           "@type": "ContactPoint",
           "telephone": "02432007698",
@@ -62,13 +62,13 @@ session_start();
           "telephone": "02435511212",
           "contactType": "technical support"
         }],
-        "sameAs": ["https://www.facebook.com/CHACHA.com.vn", "https://www.youtube.com/channel/UCuUMw6wl9XYfRpaq_D1vGng", "https://g.co/kgs/ejBJJ5", "https://twitter.com/CHACHAG", "https://www.instagram.com/CHACHAgroup/", "https://vn.linkedin.com/company/CHACHA-group", "https://CHACHA.com.vn", "https://CHACHAgroup.tumblr.com/"]
+        "sameAs": ["https://www.facebook.com/sunhouse.com.vn", "https://www.youtube.com/channel/UCuUMw6wl9XYfRpaq_D1vGng", "https://g.co/kgs/ejBJJ5", "https://twitter.com/CHACHAG", "https://www.instagram.com/CHACHAgroup/", "https://vn.linkedin.com/company/CHACHA-group", "https://sunhouse.com.vn", "https://CHACHAgroup.tumblr.com/"]
       }, {
         "@type": "LocalBusiness",
         "name": "CHACHA",
-        "image": "https://CHACHA.com.vn/pic/banner/logo.png",
-        "@id": "https://CHACHA.com.vn/#website",
-        "url": "https://CHACHA.com.vn",
+        "image": "/chacha_v2/pic/banner/logo.png",
+        "@id": "https://sunhouse.com.vn/#website",
+        "url": "https://sunhouse.com.vn",
         "telephone": "02437366676",
         "priceRange": "1000000",
         "address": {
@@ -89,15 +89,15 @@ session_start();
           "opens": "08:00",
           "closes": "18:00"
         },
-        "sameAs": ["https://www.facebook.com/CHACHA.com.vn", "https://twitter.com/CHACHAG", "https://www.instagram.com/CHACHAgroup/", "https://www.youtube.com/channel/UCuUMw6wl9XYfRpaq_D1vGng", "https://vn.linkedin.com/company/CHACHA-group", "https://CHACHAgroup.tumblr.com/", "https://g.co/kgs/ejBJJ5", "https://CHACHA.com.vn"]
+        "sameAs": ["https://www.facebook.com/sunhouse.com.vn", "https://twitter.com/CHACHAG", "https://www.instagram.com/CHACHAgroup/", "https://www.youtube.com/channel/UCuUMw6wl9XYfRpaq_D1vGng", "https://vn.linkedin.com/company/CHACHA-group", "https://CHACHAgroup.tumblr.com/", "https://g.co/kgs/ejBJJ5", "https://sunhouse.com.vn"]
       }, {
         "@type": "WebSite",
-        "url": "https://CHACHA.com.vn",
+        "url": "https://sunhouse.com.vn",
         "potentialAction": {
           "@type": "SearchAction",
           "target": {
             "@type": "EntryPoint",
-            "urlTemplate": "https://CHACHA.com.vn/search/{search_term_string}"
+            "urlTemplate": "https://sunhouse.com.vn/search/{search_term_string}"
           },
           "query-input": "required name=search_term_string"
         }
@@ -115,7 +115,7 @@ session_start();
   <link rel="preload" crossorigin="anonymous" href="./themes/1000000/assets/css/fonts/StagSansVU-Semibold.woff2" as="font" type="font/woff2">
   <link rel="preload" crossorigin="anonymous" href="./themes/1000000/assets/css/fonts/StagSansVU-Medium.woff2" as="font" type="font/woff2">
   <link href="./themes/1000000/assets/css/main.min.css" rel="stylesheet">
-  <link href="./assets/css/custom/slick-theme.css" rel="stylesheet">
+  <!-- <link href="./assets/css/custom/slick-theme.css" rel="stylesheet"> -->
   <!-- #endregion -->
   <!-- #region Các file JS -->
   <script src="./Theme/1000000/Assets/js/home.min.js" defer=""></script>
@@ -167,7 +167,7 @@ session_start();
     }
   </script>
   <meta name="google-site-verification" content="B3P3uGpU5hqfXnAilAfOjC0oX466Za5lQk5hHK3gebk">
-  <!-- Hotjar Tracking Code for CHACHA.com.vn -->
+  <!-- Hotjar Tracking Code for sunhouse.com.vn -->
   <script>
     (function(h, o, t, j, a, r) {
       h.hj = h.hj || function() {
@@ -250,9 +250,9 @@ session_start();
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <!-- #endregion -->
   <script async="" src="https://script.hotjar.com/modules.6c69b5997f314810cfe8.js" charset="utf-8"></script>
-  <script type="text/javascript" async="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/11006955196/?random=1722323530297&amp;cv=11&amp;fst=1722323530297&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be47t0v898488184za200&amp;gcd=13l3l3l3l1&amp;dma=0&amp;tag_exp=95250752&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2FCHACHA.com.vn%2F&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=Website%20ch%C3%ADnh%20th%E1%BB%A9c%20c%E1%BB%A7a%20T%E1%BA%ADp%20%C4%91o%C3%A0n%20CHACHA%20-%20CHACHA%20GROUP&amp;npa=0&amp;pscdl=noapi&amp;auid=393881066.1722212751&amp;uaa=x86&amp;uab=64&amp;uafvl=Not)A%253BBrand%3B99.0.0.0%7CGoogle%2520Chrome%3B127.0.6533.72%7CChromium%3B127.0.6533.72&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=10.0.0&amp;uaw=0&amp;fledge=1&amp;data=event%3Dgtag.config&amp;rfmt=3&amp;fmt=4"></script>
-  <script type="text/javascript" async="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/966402230/?random=1722323530886&amp;cv=11&amp;fst=1722323530886&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be47t0v9182292099z8830103098za201zb830103098&amp;gcd=13l3l3l3l1&amp;dma=0&amp;tag_exp=95250752&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2FCHACHA.com.vn%2F&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=Website%20ch%C3%ADnh%20th%E1%BB%A9c%20c%E1%BB%A7a%20T%E1%BA%ADp%20%C4%91o%C3%A0n%20CHACHA%20-%20CHACHA%20GROUP&amp;npa=0&amp;pscdl=noapi&amp;auid=393881066.1722212751&amp;uaa=x86&amp;uab=64&amp;uafvl=Not)A%253BBrand%3B99.0.0.0%7CGoogle%2520Chrome%3B127.0.6533.72%7CChromium%3B127.0.6533.72&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=10.0.0&amp;uaw=0&amp;fledge=1&amp;rfmt=3&amp;fmt=4"></script>
-  <script type="text/javascript" charset="utf-8" async="" src="//widget.installchatbot.com/embed/0.chunk.08320.js"></script>
+  <script type="text/javascript" async="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/11006955196/?random=1722323530297&amp;cv=11&amp;fst=1722323530297&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be47t0v898488184za200&amp;gcd=13l3l3l3l1&amp;dma=0&amp;tag_exp=95250752&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fsunhouse.com.vn%2F&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=Website%20ch%C3%ADnh%20th%E1%BB%A9c%20c%E1%BB%A7a%20T%E1%BA%ADp%20%C4%91o%C3%A0n%20CHACHA%20-%20CHACHA%20GROUP&amp;npa=0&amp;pscdl=noapi&amp;auid=393881066.1722212751&amp;uaa=x86&amp;uab=64&amp;uafvl=Not)A%253BBrand%3B99.0.0.0%7CGoogle%2520Chrome%3B127.0.6533.72%7CChromium%3B127.0.6533.72&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=10.0.0&amp;uaw=0&amp;fledge=1&amp;data=event%3Dgtag.config&amp;rfmt=3&amp;fmt=4"></script>
+  <script type="text/javascript" async="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/966402230/?random=1722323530886&amp;cv=11&amp;fst=1722323530886&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be47t0v9182292099z8830103098za201zb830103098&amp;gcd=13l3l3l3l1&amp;dma=0&amp;tag_exp=95250752&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fsunhouse.com.vn%2F&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=Website%20ch%C3%ADnh%20th%E1%BB%A9c%20c%E1%BB%A7a%20T%E1%BA%ADp%20%C4%91o%C3%A0n%20CHACHA%20-%20CHACHA%20GROUP&amp;npa=0&amp;pscdl=noapi&amp;auid=393881066.1722212751&amp;uaa=x86&amp;uab=64&amp;uafvl=Not)A%253BBrand%3B99.0.0.0%7CGoogle%2520Chrome%3B127.0.6533.72%7CChromium%3B127.0.6533.72&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=10.0.0&amp;uaw=0&amp;fledge=1&amp;rfmt=3&amp;fmt=4"></script>
+  <!-- <script type="text/javascript" charset="utf-8" async="" src="//widget.installchatbot.com/embed/0.chunk.08320.js"></script> -->
   <style type="text/css">
     .bs-chatbot-frame__Xd3eS {
       background: #fff;
@@ -456,9 +456,9 @@ session_start();
       height: 100%
     }
   </style>
-  <script type="text/javascript" charset="utf-8" async="" src="//widget.installchatbot.com/embed/4.chunk.65eb9.js"></script>
+  <!-- <script type="text/javascript" charset="utf-8" async="" src="//widget.installchatbot.com/embed/4.chunk.65eb9.js"></script>
   <script type="text/javascript" charset="utf-8" async="" src="//widget.installchatbot.com/embed/2.chunk.ee8a5.js"></script>
-  <script type="text/javascript" charset="utf-8" async="" src="//widget.installchatbot.com/embed/3.chunk.a7c6d.js"></script>
+  <script type="text/javascript" charset="utf-8" async="" src="//widget.installchatbot.com/embed/3.chunk.a7c6d.js"></script> -->
   <style type="text/css">
     @-webkit-keyframes slide-right__2aR6_ {
       0% {
