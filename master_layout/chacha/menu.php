@@ -645,7 +645,7 @@ foreach ($CategoryHome as $item)
                           <ul>
                             <?php foreach($productIn as $itemIn) :?>
                             <li>
-                              <a href="chi-tiet-san-pham.php?id=<?php echo $itemIn['id']?>" title="<?php echo $itemIn['name']?>"><?php echo $itemIn['name']?></a>
+                              <a href="chi-tiet-san-pham-new.php?id=<?php echo $itemIn['id']?>" title="<?php echo $itemIn['name']?>"><?php echo $itemIn['name']?></a>
                             </li>
                             <?php endforeach;?> 
                           </ul>

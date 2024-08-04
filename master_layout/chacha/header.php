@@ -115,11 +115,14 @@ session_start();
   <link rel="preload" crossorigin="anonymous" href="./themes/1000000/assets/css/fonts/StagSansVU-Semibold.woff2" as="font" type="font/woff2">
   <link rel="preload" crossorigin="anonymous" href="./themes/1000000/assets/css/fonts/StagSansVU-Medium.woff2" as="font" type="font/woff2">
   <link href="./themes/1000000/assets/css/main.min.css" rel="stylesheet">
+  <link href="./public/frontend/css/bootstrap.min.css" rel="stylesheet">
   <!-- <link href="./assets/css/custom/slick-theme.css" rel="stylesheet"> -->
   <!-- #endregion -->
   <!-- #region Các file JS -->
   <script src="./Theme/1000000/Assets/js/home.min.js" defer=""></script>
   <script src="./Theme/1000000/Assets/js/fancybox/jquery.fancybox.min.js" defer=""></script>
+  <script  src="./public/frontend/js/jquery-3.2.1.min.js"></script>
+  <script  src="./public/frontend/js/bootstrap.min.js"></script>
   <script type="text/javascript">
     if (document.URL.indexOf("www.") > -1) window.location = document.URL.replace("www.", "");
   </script>

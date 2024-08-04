@@ -669,16 +669,16 @@
   </script>
   <iframe allow="join-ad-interest-group" data-tagging-id="AW-11006955196" data-load-time="1722323530310" height="0" width="0" src="https://td.doubleclick.net/td/rul/11006955196?random=1722323530297&amp;cv=11&amp;fst=1722323530297&amp;fmt=3&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be47t0v898488184za200&amp;gcd=13l3l3l3l1&amp;dma=0&amp;tag_exp=95250752&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fsunhouse.com.vn%2F&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=Website%20ch%C3%ADnh%20th%E1%BB%A9c%20c%E1%BB%A7a%20T%E1%BA%ADp%20%C4%91o%C3%A0n%20SUNHOUSE%20-%20SUNHOUSE%20GROUP&amp;npa=0&amp;pscdl=noapi&amp;auid=393881066.1722212751&amp;uaa=x86&amp;uab=64&amp;uafvl=Not)A%253BBrand%3B99.0.0.0%7CGoogle%2520Chrome%3B127.0.6533.72%7CChromium%3B127.0.6533.72&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=10.0.0&amp;uaw=0&amp;fledge=1&amp;data=event%3Dgtag.config" style="display: none; visibility: hidden;"></iframe>
   <iframe id="_hjSafeContext_91786251" title="_hjSafeContext" tabindex="-1" aria-hidden="true" src="about:blank" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe>
-  <script type="text/javascript" id="">
-    // ! function(b, e, f, g, a, c, d) {
-    //   b.fbq || (a = b.fbq = function() {
-    //     a.callMethod ? a.callMethod.apply(a, arguments) : a.queue.push(arguments)
-    //   }, b._fbq || (b._fbq = a), a.push = a, a.loaded = !0, a.version = "2.0", a.queue = [], c = e.createElement(f), c.async = !0, c.src = g, d = e.getElementsByTagName(f)[0], d.parentNode.insertBefore(c, d))
-    // }(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
-    // fbq("init", "2659254590859412");
-    // fbq("set", "agent", "tmgoogletagmanager", "2659254590859412");
-    // fbq("track", "PageView");
-  </script>
+  <!-- <script type="text/javascript" id="">
+    ! function(b, e, f, g, a, c, d) {
+      b.fbq || (a = b.fbq = function() {
+        a.callMethod ? a.callMethod.apply(a, arguments) : a.queue.push(arguments)
+      }, b._fbq || (b._fbq = a), a.push = a, a.loaded = !0, a.version = "2.0", a.queue = [], c = e.createElement(f), c.async = !0, c.src = g, d = e.getElementsByTagName(f)[0], d.parentNode.insertBefore(c, d))
+    }(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+    fbq("init", "2659254590859412");
+    fbq("set", "agent", "tmgoogletagmanager", "2659254590859412");
+    fbq("track", "PageView");
+  </script> -->
   <noscript>
     <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2659254590859412&amp;ev=PageView&amp;noscript=1">
   </noscript>

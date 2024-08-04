@@ -28,23 +28,19 @@
 
     .slide_with_thumb{display:block}
 </style> 
-<script src="./Theme/1000000/Assets/js/ProductDetail.min.js" defer=""></script>
 <div class="master_page sanPhamChiTietPage sanPhamChiTietChung">
   <div class="breadcrums">
     <div class="container">
       <div class="row">
         <ul>
           <li>
-            <a href="/" title="Trang chủ">Trang chủ</a>
+            <a href="index.php" title="Trang chủ">Trang chủ</a>
           </li>
           <li>
-            <a href="https://sunhouse.com.vn/dien-tu-dien-lanh" title="Điện tử Điện lạnh">Điện tử Điện lạnh</a>
+            <a href="https://sunhouse.com.vn/dien-tu-dien-lanh" title="Sản phẩm">Sản phẩm</a>
           </li>
           <li>
             <a href="https://sunhouse.com.vn/dien-tu-dien-lanh/may-lam-mat-khong-khi" title="Máy làm mát không khí - Quạt điều hòa">Máy làm mát không khí - Quạt điều hòa</a>
-          </li>
-          <li>
-            <a href="https://sunhouse.com.vn/dien-tu-dien-lanh/may-lam-mat-khong-khi/sunhouse-shd7727" title="MÁY LÀM MÁT KHÔNG KHÍ SUNHOUSE SHD7727">MÁY LÀM MÁT KHÔNG KHÍ SUNHOUSE SHD7727</a>
           </li>
         </ul>
       </div>
@@ -63,7 +59,7 @@
                   <div class="item">
                     <div class="item_box">
                       <div class="khungAnh">
-                        <a href="javascript:void(0);" class="khungAnhCrop0" onclick="showImage();" tabindex="-1">
+                        <a href="javascript:void(0);" class="khungAnhCrop0" tabindex="-1">
                           <img src="https://sunhouse.com.vn/pic/thumb/large/product/0(53).jpg" data-src="https://sunhouse.com.vn/pic/thumb/large/product/0(53).jpg" alt="0(53).jpg" class=" lazyloaded">
                         </a>
                       </div>
@@ -72,7 +68,7 @@
                   <div class="item">
                     <div class="item_box">
                       <div class="khungAnh">
-                        <a href="javascript:void(0);" class="khungAnhCrop0" onclick="showImage();" tabindex="0">
+                        <a href="javascript:void(0);" class="khungAnhCrop0" tabindex="0">
                           <img src="https://sunhouse.com.vn/pic/thumb/large/product/1(86).jpg" data-src="https://sunhouse.com.vn/pic/thumb/large/product/1(86).jpg" alt="1(86).jpg" class=" lazyloaded">
                         </a>
                       </div>
@@ -81,7 +77,7 @@
                   <div class="item">
                     <div class="item_box">
                       <div class="khungAnh">
-                        <a href="javascript:void(0);" class="khungAnhCrop0" onclick="showImage();" tabindex="-1">
+                        <a href="javascript:void(0);" class="khungAnhCrop0" tabindex="-1">
                           <img src="https://sunhouse.com.vn/pic/thumb/large/product/2(89).jpg" data-src="https://sunhouse.com.vn/pic/thumb/large/product/2(89).jpg" alt="2(89).jpg" class=" lazyloaded">
                         </a>
                       </div>
@@ -90,7 +86,7 @@
                   <div class="item">
                     <div class="item_box">
                       <div class="khungAnh">
-                        <a href="javascript:void(0);" class="khungAnhCrop0" onclick="showImage();" tabindex="-1">
+                        <a href="javascript:void(0);" class="khungAnhCrop0" tabindex="-1">
                           <img src="https://sunhouse.com.vn/pic/thumb/large/product/3(90).jpg" data-src="https://sunhouse.com.vn/pic/thumb/large/product/3(90).jpg" alt="3(90).jpg" class=" lazyloaded">
                         </a>
                       </div>
@@ -99,7 +95,7 @@
                   <div class="item">
                     <div class="item_box">
                       <div class="khungAnh">
-                        <a href="javascript:void(0);" class="khungAnhCrop0" onclick="showImage();" tabindex="-1">
+                        <a href="javascript:void(0);" class="khungAnhCrop0" tabindex="-1">
                           <img src="https://sunhouse.com.vn/pic/thumb/large/product/4(90).jpg" data-src="https://sunhouse.com.vn/pic/thumb/large/product/4(90).jpg" alt="4(90).jpg" class=" lazyloaded">
                         </a>
                       </div>
@@ -108,7 +104,7 @@
                   <div class="item">
                     <div class="item_box">
                       <div class="khungAnh">
-                        <a href="javascript:void(0);" class="khungAnhCrop0" onclick="showImage();" tabindex="-1">
+                        <a href="javascript:void(0);" class="khungAnhCrop0" tabindex="-1">
                           <img src="https://sunhouse.com.vn/pic/thumb/large/product/5(85).jpg" data-src="https://sunhouse.com.vn/pic/thumb/large/product/5(85).jpg" alt="5(85).jpg" class=" lazyloaded">
                         </a>
                       </div>
@@ -117,7 +113,7 @@
                   <div class="item">
                     <div class="item_box">
                       <div class="khungAnh">
-                        <a href="javascript:void(0);" class="khungAnhCrop0" onclick="showImage();" tabindex="-1">
+                        <a href="javascript:void(0);" class="khungAnhCrop0" tabindex="-1">
                           <img src="https://sunhouse.com.vn/pic/thumb/large/product/6(90).jpg" data-src="https://sunhouse.com.vn/pic/thumb/large/product/6(90).jpg" alt="6(90).jpg" class=" lazyloaded">
                         </a>
                       </div>
@@ -126,7 +122,7 @@
                   <div class="item">
                     <div class="item_box">
                       <div class="khungAnh">
-                        <a href="javascript:void(0);" class="khungAnhCrop0" onclick="showImage();" tabindex="-1">
+                        <a href="javascript:void(0);" class="khungAnhCrop0" tabindex="-1">
                           <img src="https://sunhouse.com.vn/pic/thumb/large/product/7(68).jpg" data-src="https://sunhouse.com.vn/pic/thumb/large/product/7(68).jpg" alt="7(68).jpg" class=" lazyloaded">
                         </a>
                       </div>
@@ -135,7 +131,7 @@
                   <div class="item">
                     <div class="item_box">
                       <div class="khungAnh">
-                        <a href="javascript:void(0);" class="khungAnhCrop0" onclick="showImage();" tabindex="-1">
+                        <a href="javascript:void(0);" class="khungAnhCrop0" tabindex="-1">
                           <img src="https://sunhouse.com.vn/pic/thumb/large/product/8(45).jpg" data-src="https://sunhouse.com.vn/pic/thumb/large/product/8(45).jpg" alt="8(45).jpg" class=" lazyloaded">
                         </a>
                       </div>
@@ -375,199 +371,48 @@
           <div class="description"></div>
         </div>
       </div>
-      <div class="tabView stick" id="tabView">
-        <div class="content">
-          <ul class="menuView1">
-            <li class="">
-              <a data-view="menuView1" href="javascript:void(0);">Tổng quan</a>
-            </li>
-            <li class="">
-              <a data-view="menuView2" href="javascript:void(0);">Thiết kế</a>
-            </li>
-            <li class="">
-              <a data-view="menuView3" href="javascript:void(0);">Công năng</a>
-            </li>
-            <li>
-              <a data-view="menuView6" href="javascript:void(0);">Đánh giá</a>
-            </li>
-            <li class="">
-              <a data-view="menuView5" target="_blank" href="https://drive.google.com/drive/folders/1nfP7tsxxHSBDsFvJu0K-FkJNJ-aNH9hM">
-                <h2 class="reset">Hình ảnh / Video</h2>
-              </a>
-            </li>
-          </ul>
-          <style>
-            .thongTinSanPhamChung .tabView .menuView1 li a {
-              font-weight: bold
-            }
-          </style>
-          <div class="hotline">
-            <div class="search-box-on-product-detail-tab">
-              <div class="auto-suggest-wrap">
-                <input type="text" id="tbSearchKeywordsOnProductDetailTab" value="" placeholder="Tìm kiếm sản phẩm" onkeyup="CheckPostSearchOnProductDetailTab()">
-                <div class="auto-suggest"></div>
-              </div>
-              <a class="btn-search" href="javascript:void(0);" onclick="PostSearchOnProductDetailTab()">
-                <i class="fa fa-search"></i>
-              </a>
+      
+      <div class="bottom">
+        <div class="col1">
+          <div class="row">                 
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#home">Mô tả sản phẩm </a></li>
+                <li><a data-toggle="tab" href="#menu1">Thông tin khác </a></li>
+                <li><a data-toggle="tab" href="#menu2">Yêu thích</a></li>
+                <li><a data-toggle="tab" href="#menu3">Bình luận về sản phẩm</a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="home" class="tab-pane fade in active">
+                    <h3>Nội dung</h3>
+                    <p><?php echo $product['content'] ?></p>
+                </div>
+                <div id="menu1" class="tab-pane fade">
+                    <h3> Thông tin khác </h3>
+                    <p><?php echo $product['content'] ?></p>
+                </div>
+                <div id="menu2" class="tab-pane fade">
+                    <h3></h3>
+                    <p>Bình luận về sản phẩm.</p>
+                </div>
+                <div id="menu3" class="tab-pane fade">
+                    
+                    <div id="fb-root"></div>
+                        <script>(function(d, s, id) {
+                          var js, fjs = d.getElementsByTagName(s)[0];
+                          if (d.getElementById(id)) return;
+                          js = d.createElement(s); js.id = id;
+                          js.src = 'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.12&appId=1862935443738920&autoLogAppEvents=1';
+                          fjs.parentNode.insertBefore(js, fjs);
+                        }(document, 'script', 'facebook-jssdk'));</script>
+
+                        <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-numposts="5"></div>
+                </div>
             </div>
-            <script>
-              function CheckPostSearchOnProductDetailTab() {
-                event.preventDefault();
-                if (event.keyCode === 13) PostSearchOnProductDetailTab();
-                else AutoSuggestProductSearchInTab();
-              }
-
-              function PostSearchOnProductDetailTab() {
-                var searchKeyword = $("#tbSearchKeywordsOnProductDetailTab").val();
-                if (searchKeyword.length > 0) window.location = "/search/" + searchKeyword;
-              }
-            </script>
-            <script>
-              var sendSuggestSearch;
-
-              function AutoSuggestProductSearchInTab() {
-                //Hủy ajax trước để đảm bảo chỉ chạy cái cuối
-                if (sendSuggestSearch) {
-                  sendSuggestSearch.abort();
-                }
-                if ($("#tbSearchKeywordsOnProductDetailTab").val() === "") $(".search-box-on-product-detail-tab .auto-suggest").hide();
-                else {
-                  sendSuggestSearch = $.ajax({
-                    url: "/chacha_v2/themes/1000000/ajax/product.aspx",
-                    type: "POST",
-                    dataType: "json",
-                    data: {
-                      "action": "AutoSuggestProductSearch",
-                      "searchkeyword": $("#tbSearchKeywordsOnProductDetailTab").val()
-                    },
-                    success: function(res) {
-                      $(".search-box-on-product-detail-tab .auto-suggest").html("");
-                      res.forEach(function(product) {
-                        var productHtml = ' < a class = "suggest-item"
-                        href = "https://sunhouse.com.vn/' + product.Categories[0].SeoUrl + '/' + product.SeoUrl + '"
-                        title = "' + product.Title + '"
-                        data - image = "' + product.Image + '" > ' +
-                        ' < div class = "suggest-item-image-wrap" > ' +
-                        ' < img class = "suggest-item-image"
-                        src = "/chacha_v2/pic/thumb/thumb/product/' + product.Image + '"
-                        alt = "" / > ' +
-                        ' < /div>' +
-                        ' < div class = "suggest-item-title" > < span > ' + product.Title + ' < /span> < br / > < span > Mã: ' + product.Code + ' < /span> < /div>' +
-                        ' < /a>';
-                        $(".search-box-on-product-detail-tab .auto-suggest").append(productHtml);
-                      });
-                      if (res.length > 0) $(".search-box-on-product-detail-tab .auto-suggest").show();
-                      else $(".search-box-on-product-detail-tab .auto-suggest").hide();
-                    },
-                    error: function(error) {
-                      $(".search-box-on-product-detail-tab .auto-suggest").html("");
-                      console.log("Có lỗi xảy ra. AutoSuggestProductSearch");
-                    }
-                  });
-                }
-              }
-            </script>
           </div>
         </div>
-      </div>
-      <div class="bottom">
         <div class="col2">
-          <div class="thongSoKyThuatSanPham1 menuViewHightLight" id="menuView4">
-            <h2 class="title">Thông số kỹ thuật</h2>
-            <ul>
-              <li>
-                <div class="text">Diện tích làm mát</div>
-                <div class="val">Từ 30 đến dưới 40 m2</div>
-              </li>
-              <li>
-                <div class="text">Điện áp</div>
-                <div class="val">220V~/50Hz</div>
-              </li>
-              <li>
-                <div class="text">Công suất</div>
-                <div class="val">150 W</div>
-              </li>
-              <li>
-                <div class="text">Lưu lượng gió</div>
-                <div class="val">3000 m3/h</div>
-              </li>
-              <li>
-                <div class="text">Khối lượng</div>
-                <div class="val">13.5 kg</div>
-              </li>
-              <li>
-                <div class="text">Kích thước</div>
-                <div class="val">480 x 360 x 1050 mm</div>
-              </li>
-              <li>
-                <div class="text">Chất liệu vỏ máy</div>
-                <div class="val">Nhựa ABS</div>
-              </li>
-              <li>
-                <div class="text">Số tấm làm mát</div>
-                <div class="val">3</div>
-              </li>
-              <li>
-                <div class="text">Màu sắc</div>
-                <div class="val">Đen trắng</div>
-              </li>
-              <li>
-                <div class="text">Dung tích bình nước</div>
-                <div class="val">40 Lít</div>
-              </li>
-              <li>
-                <div class="text">Bộ phận tản gió</div>
-                <div class="val">Có</div>
-              </li>
-              <li>
-                <div class="text">Ion lọc không khí</div>
-                <div class="val">Có</div>
-              </li>
-              <li>
-                <div class="text">Điều khiển từ xa</div>
-                <div class="val">Có</div>
-              </li>
-              <li>
-                <div class="text">Bảng điều khiển cảm ứng</div>
-                <div class="val">Có</div>
-              </li>
-              <li>
-                <div class="text">Bơm tự động chống cạn</div>
-                <div class="val">Không</div>
-              </li>
-              <li>
-                <div class="text">Tự động ngắt khi cạn nước</div>
-                <div class="val">Có</div>
-              </li>
-              <li>
-                <div class="text">Lưới lọc bụi</div>
-                <div class="val">Có</div>
-              </li>
-              <li>
-                <div class="text">Hẹn giờ</div>
-                <div class="val">Có</div>
-              </li>
-              <li>
-                <div class="text">Tiện ích khác</div>
-                <div class="val">Không</div>
-              </li>
-              <li>
-                <div class="text">Thương hiệu</div>
-                <div class="val">SUNHOUSE</div>
-              </li>
-              <li>
-                <div class="text">Xuất xứ</div>
-                <div class="val">Trung Quốc</div>
-              </li>
-              <li>
-                <div class="text">Bảo hành</div>
-                <div class="val">12 tháng đối với phần điện</div>
-              </li>
-            </ul>
-          </div>
           <div class="kinhNghiemMua" id="kinhNghiemMua">
-            <div class="title">Bí quyết - Mẹo vặt</div>
+            <div class="title">TƯ VẤN SẢN PHẨM</div>
             <div class="groupItem">
               <div class="itemBox">
                 <div class="khungAnh">
@@ -621,237 +466,6 @@
                   <div class="itemDescription" style="max-height:40px;overflow:hidden">Bạn đang sử dụng máy lọc nước vẫn rất bình thường, bỗng dưng một ngày đẹp trời "máy lọc nước vẫn chạy nhưng không có nước". Đừng lo lắng, việc&nbsp;xử lý máy lọc nước không ra nước khá đơn giản và thường xuyên gặp ở một số máy lọc nước đã sử dụng lâu ngày.&nbsp; Tại sao máy lọc nước không ra nước đến từ rất nhiều nguyên nhân từ màng lọc bị tắt, van áp bị hỏng đến bình áp hết khí nén, SUNHOUSE sẽ giúp bạn xử lý máy lọc nước không ra nước chi tiết và triệt để cho từng trường hợp cụ thể dưới đây.&nbsp;</div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="col1">
-          <div class="boxInfo">
-            <div class="tongQuan gStyle3 menuViewHightLight" id="menuView1">
-              <div class="description">
-                <p>Máy làm mát không khí SUNHOUSE SHD7727&nbsp;hoạt động dựa trên nguyên lý bốc hơi nước tự nhiên. Không khí nóng sau khi đi qua tấm làm mát được thổi ra ngoài. Dựa trên nguyên lý đó, sản phẩm có khả năng làm mát trên diện rộng, tiết kiệm điện năng hiệu quả hơn các sản phẩm thông thường.</p>
-                <p>SUNHOUSE SHD7727 có lưu lượng gió lên đến 3.000m3/h cùng nhiều tính năng hiện đại, phù hợp để làm mát tại gia đình hoặc cửa hàng, văn phòng nhỏ. <br>
-                  <br>
-                  <img alt="Máy làm mát không khí SUNHOUSE SHD7727" src="/chacha_v2/pic/general/images/quat-dieu-hoa-sunhouse-shd7727_001.png" style="height:527px; width:790px">
-                  <br>
-                  <img alt="thông số quạt điều hòa sunhouse shd7727" src="/chacha_v2/pic/product/images/8(32).jpg" style="height:529px; width:790px">
-                </p>
-              </div>
-            </div>
-            <div class="thietKe gStyle3 menuViewHightLight" id="menuView2">
-              <div class="description">
-                <h2>THIẾT KẾ SANG TRỌNG – SỬ DỤNG TIỆN LỢI</h2>
-                <ul>
-                  <li>
-                    <h3>Thiết kế hiện đại, trang nhã</h3>
-                  </li>
-                </ul>
-                <p>Máy làm mát không khí SUNHOUSE SHD7727 có động cơ làm bằng đồng nguyên chất siêu bền, hoạt động ổn định. Thân máy làm bằng nhựa ABS bền đẹp, bề mặt sáng bóng, hạn chế bám bụi, dễ dàng vệ sinh. Sản phẩm có kiểu dáng sang trọng, màu sắc đen trắng nổi bật, kích thước nhỏ gọn, tiết kiệm diện tích, phù hợp với nhiều không gian khác nhau.</p>
-                <p>
-                  <img alt="quạt điều hòa sunhouse shd7727 thiết kế trang nhã, nhỏ gọn" src="/chacha_v2/pic/product/images/1(75).jpg" style="height:529px; width:790px">
-                </p>
-                <ul>
-                  <li>
-                    <h3>Điều khiển dễ dàng, linh hoạt sử dụng</h3>
-                  </li>
-                </ul>
-                <p>SHD7727 được trang bị bảng điều khiển cảm ứng nhạy bén, ngôn ngữ tiếng Việt, dễ sử dụng và kèm theo màn hình LED hiển thị đa thông tin tiện lợi. Sản phẩm cũng có kèm điều khiển từ xa, dễ dàng thay đổi hoạt động theo ý muốn trong khoảng cách 5m.</p>
-                <p>
-                  <img alt="máy làm mát không khí sunhouse shd7727 dễ dàng điều khiển" src="/chacha_v2/pic/product/images/2(78).jpg" style="height:529px; width:790px">
-                </p>
-                <p>Máy làm mát không khí SUNHOUSE SHD7727 có 4 bánh xe lớn nên rất dễ di chuyển giữa các không gian khác nhau.</p>
-                <ul>
-                  <li>
-                    <h3>Bình chứa nước tiện dụng</h3>
-                  </li>
-                </ul>
-                <p>Sản phẩm có bình chứa nước với dung tích 40L, bổ sung nước nhanh chóng qua cửa tiếp nước bên hông. Phía mặt trước của sản phẩm có thang đo mực nước giúp bạn tiện theo dõi lượng nước còn lại trong bình.</p>
-              </div>
-            </div>
-            <div class="congNang gStyle3 menuViewHightLight" id="menuView3">
-              <div class="description">
-                <h2>GIẢI PHÁP LÀM MÁT TỐI ƯU CHO KHÔNG GIAN MỞ</h2>
-                <ul>
-                  <li>
-                    <h3>Gió mát tự nhiên, thân thiện với sức khỏe</h3>
-                  </li>
-                </ul>
-                <p>Hoạt động dựa trên nguyên lý bốc hơi nước tự nhiên, SHD7727 là giải pháp làm mát tối ưu cho không gian mở. Bạn không cần phải đóng kín cửa như sử dụng máy điều hòa mà không gian trong phòng vẫn luôn được thoáng mát tự nhiên. Bạn cũng không phải lo tình trạng lạnh sốc hay khô da khi bước từ ngoài vào phòng.</p>
-                <p>
-                  <img alt="giảm pháp làm mát từ gió tự nhiên hiệu quả" src="/chacha_v2/pic/product/images/3(77).jpg" style="height:529px; width:790px">
-                </p>
-                <p>Luồng không khí cũng được lọc sạch qua 2 lớp: lưới lọc bụi bên ngoài và tấm làm mát phía trong. Cơ chế là lưới lọc bụi sẽ giữ lại các bụi lớn và tấm làm mát khi đang ướt nước sẽ giữ lại các hạt bụi cỡ nhỏ hơn (vì thế nên bạn phải thường xuyên vệ sinh 2 bộ phận này).</p>
-                <ul>
-                  <li>
-                    <h3>Gió mạnh, diện tích làm mát lớn</h3>
-                  </li>
-                </ul>
-                <p>Quạt điều hòa làm mát SUNHOUSE SHD7727 có lưu lượng gió 3.000m3/h, nhanh chóng làm mát căn phòng của bạn. <br> Sản phẩm có đến 4 chế độ làm mát &amp; 3 tốc độ gió khác nhau để bạn lựa chọn phù hợp với nhu cầu sử dụng: làm mát bằng gió, làm lạnh bằng hơi nước và chế độ ngủ. <br>
-                  <br>
-                  <img alt="máy làm mát không khí sunhouse shd7727 cho gió làm mát diện lớn" src="/chacha_v2/pic/product/images/4(75).jpg" style="height:529px; width:790px">
-                </p>
-                <p>Chức năng đảo gió 2 chiều tự động kết hợp với đá khô đi kèm, cho phép mở rộng phạm vi làm mát lên tới 30m2, sử dụng thoải mái trong phòng khách, phòng ngủ hay ban công.</p>
-                <ul>
-                  <li>
-                    <h3>Tiết kiệm điện gấp 10 lần so với điều hòa</h3>
-                  </li>
-                </ul>
-                <p>Sử dụng ở không gian mở và lớn nhưng sản phẩm lại không hề tốn quá nhiều chi phí điện năng. Với công suất chỉ bằng 1/10 điều hòa không khí thông thường, sản phẩm còn không gây ra tiếng ồn quá lớn (60 – 70dB), không ảnh hưởng đến sinh hoạt của gia đình. <br>
-                  <br>
-                  <img alt="Tiết kiệm điện gấp 10 lần so với điều hòa" src="/chacha_v2/pic/product/images/5(66).jpg" style="height:529px; width:790px">
-                </p>
-                <ul>
-                  <li>
-                    <h3>Tích hợp công năng hữu ích, bảo vệ sức khỏe</h3>
-                  </li>
-                </ul>
-                <p>Quạt điều hòa SUNHOUSE SHD7727 được tích hợp chức năng Tạo ion (-), lọc và khử mùi khó chịu, loại bỏ bớt các loại bụi siêu nhỏ và các chất rắn lơ lửng trong không khí, cho cả gia đình một luồng không khí mát sạch.</p>
-                <p>
-                  <img alt="Tích hợp công năng hữu ích, bảo vệ sức khỏe" src="/chacha_v2/pic/product/images/6(62).jpg" style="height:529px; width:790px">
-                  <br>
-                  <br> Sản phẩm cũng thường được sử dụng trong phòng ngủ với chế độ Gió ngủ, tự động điều chỉnh tốc độ gió cho giấc ngủ sâu êm ái và an toàn sức khỏe. Bạn cũng có thể hẹn giờ tắt lên đến 12 giờ, thuận tiện sử dụng lại không lo lãng phí điện nước.
-                </p>
-                <ul>
-                  <li>
-                    <h3>An toàn trong quá trình sử dụng</h3>
-                  </li>
-                </ul>
-                <p>Ở chế độ Làm mát, máy bơm sẽ hoạt động để đẩy nước trong bình lên làm ướt các tấm làm mát. Khi bình cạn nước, máy bơm sẽ tự động ngắt hoạt động để hạn chế bơm khô, tăng tuổi thọ sản phẩm, thiết bị trở về chế độ quạt gió thông thường</p>
-                <p>
-                  <img alt="An toàn trong quá trình sử dụng" src="/chacha_v2/pic/product/images/7(48).jpg" style="height:529px; width:790px">
-                </p>
-              </div>
-            </div>
-            <div class="hinhAnhThucTe5 menuViewHightLight " id="menuView5">
-              <div class="title">Hình ảnh thực tế</div>
-              <div class="slide_with_thumb_1" style="display:block">
-                <div class="slide_for_1 slick-initialized slick-slider">
-                  <div aria-live="polite" class="slick-list draggable">
-                    <div class="slick-track" style="opacity: 1; width: 760px;" role="listbox">
-                      <div class="item">
-                        <div class="item_box">
-                          <div class="khungAnh">
-                            <a href="javascript:void(0);" class="khungAnhCrop" tabindex="0">
-                              <img src="https://sunhouse.com.vn/pic/product_InUse/quat-dieu-hoa-sunhouse-shd7727_001.png" data-src="https://sunhouse.com.vn/pic/product_InUse/quat-dieu-hoa-sunhouse-shd7727_001.png" alt="quat-dieu-hoa-sunhouse-shd7727_001.png" class="tall lazyloaded">
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="slide_nav_1 slick-initialized slick-slider">
-                  <div aria-live="polite" class="slick-list draggable">
-                    <div class="slick-track" style="opacity: 1; width: 128px; transform: translate3d(0px, 0px, 0px);" role="listbox">
-                      <div class="item">
-                        <div class="item_box picture">
-                          <div class="khungAnh">
-                            <a href="javascript:void(0);" class="khungAnhCrop" tabindex="0">
-                              <img src="https://sunhouse.com.vn/pic/thumb/small/product_InUse/quat-dieu-hoa-sunhouse-shd7727_001.png" data-src="https://sunhouse.com.vn/pic/thumb/small/product_InUse/quat-dieu-hoa-sunhouse-shd7727_001.png" alt="quat-dieu-hoa-sunhouse-shd7727_001.png" class="tall lazyloaded">
-                            </a>
-                            <i class="fa fa-picture-o" aria-hidden="true"></i>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="menuView6">
-            <div class="danhGiaSanPham menuViewHightLight">
-              <div class="title">
-                <span>Đánh giá sản phẩm</span>
-              </div>
-              <div class="result">
-                <div class="point">0</div>
-                <div class="star">
-                  <span class="no"></span>
-                  <span class="no"></span>
-                  <span class="no"></span>
-                  <span class="no"></span>
-                  <span class="no"></span>
-                </div>
-                <div class="quantity">Có 0 đánh giá</div>
-              </div>
-              <div class="form">
-                <div class="header">
-                  <div class="text">Chọn đánh giá của bạn</div>
-                  <div class="star rating-order-wrap" data-sao="0">
-                    <span data-sao="1"></span>
-                    <span data-sao="2"></span>
-                    <span data-sao="3"></span>
-                    <span data-sao="4"></span>
-                    <span data-sao="5"></span>
-                  </div>
-                </div>
-                <div id="commentForm" class="content">
-                  <div class="box">
-                    <textarea id="tbContent" class="required" placeholder="Nhận xét về sản phẩm (tối thiểu 100 ký tự)"></textarea>
-                  </div>
-                  <div class="box">
-                    <input id="tbName" class="required" type="text" placeholder="Họ tên">
-                    <input id="tbPhone" type="text" class="required" placeholder="Điện thoại">
-                    <a class="submit" href="javascript:CommentSP()">Gửi nhận xét</a>
-                  </div>
-                </div>
-              </div>
-              <div class="comment"></div>
-              <script>
-                $(document).ready(function() {
-                      $(".thongTinSanPhamChung .top .col2 .infoView .comment span").html("0");
-                      $(".thongTinSanPhamChung .top .col2 .infoView .review .star").html(" < span class = 'no' > < /span> < span class = 'no' > < /span> < span class = 'no' > < /span> < span class = 'no' > < /span> < span class = 'no' > < /span>");
-                        $(".thongTinSanPhamChung .top .col2 .infoView .review .quantity").html("(0 đánh giá)");
-                      })function CommentSP() {
-                      var obError = undefined;
-                      $("#commentForm .required").each(function() {
-                        if (obError == undefined && $(this).val() == '') {
-                          alert("Bạn phải nhập những thông tin bắt buộc trước khi gửi!");
-                          obError = $(this);
-                          return;
-                        }
-                      });
-                      if (obError != undefined) {
-                        obError.focus();
-                        return;
-                      }
-                      var id = "788";
-                      var name = $("#tbName").val();
-                      var phone = $("#tbPhone").val();
-                      var sao = $(".rating-order-wrap").attr("data-sao");
-                      var comment = $("#tbContent").val();
-                      if (sao == "0") {
-                        alert("Bạn chưa chọn số sao đánh giá cho sản phẩm!");
-                        return;
-                      }
-                      var dataForm = new FormData();
-                      dataForm.append("action", "Comment");
-                      dataForm.append("name", name);
-                      dataForm.append("phone", phone);
-                      dataForm.append("sao", sao);
-                      dataForm.append("comment", comment);
-                      dataForm.append("id", id);
-                      jQuery.ajax({
-                        url: "/chacha_v2/themes/1000000/ajax/product.aspx",
-                        type: "POST",
-                        dataType: "json",
-                        data: dataForm,
-                        contentType: false,
-                        processData: false,
-                        success: function(res) {
-                          if (res[0].toString() == "Success") {
-                            $("#tbName").val("");
-                            $("#tbPhone").val("");
-                            $("#tbContent").val("");
-                            alert("Cảm ơn bạn đã gửi ý kiến cho chúng tôi! Bình luận của bạn sẽ được xét duyệt trước khi được hiển thị!");
-                          }
-                        },
-                        error: function(error) { //Lỗi xảy ra
-                          alert('Hệ thống đang bận, bạn vui lòng thử lại sau!');
-                        }
-                      });
-                    };
-              </script>
             </div>
           </div>
         </div>
@@ -2212,121 +1826,149 @@
             </ul>
           </div>
         </div>
-        <div class="newsProductDetail">
-          <div class="header">
-            <div class="title">
-              <h2 class="reset">Sản phẩm bạn đã xem</h2>
-              <span>(3 sản phẩm)</span>
+      </div>
+    </div>
+  </div>
+</div> 
+<div class="popUpSanPham">
+  <div class="popUpContent">
+    <div class="content">
+      <div class="slide_with_thumb_2">
+        <div class="slide_zoom">
+          <div class="close" onclick="hideImage();">
+            <a href="javascript:void(0);">
+              <span class="button">
+                <i class="fa fa-times" aria-hidden="true"></i>
+              </span>
+              <span class="text">Đóng</span>
+            </a>
+          </div>
+          <div class="watch360 d-none" onclick="showImage360();">
+            <a href="javascript:void(0);">
+              <span class="button">
+                <i class="fa fa-times" aria-hidden="true"></i>
+              </span>
+              <span class="text">Xem 360</span>
+            </a>
+          </div>
+          <!--Khối ảnh 360 (Load ảnh tự động theo thư mục và tên định sẵn trong file Js (images360), tên ảnh giống nhau chỉ khác phần cuối (VD: threesixty_1.jpg, threesixty_1.jpg, threesixty_3.jpg, ...))-->
+          <div id="threesixty">
+            <div id="spinner">
+              <span>0%</span>
+            </div>
+            <ol id="threesixty_images"></ol>
+          </div>
+          
+          
+          <div class="slide_for_2 largeImagesPopup">
+            <div class="item">
+              <div class="item_box">
+                <div class="khungAnh">
+                  <a href="javascript:void(0);" class="khungAnhCrop0" tabindex="-1">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://sunhouse.com.vn/pic/product/SHA76623-01.jpg" alt="SHA76623-01.jpg" class="lazyload" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item_box">
+                <div class="khungAnh">
+                  <a href="javascript:void(0);" class="khungAnhCrop0" tabindex="0">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://sunhouse.com.vn/pic/product/SHA76623-02.jpg" alt="SHA76623-02.jpg" class="lazyload" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item_box">
+                <div class="khungAnh">
+                  <a href="javascript:void(0);" class="khungAnhCrop0" tabindex="-1">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://sunhouse.com.vn/pic/product/SHA76623-03.jpg" alt="SHA76623-03.jpg" class="lazyload" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item_box">
+                <div class="khungAnh">
+                  <a href="javascript:void(0);" class="khungAnhCrop0" tabindex="-1">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://sunhouse.com.vn/pic/product/SHA76623-04.jpg" alt="SHA76623-04.jpg" class="lazyload" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item_box">
+                <div class="khungAnh">
+                  <a href="javascript:void(0);" class="khungAnhCrop0" tabindex="-1">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://sunhouse.com.vn/pic/product/SHA76623-05.jpg" alt="SHA76623-05.jpg" class="lazyload" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item_box">
+                <div class="khungAnh">
+                  <a href="javascript:void(0);" class="khungAnhCrop0" tabindex="-1">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://sunhouse.com.vn/pic/product/SHA76623-06.jpg" alt="SHA76623-06.jpg" class="lazyload" />
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="itemProductCT slick-initialized slick-slider">
-            <div aria-live="polite" class="slick-list draggable">
-              <div class="slick-track" style="opacity: 1; width: 714px; transform: translate3d(0px, 0px, 0px);" role="listbox">
-                <div class="item">
-                  <div class="wrapper">
-                    <div class="khungAnh">
-                      <a href="https://sunhouse.com.vn/dien-tu-dien-lanh/may-lam-mat-khong-khi/sunhouse-shd7719.html" title="MÁY LÀM MÁT KHÔNG KHÍ SUNHOUSE SHD7719" class="khungAnhCrop0" tabindex="0">
-                        <img src="https://sunhouse.com.vn/pic/thumb/compact/product/7719.jpg" data-src="https://sunhouse.com.vn/pic/thumb/compact/product/7719.jpg" alt="Máy làm mát không khí SUNHOUSE SHD7719" class=" lazyloaded">
-                      </a>
-                    </div>
-                    <div class="outer">
-                      <h3 class="reset">
-                        <a href="https://sunhouse.com.vn/dien-tu-dien-lanh/may-lam-mat-khong-khi/sunhouse-shd7719.html" title="MÁY LÀM MÁT KHÔNG KHÍ SUNHOUSE SHD7719" class="name" tabindex="0">MÁY LÀM MÁT KHÔNG KHÍ SUNHOUSE SHD7719</a>
-                      </h3>
-                      <div class="model">Mã: SHD7719</div>
-                      <div class="rate">
-                        <ul>
-                          <li class="active">
-                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                          </li>
-                          <li class="active">
-                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                          </li>
-                          <li class="active">
-                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                          </li>
-                          <li class="active">
-                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                          </li>
-                          <li class="active">
-                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                          </li>
-                        </ul>
-                        <span>1 đánh giá</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="wrapper">
-                    <div class="khungAnh">
-                      <a href="https://sunhouse.com.vn/do-gia-dung/bo-noi-anod/bo-noi-anod-sunhouse-sh6634n.html" title="BỘ NỒI ANOD SUNHOUSE SH6634N" class="khungAnhCrop0" tabindex="0">
-                        <img src="https://sunhouse.com.vn/pic/thumb/compact/product/bo-noi-anod-sunhouse-sh6634n.jpeg" data-src="https://sunhouse.com.vn/pic/thumb/compact/product/bo-noi-anod-sunhouse-sh6634n.jpeg" alt="BỘ NỒI ANOD SUNHOUSE SH6634N" class=" lazyloaded">
-                      </a>
-                    </div>
-                    <div class="outer">
-                      <h3 class="reset">
-                        <a href="https://sunhouse.com.vn/do-gia-dung/bo-noi-anod/bo-noi-anod-sunhouse-sh6634n.html" title="BỘ NỒI ANOD SUNHOUSE SH6634N" class="name" tabindex="0">BỘ NỒI ANOD SUNHOUSE SH6634N</a>
-                      </h3>
-                      <div class="model">Mã: SH6634N</div>
-                      <div class="rate">
-                        <ul>
-                          <li class="active">
-                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                          </li>
-                          <li class="active">
-                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                          </li>
-                          <li class="active">
-                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                          </li>
-                          <li class="active">
-                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                          </li>
-                          <li class="active">
-                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                          </li>
-                        </ul>
-                        <span>1 đánh giá</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="wrapper">
-                    <div class="khungAnh">
-                      <a href="https://sunhouse.com.vn/dien-tu-dien-lanh/may-lam-mat-khong-khi/sunhouse-shd7727.html" title="MÁY LÀM MÁT KHÔNG KHÍ SUNHOUSE SHD7727" class="khungAnhCrop0" tabindex="0">
-                        <img src="https://sunhouse.com.vn/pic/thumb/compact/product/quat-dieu-hoa-sunhouse-shd7727_002.png" data-src="https://sunhouse.com.vn/pic/thumb/compact/product/quat-dieu-hoa-sunhouse-shd7727_002.png" alt="Máy làm mát không khí SUNHOUSE SHD7727" class=" lazyloaded">
-                      </a>
-                    </div>
-                    <div class="outer">
-                      <h3 class="reset">
-                        <a href="https://sunhouse.com.vn/dien-tu-dien-lanh/may-lam-mat-khong-khi/sunhouse-shd7727.html" title="MÁY LÀM MÁT KHÔNG KHÍ SUNHOUSE SHD7727" class="name" tabindex="0">MÁY LÀM MÁT KHÔNG KHÍ SUNHOUSE SHD7727</a>
-                      </h3>
-                      <div class="model">Mã: SHD7727</div>
-                      <div class="rate">
-                        <ul>
-                          <li class="active">
-                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                          </li>
-                          <li class="active">
-                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                          </li>
-                          <li class="active">
-                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                          </li>
-                          <li class="active">
-                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                          </li>
-                          <li class="active">
-                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                          </li>
-                        </ul>
-                        <span>1 đánh giá</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+        </div>
+        <div class="slide_nav_2 thumbImagesPopup">
+          <div class="item">
+            <div class="item_box">
+              <div class="khungAnh">
+                <a href="javascript:void(0);" class="khungAnhCrop0" tabindex="-1">
+                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://sunhouse.com.vn/pic/thumb/small/product/SHA76623-01.jpg" alt="SHA76623-01.jpg" class="lazyload" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item_box">
+              <div class="khungAnh">
+                <a href="javascript:void(0);" class="khungAnhCrop0" tabindex="-1">
+                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://sunhouse.com.vn/pic/thumb/small/product/SHA76623-02.jpg" alt="SHA76623-02.jpg" class="lazyload" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item_box">
+              <div class="khungAnh">
+                <a href="javascript:void(0);" class="khungAnhCrop0" tabindex="-1">
+                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://sunhouse.com.vn/pic/thumb/small/product/SHA76623-03.jpg" alt="SHA76623-03.jpg" class="lazyload" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item_box">
+              <div class="khungAnh">
+                <a href="javascript:void(0);" class="khungAnhCrop0" tabindex="-1">
+                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://sunhouse.com.vn/pic/thumb/small/product/SHA76623-04.jpg" alt="SHA76623-04.jpg" class="lazyload" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item_box">
+              <div class="khungAnh">
+                <a href="javascript:void(0);" class="khungAnhCrop0" tabindex="-1">
+                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://sunhouse.com.vn/pic/thumb/small/product/SHA76623-05.jpg" alt="SHA76623-05.jpg" class="lazyload" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item_box">
+              <div class="khungAnh">
+                <a href="javascript:void(0);" class="khungAnhCrop0" tabindex="-1">
+                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://sunhouse.com.vn/pic/thumb/small/product/SHA76623-06.jpg" alt="SHA76623-06.jpg" class="lazyload" />
+                </a>
               </div>
             </div>
           </div>
@@ -2334,5 +1976,449 @@
       </div>
     </div>
   </div>
-</div>         
+  <script>
+    function DestroySlickImagesPopup() {
+      $('.slide_for_2').slick('unslick');
+      $('.slide_nav_2').slick('unslick');
+    }
+
+    function InitSlickImagesPopup() {
+      // $('.slide_for_2').slick({
+      //   rows: 1,
+      //   slidesPerRow: 1,
+      //   slidesToShow: 1,
+      //   slidesToScroll: 1,
+      //   centerPadding: '0px',
+      //   dots: false,
+      //   arrows: true,
+      //   infinite: true,
+      //   autoplay: false,
+      //   fade: true,
+      //   prevArrow: '<div class="arrow prev"><a href="javascript:void(0);"><span class="button"><i class="fa fa-chevron-left" aria-hidden="true"></i></span><span class="text">Xem hình sau</span></a></div>',
+      //   nextArrow: '<div class="arrow next"><a href="javascript:void(0);"><span class="button"><i class="fa fa-chevron-right" aria-hidden="true"></i></span><span class="text">Xem hình trước</span></a></div>',
+      //   asNavFor: '.slide_nav_2',
+      //   responsive: [{
+      //     breakpoint: 1200,
+      //     settings: {
+      //       draggable: false
+      //     }
+      //   }]
+      // });
+      $(".slide_for_2").slick({
+        rows: 1,
+        slidesPerRow: 1,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerPadding: "0px",
+        dots: !1,
+        arrows: !0,
+        infinite: !0,
+        autoplay: !1,
+        fade: !0,
+        asNavFor: ".slide_nav_2",
+        responsive: [{
+          breakpoint: 1200,
+          settings: {
+            draggable: !1
+          }
+        }]
+      });
+      $('.slide_nav_2').slick({
+      rows: 1,
+		slidesPerRow: 1,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		centerPadding: "0px",
+		focusOnSelect: !0,
+		dots: !1,
+		arrows: !1,
+		infinite: !0,
+		autoplay: !1,
+		centerMode: !1,
+		asNavFor: ".slide_for_2",
+		responsive: [{
+			breakpoint: 1200,
+			settings: {
+				rows: 1,
+				slidesPerRow: 1,
+				slidesToShow: 3,
+				slidesToScroll: 1,
+				draggable: !1
+			}
+		}, {
+			breakpoint: 768,
+			settings: {
+				rows: 1,
+				slidesPerRow: 1,
+				slidesToShow: 3,
+				slidesToScroll: 1
+			}
+		}]
+  });
+  }
+    //   $('.slide_nav_2').slick({
+    //     rows: 1,
+    //     slidesPerRow: 1,
+    //     slidesToShow: 11,
+    //     slidesToScroll: 1,
+    //     centerPadding: '0px',
+    //     focusOnSelect: true,
+    //     dots: false,
+    //     arrows: false,
+    //     infinite: true,
+    //     autoplay: false,
+    //     centerMode: false,
+    //     asNavFor: '.slide_for_2',
+    //     responsive: [{
+    //       breakpoint: 1200,
+    //       settings: {
+    //         rows: 1,
+    //         slidesPerRow: 1,
+    //         slidesToShow: 6,
+    //         slidesToScroll: 1,
+    //         draggable: false
+    //       }
+    //     }, {
+    //       breakpoint: 768,
+    //       settings: {
+    //         rows: 1,
+    //         slidesPerRow: 1,
+    //         slidesToShow: 4,
+    //         slidesToScroll: 1
+    //       }
+    //     }]
+    //   });
+    // }
+    //InitSlickImagesPopup();
+    //Gọi ở js cuối module
+  </script>
+</div>
+<script>
+  //Các biến khởi tạo cho các hàm load ảnh 360
+  var ready = false,
+    dragging = false,
+    pointerStartPosX = 0,
+    pointerEndPosX = 0,
+    pointerDistance = 0,
+    monitorStartTime = 0,
+    monitorInt = 10,
+    ticker = 0,
+    speedMultiplier = 10,
+    spinner,
+    totalFrames = 0,
+    currentFrame = 0,
+    frames = [],
+    endFrame = 0,
+    loadedImages = 0,
+    $document = $(document),
+    $container = $('#threesixty'),
+    $images = $('#threesixty_images'),
+    demoMode = true,
+    fakePointer = {
+      x: 0,
+      speed: 4
+    },
+    fakePointerTimer = 0;
+  //End
+  if ($(window).innerWidth() <= 1600) {
+    fakePointer = {
+      x: 0,
+      speed: 3
+    }
+  }
+  if ($(window).innerWidth() <= 1366) {
+    fakePointer = {
+      x: 0,
+      speed: 2
+    }
+  }
+  if ($(window).innerWidth() <= 1199) {
+    fakePointer = {
+      x: 0,
+      speed: 1.5
+    }
+  }
+  if ($(window).innerWidth() <= 767) {
+    fakePointer = {
+      x: 0,
+      speed: 1
+    }
+  }
+  $(window).resize(function() {
+    if ($(window).innerWidth() <= 1600) {
+      fakePointer = {
+        x: 0,
+        speed: 3
+      }
+    }
+    if ($(window).innerWidth() <= 1366) {
+      fakePointer = {
+        x: 0,
+        speed: 2
+      }
+    }
+    if ($(window).innerWidth() <= 1199) {
+      fakePointer = {
+        x: 0,
+        speed: 1.5
+      }
+    }
+    if ($(window).innerWidth() <= 767) {
+      fakePointer = {
+        x: 0,
+        speed: 1
+      }
+    }
+  });
+  //Các hàm load ảnh 360
+  function addSpinner() {
+    if ($("#threesixty").length > 0) {
+      spinner = new CanvasLoader("spinner");
+      spinner.setShape("spiral");
+      spinner.setDiameter(90);
+      spinner.setDensity(90);
+      spinner.setRange(1);
+      spinner.setSpeed(4);
+      spinner.setColor("#333333");
+      spinner.show();
+      $("#spinner").fadeIn("slow");
+    }
+  };
+
+  function loadImage360(imageName) {
+        var li = document.createElement("li");
+        var image = $('<img>').attr('src', imageName).addClass("previous-image").appendTo(li);
+        frames.push(image);
+        $images.append(li);
+        $(image).load(function () {
+            imageLoaded();
+        });
+    };
+
+    function imageLoaded() {
+      loadedImages++;
+      $("#spinner span").text(Math.floor(loadedImages / totalFrames * 100) + "%");
+      if (loadedImages == totalFrames) {
+        frames[0].removeClass("previous-image").addClass("current-image");
+        $("#spinner").fadeOut("slow", function() {
+          spinner.hide();
+          showThreesixty();
+        });
+      }
+    };
+
+    function showThreesixty() {
+      $images.fadeIn("slow");
+      ready = true;
+      endFrame = -720;
+      if (!demoMode) {
+        refresh();
+      } else {
+        fakePointerTimer = window.setInterval(moveFakePointer, 100);
+      }
+    };
+
+    function moveFakePointer() {
+      fakePointer.x += fakePointer.speed;
+      trackPointer();
+    };
+
+    function quitDemoMode() {
+      window.clearInterval(fakePointerTimer);
+      demoMode = false;
+    };
+    // addSpinner();
+
+    function render() {
+      if (currentFrame !== endFrame) {
+        var frameEasing = endFrame < currentFrame ? Math.floor((endFrame - currentFrame) * 0.1) : Math.ceil((endFrame - currentFrame) * 0.1);
+        hidePreviousFrame();
+        currentFrame += frameEasing;
+        showCurrentFrame();
+      } else {
+        window.clearInterval(ticker);
+        ticker = 0;
+      }
+    };
+
+    function refresh() {
+      if (ticker === 0) {
+        ticker = self.setInterval(render, Math.round(1000 / 60));
+      }
+    };
+
+    function hidePreviousFrame() {
+      frames[getNormalizedCurrentFrame()].removeClass("current-image").addClass("previous-image");
+    };
+
+    function showCurrentFrame() {
+      frames[getNormalizedCurrentFrame()].removeClass("previous-image").addClass("current-image");
+    };
+
+    function getNormalizedCurrentFrame() {
+      var c = -Math.ceil(currentFrame % totalFrames);
+      if (c < 0) c += (totalFrames - 1);
+      return c;
+    };
+
+    function getPointerEvent(event) {
+      return event.originalEvent.targetTouches ? event.originalEvent.targetTouches[0] : event;
+    };
+    $container.on("mousedown", function(event) {
+      quitDemoMode();
+      event.preventDefault();
+      pointerStartPosX = getPointerEvent(event).pageX;
+      dragging = true;
+    });
+    $document.on("mouseup", function(event) {
+      event.preventDefault();
+      dragging = false;
+    });
+    $document.on("mousemove", function(event) {
+      if (demoMode) {
+        return;
+      }
+      event.preventDefault();
+      trackPointer(event);
+    });
+    $container.on("touchstart", function(event) {
+      quitDemoMode();
+      event.preventDefault();
+      pointerStartPosX = getPointerEvent(event).pageX;
+      dragging = true;
+    });
+    $container.on("touchmove", function(event) {
+      event.preventDefault();
+      trackPointer(event);
+    });
+    $container.on("touchend", function(event) {
+      event.preventDefault();
+      dragging = false;
+    });
+
+    function trackPointer(event) {
+      var userDragging = ready && dragging ? true : false;
+      var demoDragging = demoMode;
+      if (userDragging || demoDragging) {
+        pointerEndPosX = userDragging ? getPointerEvent(event).pageX : fakePointer.x;
+        if (monitorStartTime < new Date().getTime() - monitorInt) {
+          pointerDistance = pointerEndPosX - pointerStartPosX;
+          endFrame = currentFrame + Math.ceil((totalFrames - 1) * speedMultiplier * (pointerDistance / $container.width()));
+          refresh();
+          monitorStartTime = new Date().getTime();
+          pointerStartPosX = userDragging ? getPointerEvent(event).pageX : fakePointer.x;
+        }
+      } else {
+        return;
+      }
+    };
+    //End
+    // Sự kiện bật popup zoom ảnh
+    function showImage() {
+      $('.popUpSanPham').addClass('active');
+      //Khởi tạo lại slick slider
+      InitSlickImages();
+        InitSlickImagesPopup();
+    }
+    var images360Array = [];
+    // Sự kiện load ảnh 360 khi click
+    function showImage360() {
+      $('.popUpSanPham').addClass('active');
+      $('#threesixty').addClass('active');
+      if ($("#threesixty_images").html() === "") {
+        //totalFrames = 180; //Gán giá trị kết thúc (Tổng số lượng ảnh)
+        ////Chạy vòng lặp for, mỗi lần truyền vào 1 đường dẫn của ảnh
+        //for (i = 0; i < totalFrames; i++) {
+        //    loadImage360("/img/threesixty_" + (i + 1) + ".jpg");
+        //}
+        totalFrames = images360Array.length;
+        images360Array.forEach(function(image360) {
+          loadImage360("https://sunhouse.com.vn/pic/product_360/" + image360);
+        });
+      }
+    }
+    // Sự kiện close popup zoom ảnh
+    function hideImage() {
+      $('.popUpSanPham').removeClass('active');
+      $('#threesixty').removeClass('active');
+    }
+    // Sự kiện chuyển ảnh
+    $('.popUpSanPham .slide_zoom .arrow').click(function() {
+      $('#threesixty').removeClass('active');
+    })
+    $('.popUpSanPham .slide_nav_2 .khungAnh img').click(function() {
+      $('#threesixty').removeClass('active');
+    })
+    // Sự kiện nhấn ESC
+    $(document).keydown(function(e) {
+      if (e.keyCode == 27) {
+        $('.popUpSanPham').removeClass('active');
+        $('#threesixty').removeClass('active');
+      }
+      if (e.keyCode == 39 || e.keyCode == 38) {
+        if ($('.popUpSanPham').hasClass('active')) {
+          $('.popUpSanPham .slide_zoom .next').trigger('click');
+        }
+      }
+      if (e.keyCode == 37 || e.keyCode == 40) {
+        if ($('.popUpSanPham').hasClass('active')) {
+          $('.popUpSanPham .slide_zoom .prev').trigger('click');
+        }
+      }
+    });
+</script>
+<!-- #region Ajax thay ảnh khi chọn màu -->
+<script>
+  function GetImagesByColor(variationId, productId, productApp, colorName) {
+    $(".selectedColorName").text(colorName);
+    $(".ulSelectColor li").removeClass("active");
+    $(".ulSelectColor li[data-color-id='" + variationId + "']").addClass("active");
+    AjaxLoading(true);
+    //Gửi dữ liệu lên server
+    $.ajax({
+      url: "/themes/1000000/ajax/product.aspx",
+      type: "POST",
+      dataType: "json",
+      data: {
+        "action": "GetImagesByColor",
+        "variationId": variationId,
+        "productId": productId,
+        "productApp": productApp
+      },
+      success: function(res) {
+        AjaxLoading(false);
+        //Hủy các slick slider cũ
+        DestroySlickImages();
+        DestroySlickImagesPopup();
+        //Gán khối ảnh
+        $(".largeImages").html(res[0]);
+        $(".thumbImages").html(res[1]);
+        $(".largeImagesPopup").html(res[2]);
+        $(".thumbImagesPopup").html(res[3]);
+        //Gán ảnh cuối:
+        $(".lastThumbImage").html(res[4]);
+        //Gán data đếm số ảnh ở khối thumb:
+        $(".thumbImagesWrap").attr("data-number", res[5]);
+        $(".demSoAnh").html(res[5]);
+        //Khởi tạo lại slick slider
+        InitSlickImages();
+        InitSlickImagesPopup();
+        // Sự kiện chuyển ảnh ở popup
+        $('.popUpSanPham .slide_zoom .arrow').click(function() {
+          $('#threesixty').removeClass('active');
+        });
+        $('.popUpSanPham .slide_nav_2 .khungAnh img').click(function() {
+          $('#threesixty').removeClass('active');
+        });
+      },
+      error: function(error) {
+        AjaxLoading(false);
+        console.log("Có lỗi xảy ra. GetImagesByColor");
+      }
+    });
+  }
+</script>
+<!-- #endregion -->      
+
+<script src="./Theme/1000000/Assets/js/ProductDetail.min.js" defer=""></script>
 <?php include_once('./master_layout/chacha/footer.php'); ?>
