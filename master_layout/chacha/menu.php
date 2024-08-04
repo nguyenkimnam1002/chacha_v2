@@ -1,6 +1,3 @@
-<?php
-     require('./connect.php');
-?>
 <?php 
 
 require('./autoload/autoload.php');

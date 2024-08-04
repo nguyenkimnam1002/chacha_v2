@@ -156,6 +156,7 @@
             return mysqli_fetch_assoc($result);
         }
 
+        // fetchAll tra du lieu ra all data, xu ly mảng đơn thông thường
         public function fetchOne($table , $query)
         {
             $sql  = "SELECT * FROM {$table} WHERE ";
@@ -174,7 +175,7 @@
         }
 
         
-
+        // fetchAll tra du lieu ra all data, xu ly can su dung for
          public function fetchAll($table) //duyệt bảng và lấy hết tất cả dữ liệu 
         {
             $sql = "SELECT * FROM {$table} WHERE 1" ;

@@ -48,8 +48,8 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `name`, `address`, `email`, `password`, `phone`, `status`, `token`, `level`, `avatar`, `created_at`, `updated_at`) VALUES
-(1, 'lê minh thảo', 'dĩ an , bình duong', 'minhthaodev@gmail', '57837a14c1abe81ebf0100ffd577255e', '01229650824', 1, NULL, 2, NULL, NULL, NULL),
-(2, 'Lê Minh Thảo', 'Bình Dương', 'admin@gmail.com', '25d55ad283aa400af464c76d713c07ad', '0898485596', 1, NULL, 1, NULL, NULL, NULL);
+(1, 'nam1', 'vĩnh Yên', 'nam1@gmail', '57837a14c1abe81ebf0100ffd577255e', '0123456789', 1, NULL, 2, NULL, NULL, NULL),
+(2, 'Nam2', 'vp', 'admin@gmail.com', '25d55ad283aa400af464c76d713c07ad', '0848172333', 1, NULL, 1, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -206,8 +206,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `phone`, `address`, `password`, `avatar`, `status`, `token`, `created_at`, `updated_at`) VALUES
-(1, 'minhthaodev01', 'minhthaodev01@gmail.com', '0898485596', 'sai gòn', '57837a14c1abe81ebf0100ffd577255e', NULL, 1, NULL, NULL, NULL),
-(2, 'Thảo lê', 'admin@gmail.com', '0898485597', 'sài gòn', '25d55ad283aa400af464c76d713c07ad', NULL, 1, NULL, NULL, NULL);
+(1, 'Nam1', 'namnk9999@gmail.com', '0848172333', 'vpc', '57837a14c1abe81ebf0100ffd577255e', NULL, 1, NULL, NULL, NULL),
+(2, 'Nam2', 'admin@gmail.com', '0898485597', 'sài gòn', '25d55ad283aa400af464c76d713c07ad', NULL, 1, NULL, NULL, NULL);
 
 
 --

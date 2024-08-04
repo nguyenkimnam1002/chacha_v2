@@ -5,6 +5,10 @@
     $id = intval(getInput('id')); // ep kieu
    
    $EditProduct = $db->fetchID("product", $id);
+
+
+   $sqlFetchImg = "SELECT * FROM image_file WHERE id = $id";
+   $ImgProduct = $db->fetchsql($sqlFetchImg);
    //Neu Id khong co thi tra ve index
    if(empty($EditProduct))
    {
