@@ -98,6 +98,12 @@
                             Sản phẩm
                             </a>
                         </li>
+                        
+                        <li class="<?php echo isset($open) && $open == 'post' ? 'active' : '' ?>">
+                            <a href="<?php echo modules("post")?>"><i class="fa fa-list"></i>
+                            Danh mục tin tức
+                            </a>
+                        </li>
                         <li class="<?php echo isset($open) && $open == 'admin' ? 'active' : '' ?>">
                             <a href="<?php echo modules("admin")?>"><i class="fa fa-user"></i>
                             Admin
