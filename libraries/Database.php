@@ -10,14 +10,11 @@
          * @var [type]
          */
         public $link;
-        public $conn;
 
         public function __construct()
         {
             $this->link = mysqli_connect("localhost","root","","tutphp") or die ();
-            $conn = mysqli_connect("localhost","root","","tutphp") or die ();
             mysqli_set_charset($this->link,"utf8");
-            mysqli_set_charset($conn,"utf8");
         }
 
         
