@@ -430,3 +430,46 @@ INSERT INTO `posts` (`id`, `title`, `slug`, `image`, `content`, `created_at`, `u
 
 -- update post loai id la gioithieu
 UPDATE `posts` SET loai_id = 1;
+
+--
+-- Cấu trúc bảng cho bảng `categories`
+--
+CREATE TABLE `categories` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `slug` varchar(100) NOT NULL,
+  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
+  `updated_at` datetime DEFAULT NULL,
+  `status` varchar(10) DEFAULT 'PUBLIC'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Đang đổ dữ liệu cho bảng `categories`
+--
+
+INSERT INTO `categories` (`id`, `name`, `slug`, `created_at`, `updated_at`, `status`) VALUES
+(1, 'Giới thiệu', 'Gioithieu', '2021-12-19 20:39:21', '2021-12-19 14:38:21', 'PUBLIC'),
+(2, 'Tin tức sự kiện', 'tintuc', '2021-12-15 20:52:16', '2021-12-12 14:52:16', 'PUBLIC'),
+(3, 'Tư vấn sản phẩm', 'tuvan', '2021-12-15 20:52:16', '2021-12-12 14:52:16', 'PUBLIC'),
+(4, 'Bí quyết mẹo vặt', 'thoitrang', '2021-12-24 13:02:10', NULL, 'PUBLIC'),
+(5, 'Bảo hành', 'baohanh', '2021-12-24 13:02:10', NULL, 'PUBLIC'),
+(6, 'Xuất khẩu', 'xuatkhau', '2021-12-24 13:02:10', NULL, 'PUBLIC');
+
+
+ALTER TABLE `posts`
+  ADD PRIMARY KEY (`id`);
+
+  ALTER TABLE `categories`
+  ADD PRIMARY KEY (`id`);
+
+  --
+-- AUTO_INCREMENT for table `posts`
+--
+ALTER TABLE `posts`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+
+    --
+-- AUTO_INCREMENT for table `categories`
+--
+ALTER TABLE `categories`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;  

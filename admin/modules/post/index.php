@@ -1,88 +1,104 @@
 <?php
+require('./connect.php'); ?>
+<?php
     
-    $open = "category";
+    $open = "posts";
     require_once __DIR__ ."/../../autoload/autoload.php";
     
-    $category = $db->fetchAll("category");
+    $posts = $db->fetchAll("posts");
+
+    $search = "";
+    $limit = 5;
+    $page = 1;
+    if(isset($_REQUEST['p']) && (int)$_REQUEST['p'] >= 1) {
+        $page = (int) $_REQUEST['p'];
+    }
+    if(isset($_GET['txtsearch'])){
+        $search = $_GET['txtsearch'];
+    }
+
+    $offset = ($page - 1) * $limit;
+    $sql = "SELECT p.*,loai.name as loai FROM posts p, categories loai WHERE p.category_id = loai.id and p.title LIKE '%$search%'";
+    
+    $query = mysqli_query($conn ,$sql . " LIMIT $offset, $limit");
+    $count = mysqli_num_rows(mysqli_query($conn ,$sql));
+    $totalPage = ceil($count/$limit) ?? 0;
 ?>
 <?php require_once __DIR__ ."/../../layouts/header.php"; ?>
 <!-- Page Heading NOI DUNG -->
-<div class="row">
-    <div class="col-lg-12">
-        <h1 class="page-header">
-            Danh sách Danh Mục
-            <a href="add.php" class="btn btn-success"> Thêm mới</a>
-        </h1>
-        <ol class="breadcrumb">
-            <li>
-                <i class="fa fa-dashboard"></i>  <a href="index.html">Dashboard</a>
-            </li>
-            <li class="active">
-                <i class="fa fa-file"></i> Danh mục
-            </li>
-        </ol>
-        <div class="clearfix"></div>
-        <!-- Thong bao loi -->
-        <?php require_once __DIR__ ."/../../../partials/notification.php"; ?>
-        </div>
-</div>
-<div class="row">
-    <div class="col-md-12">
-          <div class="table-responsive">
-        <table class="table table-bordered table-hover">
+<div class="content-wrapper" style="min-height: 365px;">
+  <section class="content">
+    <div class="container-fluid">
+      <h2>Danh sách tin tức</h2></br>
+      <form  action="" method="GET">
+        <input type="text" name="txtsearch" class='searchform'/>
+        <button class='sbutton' type="submit">Search</button>
+      </form></br>
+      <div class="row">
+        <div class="table-responsive">
+          <table cellspacing="0" cellpadding="0" class="table" style="display: block !important; overflow-x: auto !important; width: 100% !important;">
             <thead>
-                <tr>
-                    <th>STT</th>
-                    <th>Name</th>
-                    <th>Slug</th>
-                    <th>Home</th>
-                    <th>Created</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php $stt=1; foreach ($category as $item): ?>
-                    <tr>
-                        <td><?php echo $stt ?></td>
-                        <td><?php echo $item['name'] ?></td>
-                        <td><?php echo $item['slug']?></td>
-                        
-                         <td>
-                             <a href="home.php?id=<?php echo $item['id']?>" class="btn btn-xs <?php echo $item['home'] == 1 ? 'btn-success' : 'btn-default' ?>">
-                                 <?php echo $item['home'] == 1 ? 'Hiển thị' : 'Không'?>
-                             </a>
-                         </td>
-                        <td><?php echo $item['created_at']?></td>
-                        <td>
-                            <a class="btn btn-xs btn-info" href="edit.php ?id=<?php echo $item['id'] ?>"><i class="fa fa-edit"></i>Sửa</a>
-                            <a class="btn btn-xs btn-danger"href="delete.php?id=<?php echo $item['id'] ?>"><i class="fa fa-times"></i>Xóa</a>                     
-                        </td>
-                    </tr>         
-                <?php $stt++; endforeach; ?>
-            </tbody>
-        </table>
-              <div class="pull-right">
-              <nav aria-label="Page navigation">
-                     <ul class="pagination">
-                <li>
-                    <a href="#" aria-label="Previous">
-                    <span aria-hidden="true">&laquo;</span>
-                    </a>
-                </li>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li>
-                    <a href="#" aria-label="Next">
-                    <span aria-hidden="true">&raquo;</span>
-                    </a>
-                </li>
-            </ul>
-              </nav>
-              </div>
+              <tr>
+                 <td scope="row">ID</td>
+                 <td scope="row">Tittle</td>
+                 <td scope="row">Slug</td>
+                 <td scope="row">Ảnh</td>
+                 <td scope="row">Nội dung</td>
+                 <td scope="row">Loại</td>
+                 <td scope="row">Ngày tạo</td>
+                 <td scope="row">Ngày sửa</td>
+	             <td scope="row">Trạng thái</td>
+                 <td scope="row" colspan="2"><a href="them_tintuc.php">Thêm</a></td>
+              </tr>
+            <thead>
+<?php while($row=mysqli_fetch_array($query)): ?>
+<tr>
+  <td><?php echo $row['id']; ?></td>
+  <td><?php echo $row['title']; ?></td>
+  <td><a href="<?php echo $row['slug']; ?>"><?php echo $row['slug']; ?></a></td>
+  <td><img src="<?php echo uploads()?>product/<?php echo $row['image']?>" width="170px">
+  <td><a href="<?php echo $row['content']; ?>"><?php echo $row['content']; ?></a></td>
+  <td><a href="<?php echo $row['loai']; ?>"><?php echo $row['loai']; ?></a></td>
+  <td><?php echo $row['created_at']; ?></td>
+  <td><?php echo $row['updated_at']; ?></td>
+  <td><?php echo $row['status']; ?></td>
+  <td><a href="sua_tintuc.php?id=<?php echo $row['id']; ?>">Sửa</a></td>
+  <td><a href="xoa_tintuc.php?id=<?php echo $row['id']; ?>">Xóa</a></td>
+</tr>
+<?php endwhile;?>
+</table>
+
+  <?php 
+  for ($i=1; $i <= $totalPage; $i++)
+    if($i == $page) {
+      echo "<a href = 'index.php?p=$i' style='font-size: 20px; color: red; margin: 0px 4px;'> $i </a>";
+    } else{
+      echo "<a href = 'index.php?p=$i' style='margin: 0px 2px;'> $i </a>";
+    }
+  ?>
+        </div>
+      </div>
+
     </div>
+  </section>
 </div>
+<style>
+
+    .sbutton {
+    color: #007bff;
+    border-radius: 10px;
+    }
+
+    h2{
+    padding-top: 10px;
+    }
+    
+    .form{
+    border: 2px solid black;
+    border-radius: 5px;
+    }
+
+
+</style>
 <!-- /.row -->
 <?php require_once __DIR__ ."/../../layouts/footer.php"; ?>

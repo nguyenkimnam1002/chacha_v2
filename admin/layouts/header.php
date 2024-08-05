@@ -93,15 +93,14 @@
                             Danh mục sản phẩm
                             </a>
                         </li>
-                        <li class="<?php echo isset($open) && $open == 'product' ? 'active' : '' ?>">
-                            <a href="<?php echo modules("product")?>"><i class="fa fa-database"></i>
-                            Sản phẩm
-                            </a>
-                        </li>
-                        
                         <li class="<?php echo isset($open) && $open == 'post' ? 'active' : '' ?>">
                             <a href="<?php echo modules("post")?>"><i class="fa fa-list"></i>
                             Danh mục tin tức
+                            </a>
+                        </li>
+                        <li class="<?php echo isset($open) && $open == 'product' ? 'active' : '' ?>">
+                            <a href="<?php echo modules("product")?>"><i class="fa fa-database"></i>
+                            Sản phẩm
                             </a>
                         </li>
                         <li class="<?php echo isset($open) && $open == 'admin' ? 'active' : '' ?>">
@@ -114,11 +113,11 @@
                             User
                             </a>
                         </li>
-                        <li class="<?php echo isset($open) && $open == 'transaction' ? 'active' : '' ?>">
+                        <!-- <li class="<?php echo isset($open) && $open == 'transaction' ? 'active' : '' ?>">
                             <a href="<?php echo modules("transaction")?>"><i class="fa fa-transgender"></i>
                             Quản lý đơn hàng
                             </a>
-                        </li>
+                        </li> -->
                         
                         
                     </ul>
