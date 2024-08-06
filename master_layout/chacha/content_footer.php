@@ -4,22 +4,22 @@
     <div class="top_footer">
       <div class="container">
         <div class="fbPage">
-          <div class="text">Like và truy cập SUNHOUSE để cập nhật chương trình khuyến mại và tin tức sớm nhất</div>
-          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsunhouse.com.vn%2F&amp;tabs&amp;width=350&amp;height=140&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId=1158196177653765" width="350" height="140" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          <div class="text">Like và truy cập CHACHA để cập nhật khuyến mại và tin tức sớm nhất</div>
+          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fkimnam.nguyen.52493&tabs=timeline&width=350&height=300&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" 
+                  width="350" 
+                  height="140" 
+                  style="border:none;overflow:hidden" 
+                  scrolling="no" 
+                  frameborder="0" 
+                  allowtransparency="true" 
+                  allow="encrypted-media"></iframe>
         </div>
         <div class="ytChannel">
-          <div class="text">Cùng SUNHOUSE xem các chương trình phát sóng về giới thiệu về sản phẩm</div>
+          <div class="text">Cùng CHACHA xem các chương trình phát sóng về giới thiệu về sản phẩm</div>
           <div class="val">
-            <a href="https://www.youtube.com/channel/UCuUMw6wl9XYfRpaq_D1vGng?sub_confirmation=1" target="_blank" rel="nofollow" title="SUNHOUSE TV: 186k subscribe">
-              <span>SUNHOUSE TV: 186k subscribe</span>
+            <a href="https://www.youtube.com/channel/UCuUMw6wl9XYfRpaq_D1vGng?sub_confirmation=1" target="_blank" rel="nofollow" title="CHACHA TV: 186k subscribe">
+              <span>CHACHA TV: 186k subscribe</span>
             </a>
-          </div>
-        </div>
-        <div class="newsLetter ValidateForm" id="NewsLetterSignUp">
-          <div class="text">Đăng ký để cập nhật những thông tin về dịch vụ mới, sự kiện và khuyến mãi</div>
-          <div class="box">
-            <input type="text" value="" placeholder="Nhập email của bạn" id="tbEmail_nlsu" onkeyup="CheckNewsLetterSignUp(event)" data-validate="true" data-vld-email="true">
-            <a class="submit" href="#" data-function="PostNewsLetterSignUp" onclick="PostNewsLetterSignUp(event)"></a>
           </div>
         </div>
         <script>
@@ -231,21 +231,21 @@
     <!--Phần cuối footer-->
     <div class="bottom_footer">
       <div class="container">
-        <div class="text">Copyright © 2017 SUNHOUSE.com.vn</div>
+        <div class="text">Copyright © 2024 CHACHA.com.vn</div>
         <div class="link" style="opacity:0.28">
-          <a target="_blank" rel="nofollow" href="http://tatthanh.com.vn/" title="Click để có 1 website chuyên nghiệp, hiệu quả!">Thiết kế website</a> bởi <a target="_blank" rel="nofollow" href="http://tatthanh.com.vn/" title="Click để xây dựng website - SEO chuyên nghiệp!">Tất Thành</a>
+          <a target="_blank" rel="nofollow" href="http://demo.com.vn/" title="Click để có 1 website chuyên nghiệp, hiệu quả!">Thiết kế website</a> bởi <a target="_blank" rel="nofollow" href="http://demo.com.vn/" title="Click để xây dựng website - SEO chuyên nghiệp!">Kim Nam Tech</a>
         </div>
         <div class="social">
-          <div class="text">Theo dõi SUNHOUSE trên</div>
+          <div class="text">Theo dõi CHACHA trên</div>
           <ul>
             <li>
-              <a href="https://www.facebook.com/sunhouse.com.vn" target="_blank" rel="nofollow" title="Facebook SUNHOUSE GROUP">
-                <img class=" lazyloaded" data-src="./themes/1000000/assets/css/images/fbImg.png" src="./themes/1000000/assets/css/images/fbImg.png" alt="Facebook SUNHOUSE GROUP">
+              <a href="https://www.facebook.com/kimnam.nguyen.52493" target="_blank" rel="nofollow" title="Facebook CHACHA GROUP">
+                <img class=" lazyloaded" data-src="./themes/1000000/assets/css/images/fbImg.png" src="./themes/1000000/assets/css/images/fbImg.png" alt="Facebook CHACHA GROUP">
               </a>
             </li>
             <li>
-              <a href="https://www.youtube.com/user/sunhousechanel" target="_blank" rel="nofollow" title="Youtube SUNHOUSE GROUP">
-                <img class=" lazyloaded" data-src="./themes/1000000/assets/css/images/ytImg.png" src="./themes/1000000/assets/css/images/ytImg.png" alt="Youtube SUNHOUSE GROUP">
+              <a href="https://www.youtube.com/user/CHACHAchanel" target="_blank" rel="nofollow" title="Youtube CHACHA GROUP">
+                <img class=" lazyloaded" data-src="./themes/1000000/assets/css/images/ytImg.png" src="./themes/1000000/assets/css/images/ytImg.png" alt="Youtube CHACHA GROUP">
               </a>
             </li>
           </ul>

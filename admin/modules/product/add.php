@@ -14,6 +14,7 @@
             "category_id"   => postInput("category_id"),
             "price"         => postInput("price"),
             "number"        => postInput("number"),
+            "hot"           => postInput("hot"),
             "content"       => postInput("content")
         ]; 
         $dataImg = 
@@ -201,8 +202,13 @@
 
             <div class="form-group">
                 <label for="inputEmail3" class="col-sm-2 control-label">Giảm giá</label>
-                <div class="col-sm-2">
+                <div class="col-sm-1">
                     <input type="number" class="form-control" id="inputEmail3" placeholder="10%" name="sale" value="0">                        
+                </div>
+
+                <label for="inputEmail3" class="col-sm-2 control-label">Nổi bật</label>
+                <div class="col-sm-1">
+                    <input type="number" class="form-control" id="inputEmail3" placeholder="10%" name="hot" value="0">                        
                 </div>
 
                 <label for="inputEmail3" class="col-sm-2 control-label">Hình ảnh</label>

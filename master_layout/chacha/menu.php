@@ -71,7 +71,7 @@ foreach ($CategoryHome as $item)
         <div class="nganhHang">
           <div class="groupItem">
             <?php foreach($category as $item) :?>
-              <!-- <li><a href="danh-muc-san-pham.php?id=<?php echo $item['id']?>"><?php echo $item['name']?></a></li> -->
+              <!-- <li><a href="danh-muc-san-pham-new.php?id=<?php echo $item['id']?>"><?php echo $item['name']?></a></li> -->
               <div class="itemBox" data-id="<?php echo $item['id']?>">
                 <div class="khungAnh">
                   <a href="javascript:void(0)" class="khungAnhCrop0" title="<?php echo $item['name']?>">
@@ -579,7 +579,7 @@ foreach ($CategoryHome as $item)
       <div class="menuBox">
         <ul class="menuMain">
           <li class="home active">
-            <a href="/" title="Trang chủ">
+            <a href="index.php" title="Trang chủ">
               <i class="fa fa-home" aria-hidden="true"></i>Trang chủ </a>
           </li>
           <li>
@@ -610,12 +610,14 @@ foreach ($CategoryHome as $item)
               <div class="container">
                 <div class="col1">
                   <div class="listDanhMuc">
-                    <div class="title">Danh mục sản phẩm <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                    <div class="title">
+                      <a class="title" style="color: #000000;" href="<?php echo base_url() ?>danh-muc-san-pham-new.php">Danh mục sản phẩm </a>
+                      <i class="fa fa-chevron-right" aria-hidden="true"></i>
                     </div>
                     <ul>
                       <?php foreach($category as $item) :?>
                         <li class="menu-cate" data-id="<?php echo $item['id']?>">
-                        <a href="/chacha_v2/danh-muc-san-pham.php?id=<?php echo $item['id']?>">
+                        <a href="<?php echo base_url() ?>danh-muc-san-pham-new.php?id=<?php echo $item['id']?>">
                           <span><?php echo $item['name']?></span>
                         </a>
                       </li>
@@ -646,7 +648,7 @@ foreach ($CategoryHome as $item)
                             </li>
                             <?php endforeach;?> 
                           </ul>
-                          <a class="more1" href="/chacha_v2/danh-muc-san-pham.php?id=<?php echo $item['id']?>" title="Xem tất cả danh mục">Xem tất cả danh mục <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                          <a class="more1" href="<?php echo base_url() ?>danh-muc-san-pham-new.php?id=<?php echo $item['id']?>" title="Xem tất cả danh mục">Xem tất cả danh mục <i class="fa fa-chevron-right" aria-hidden="true"></i>
                           </a>
                         </div>
                     <?php endforeach;?>  
@@ -679,8 +681,8 @@ foreach ($CategoryHome as $item)
                 <div class="col3">
                   <?php foreach($category as $item) :?>
                     <div class="khungAnh menu-banner" data-parent-id="<?php echo $item['id']?>">
-                      <a class="khungAnhCrop0" href="/chacha_v2/danh-muc-san-pham.php?id=<?php echo $item['id']?>" title="<?php echo $item['id']?>" rel="nofollow">
-                        <img src="/chacha_v2/public/uploads/product/<?php echo $item['image']?>" data-src="/chacha_v2/public/uploads/product/<?php echo $item['image']?>" alt="<?php echo $item['id']?>" class=" lazyloaded">
+                      <a class="khungAnhCrop0" href="<?php echo base_url() ?>danh-muc-san-pham-new.php?id=<?php echo $item['id']?>" title="<?php echo $item['id']?>" rel="nofollow">
+                        <img src="<?php echo base_url() ?>public/uploads/product/<?php echo $item['image']?>" data-src="<?php echo base_url() ?>public/uploads/product/<?php echo $item['image']?>" alt="<?php echo $item['id']?>" class=" lazyloaded">
                       </a>
                     </div>
                   <?php endforeach ?>
@@ -802,7 +804,7 @@ foreach ($CategoryHome as $item)
                 <ul>
                   <?php foreach($category as $item) :?>
                     <li>
-                      <a href="/chacha_v2/danh-muc-san-pham.php?id=<?php echo $item['id']?>" title="<?php echo $item['name'] ?>" rel="nofollow"><?php echo $item['name']?></a>
+                      <a href="<?php echo base_url() ?>danh-muc-san-pham-new.php?id=<?php echo $item['id']?>" title="<?php echo $item['name'] ?>" rel="nofollow"><?php echo $item['name']?></a>
                     </li>
                   <?php endforeach ?>
                 </ul>

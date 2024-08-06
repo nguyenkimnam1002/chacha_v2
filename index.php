@@ -97,29 +97,15 @@ require "connect.php";
             <?php foreach($category as $item) :?>
               <div class="item">
                 <div class="khungAnh">
-                  <a href="danh-muc-san-pham.php?id=<?php echo $item['id'] ?>" title="<?php echo $item['name'] ?>" class="khungAnhCrop0">
-                    <img src="/chacha_v2/public/uploads/product/<?php echo $item['image']?>" data-src="/chacha_v2/public/uploads/product/<?php echo $item['image']?>" alt="<?php echo $item['name'] ?>" class="lazyloaded">
+                  <a href="danh-muc-san-pham-new.php?id=<?php echo $item['id'] ?>" title="<?php echo $item['name'] ?>" class="khungAnhCrop0">
+                    <img src="<?php echo base_url() ?>/public/uploads/product/<?php echo $item['image']?>" data-src="<?php echo base_url() ?>/public/uploads/product/<?php echo $item['image']?>" alt="<?php echo $item['name'] ?>" class="lazyloaded">
                   </a>
                 </div>
                 <h2 class="reset">
-                  <a href="danh-muc-san-pham.php?id=<?php echo $item['id'] ?>" title="<?php echo $item['name'] ?>" class="name"><?php echo $item['name'] ?></a>
+                  <a href="danh-muc-san-pham-new.php?id=<?php echo $item['id'] ?>" title="<?php echo $item['name'] ?>" class="name"><?php echo $item['name'] ?></a>
                 </h2>
               </div>
             <?php endforeach ?>
-            <!-- <ul class="slick-dots" style="display: flex;" role="tablist">
-              <li class="slick-active" aria-hidden="false" role="presentation" aria-selected="true" aria-controls="navigation10" id="slick-slide10">
-                <button type="button" data-role="none" role="button" tabindex="0">1</button>
-              </li>
-              <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation11" id="slick-slide11">
-                <button type="button" data-role="none" role="button" tabindex="0">2</button>
-              </li>
-              <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation12" id="slick-slide12">
-                <button type="button" data-role="none" role="button" tabindex="0">3</button>
-              </li>
-              <li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation13" id="slick-slide13">
-                <button type="button" data-role="none" role="button" tabindex="0">4</button>
-              </li>
-            </ul> -->
           </div>
         </div>
       </div>
@@ -239,7 +225,7 @@ require "connect.php";
     <div class="newsHome">
       <div class="container">
         <div class="row">
-          <div class="saleOff">
+          <div class="saleOff" style="width: 65% !important;">
             <div class="titleHome">
               <h2 class="reset">
                 <a href="https://sunhouse.com.vn/tin-hoat-dong" title="Tin tức - Sự kiện tập đoàn" class="name">Tin tức - Sự kiện tập đoàn</a>
@@ -314,7 +300,7 @@ require "connect.php";
               </ul>
             </div>
           </div>
-          <div class="newsRight">
+          <div class="newsRight"  style="width: 35% !important;">
             <div class="titleHome">
               <h2 class="reset">
                 <a href="https://sunhouse.com.vn/tu-van-san-pham" title="Tư vấn sản phẩm" class="name">Tư vấn sản phẩm</a>
@@ -357,14 +343,14 @@ require "connect.php";
     <div class="infoHome">
       <div class="container">
         <div class="row">
-          <div class="left">
+          <div class="left" style="width: 50% !important;">
             <div class="khungAnh">
               <a class="khungAnhCrop" href="https://sunhouse.com.vn/dai-ly" title="Đại lý SUNHOUSE" target="_blank" rel="nofollow">
                 <img src="https://sunhouse.com.vn/pic/banner/dai-ly-sunhouse.png" data-src="https://sunhouse.com.vn/pic/banner/dai-ly-sunhouse.png" alt="Đại lý SUNHOUSE" class="lazyloaded tall">
               </a>
             </div>
           </div>
-          <div class="right">
+          <div class="right" style="width: 50% !important;">
             <div class="khungAnh">
               <a data-fancybox="gallery" href="https://www.youtube.com/watch?v=KMg5fj0I128" title=" " rel="nofollow" class="khungAnhCrop">
                 <img src="https://sunhouse.com.vn/pic/banner/cá-nhân-1400x790.jpg" data-src="https://sunhouse.com.vn/pic/banner/cá-nhân-1400x790.jpg" alt="Quy mô sản xuất khép kín lớn nhất với" class="normal lazyloaded wide">
@@ -387,7 +373,7 @@ require "connect.php";
     <div class="guaranteeHome">
       <div class="container">
         <div class="row">
-          <div class="left">
+          <div class="left" style="width: 70% !important;">
             <div class="titleHome">
               <span class="name">Trung tâm bảo hành SUNHOUSE</span>
               <div class="description"> Tất cả trung tâm bảo hành ủy quyền SUNHOUSE trên toàn quốc đều được đào tạo và chỉ sử dụng linh kiện chính hãng SUNHOUSE trong mọi hoạt động sửa chữa. </div>
@@ -438,12 +424,12 @@ require "connect.php";
   <div class="socialRight">
     <ul>
       <li>
-        <a href="https://www.facebook.com/sunhouse.com.vn" target="_blank" rel="nofollow" title="Facebook SUNHOUSE GROUP">
+        <a href="https://www.facebook.com/kimnam.nguyen.52493" target="_blank" rel="nofollow" title="Facebook DEMO TECH">
           <img class=" lazyloaded" data-src="./themes/1000000/assets/css/images/fbImg1.png" src="./themes/1000000/assets/css/images/fbImg1.png" alt="Facebook SUNHOUSE GROUP">
         </a>
       </li>
       <li>
-        <a href="https://www.youtube.com/user/sunhousechanel" target="_blank" rel="nofollow" title="Youtube SUNHOUSE GROUP">
+        <a href="https://www.youtube.com/user/sunhousechanel" target="_blank" rel="nofollow" title="Youtube DEMO TECH">
           <img class=" lazyloaded" data-src="./themes/1000000/assets/css/images/ytImg1.png" src="./themes/1000000/assets/css/images/ytImg1.png" alt="Youtube SUNHOUSE GROUP">
         </a>
       </li>
