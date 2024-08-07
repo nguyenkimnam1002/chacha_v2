@@ -236,13 +236,13 @@
             <?php foreach($tuVan as $item) :?>
               <div class="itemBox">
                 <div class="khungAnh">
-                  <a href="chi-tiet-san-pham-new.php?id=<?php echo $item['id']?>" title="<?php echo $item['title'] ?>" rel="nofollow" class="khungAnhCrop">
+                  <a href="post-item-details.php?category_id=<?php echo  $item['category_id']?>&id=<?php echo $item['id']?>" title="<?php echo $item['title'] ?>" rel="nofollow" class="khungAnhCrop">
                     <img src="<?php echo base_url() ?>public/uploads/product/<?php echo $item['image']?>" alt="<?php echo $product['name'] ?>" class="tall lazyloaded">
                   </a>
                 </div>
                 <div class="itemDetail">
                   <div class="itemTitle">
-                    <a href="chi-tiet-san-pham-new.php?id=<?php echo $item['id']?>" title="<?php echo $item['title'] ?>" rel="nofollow"><?php echo $item['title'] ?></a>
+                    <a href="post-item-details.php?category_id=<?php echo  $item['category_id']?>&id=<?php echo $item['id']?>" title="<?php echo $item['title'] ?>" rel="nofollow"><?php echo $item['title'] ?></a>
                   </div>
                   <div class="itemDescription" style="max-height:40px;overflow:hidden"><?php echo preg_replace('~[\r\n]+~', '<br>', trim($item['content'])) ?></div>
                 </div>

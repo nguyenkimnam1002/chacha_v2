@@ -473,3 +473,39 @@ ALTER TABLE `posts`
 --
 ALTER TABLE `categories`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;  
+
+
+  --
+-- Cấu trúc bảng cho bảng `accounts`
+--
+
+CREATE TABLE `accounts` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `username` varchar(30) NOT NULL,
+  `email` varchar(45) NOT NULL,
+  `fullname` varchar(50) NOT NULL,
+  `password` varchar(100) NOT NULL,
+  `phone` varchar(10) DEFAULT NULL,
+  `gender` varchar(3) NOT NULL,
+  `birthday` date NOT NULL,
+  `role` varchar(30) NOT NULL,
+  `created_at` datetime NOT NULL DEFAULT current_timestamp(),
+  `updated_at` datetime NOT NULL,
+  `status` varchar(10) NOT NULL DEFAULT 'PUBLIC'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Đang đổ dữ liệu cho bảng `accounts`
+--
+
+INSERT INTO `accounts` (`id`, `username`, `email`, `fullname`, `password`, `phone`, `gender`, `birthday`, `role`, `created_at`, `updated_at`, `status`) VALUES
+(8, 'Dai', 'dai05042000@gmail.com', 'Hồ Văn Đại', '147258369', '12322132', 'Nam', '2000-07-09', 'Admin', '2021-12-11 06:47:33', '0000-00-00 00:00:00', 'ACTIVE'),
+(10, 'Kiều', 'kieu0210@gmail.com', '', '', '0456879412', '', '0000-00-00', '', '2021-12-11 16:32:02', '0000-00-00 00:00:00', 'PUBLIC'),
+(11, 'Hoàng', 'hoanghunter@gmail.com', '', '', '0921458360', '', '0000-00-00', '', '2021-12-11 16:32:53', '0000-00-00 00:00:00', 'PUBLIC'),
+(12, 'dungtb123', 'dungtb@gmail.com', '', '', '0912327978', 'Nam', '0000-00-00', 'Admin', '2021-12-13 16:15:27', '0000-00-00 00:00:00', 'ACTIVE'),
+(13, 'Handz211', 'hanbede@gmail.com', 'Hán Vũ Hoàng Long', '123456', '0211345789', 'Nam', '2000-11-02', 'Member', '2021-12-13 18:18:15', '0000-00-00 00:00:00', 'ACTIVE'),
+(14, 'tungvt123', 'tungchv@gmail.com', 'Nguyễn Sơn Tùng', '12322132', '0147645978', 'Nam', '2000-11-19', 'Member', '2021-12-14 21:56:37', '0000-00-00 00:00:00', 'ACTIVE'),
+(15, 'Đạt', 'dattrang@gmail.com', 'Đỗ Thành Đạt', '0123456', '0645879123', 'Nam', '2000-04-02', 'Member', '2021-12-14 22:02:16', '0000-00-00 00:00:00', 'ACTIVE'),
+(16, 'Soncom', 'soncom2k1@gmail.com', 'Phạm Cao Thái Sơn', '369258147', '0911252147', 'Nam', '2001-12-12', 'Member', '2021-12-20 09:11:44', '0000-00-00 00:00:00', 'ACTIVE'),
+(18, 'Quy1987', 'quy1987@gmail.com', 'Phạm Văn Quý', '0147258369', '0564813794', 'Nam', '1987-05-05', 'Member', '2021-12-20 17:32:06', '0000-00-00 00:00:00', 'ACTIVE'),
+(19, 'nxlong', 'longnguyenxuan2000@gamil.com', 'Nguyễn Xuân Long', '12345678', '0355781234', 'Nam', '2000-06-28', 'Admin', '2021-12-25 18:34:20', '0000-00-00 00:00:00', 'ACTIVE');
