@@ -232,7 +232,7 @@ $tuVan2 = $db->fetchsql($sql2);
           <div class="saleOff" style="width: 65% !important;">
             <div class="titleHome">
               <h2 class="reset">
-                <a href="<?php echo base_url() ?>section-topic-details.php?id=2" title="Tin tức - Sự kiện tập đoàn" class="name">Tin tức - Sự kiện tập đoàn</a>
+                <a href="<?php echo base_url() ?>section-topic-details-new.php?id=2" title="Tin tức - Sự kiện tập đoàn" class="name">Tin tức - Sự kiện tập đoàn</a>
               </h2>
             </div>
             <div class="listSale listSaleHome" role="toolbar">

@@ -108,7 +108,7 @@ $tuVan7 = $db->fetchsql($sql7);
               <i class="fa fa-home" aria-hidden="true"></i>Trang chủ </a>
           </li>
           <li>
-            <a href="<?php echo base_url() ?>section-topic-details.php?id=1" title="Giới thiệu" rel="nofollow">Giới thiệu</a>
+            <a href="<?php echo base_url() ?>section-topic-details-new.php?id=1" title="Giới thiệu" rel="nofollow">Giới thiệu</a>
             <span class="openSub"></span>
             <ul class="subMenu">
               <?php foreach($tuVan as $item) :?>
@@ -212,7 +212,7 @@ $tuVan7 = $db->fetchsql($sql7);
           <!-- <?php foreach($tuVan6 as $item) :?>
             <a href="post-item-details-new.php?category_id=<?php echo  $item['category_id']?>&id=<?php echo $item['id']?>" title="Xuất khẩu" rel="nofollow">Xuất khẩu</a>
           <?php endforeach ?> -->
-            <a href="<?php echo base_url() ?>section-topic-details.php?id=6" title="Xuất khẩu" rel="nofollow">Xuất khẩu</a>
+            <a href="<?php echo base_url() ?>section-topic-details-new.php?id=6" title="Xuất khẩu" rel="nofollow">Xuất khẩu</a>
           </li>
           <li>
           <?php foreach($tuVan5 as $item) :?>
@@ -333,10 +333,10 @@ $tuVan7 = $db->fetchsql($sql7);
                 </ul>
                 <ul>
                   <li>
-                    <a href="<?php echo base_url() ?>section-topic-details.php?id=1" title="Câu chuyện CHACHA" target="_blank" rel="nofollow">Câu chuyện CHACHA</a>
+                    <a href="<?php echo base_url() ?>section-topic-details-new.php?id=1" title="Câu chuyện CHACHA" target="_blank" rel="nofollow">Câu chuyện CHACHA</a>
                   </li>
                   <li>
-                    <a href="<?php echo base_url() ?>section-topic-details.php?id=2" title="Tin tức &amp; Sự kiện" target="_blank" rel="nofollow">Tin tức &amp; Sự kiện</a>
+                    <a href="<?php echo base_url() ?>section-topic-details-new.php?id=2" title="Tin tức &amp; Sự kiện" target="_blank" rel="nofollow">Tin tức &amp; Sự kiện</a>
                   </li>
                   <li>
                     <a href="index.php" title="Nhà phân phối, đại lý" target="_blank" rel="nofollow">Nhà phân phối, đại lý</a>
@@ -345,7 +345,7 @@ $tuVan7 = $db->fetchsql($sql7);
                   <!-- <?php foreach($tuVan7 as $item) :?>
                     <a href="post-item-details-new.php?category_id=<?php echo  $item['category_id']?>&id=<?php echo $item['id']?>" title="Tuyển dụng" target="_blank" rel="nofollow">Tuyển dụng</a>
                     <?php endforeach ?> -->
-                    <a href="<?php echo base_url() ?>section-topic-details.php?id=7" title="Tuyển dụng" target="_blank" rel="nofollow">Tuyển dụng</a>
+                    <a href="<?php echo base_url() ?>section-topic-details-new.php?id=7" title="Tuyển dụng" target="_blank" rel="nofollow">Tuyển dụng</a>
                   </li>
                   <li>
                     <a href="index.php" title="Liên hệ" target="_blank" rel="nofollow">Liên hệ</a>

@@ -6,21 +6,21 @@ session_start();
 <html lang="en">
 
 <head>
-<title> Website chính thức của Tập đoàn CHACHA - CHACHA GROUP </title>
+<title> Website 3 chính thức của Tập đoàn CHACHA - CHACHA GROUP </title>
   <!-- <link rel="alternate" hreflang="vi-vn" href="https://sunhouse.com.vn"> -->
   <!-- #region Các thẻ meta và link -->
   <meta name="keywords" content="Sunhoue">
   <meta name="description" content="CHACHA GROUP - thương hiệu gia dụng hàng đầu Việt Nam, người bạn đồng hành của mọi gia đình Việt. BẠN đang tìm kiếm đại lý CHACHA, click NGAY vào ĐÂY">
   <!-- <link rel="canonical" href="https://sunhouse.com.vn"> -->
-  <meta property="og:title" content="Website chính thức của Tập đoàn CHACHA - CHACHA GROUP">
+  <meta property="og:title" content="Website 2 chính thức của Tập đoàn CHACHA - CHACHA GROUP">
   <!-- <meta property="og:site_name" content="https://sunhouse.com.vn/"> -->
   <!-- <meta property="og:url" content="https://sunhouse.com.vn"> -->
   <meta property="og:description" content="CHACHA GROUP - thương hiệu gia dụng hàng đầu Việt Nam, người bạn đồng hành của mọi gia đình Việt. BẠN đang tìm kiếm đại lý CHACHA, click NGAY vào ĐÂY">
   <meta property="og:type" content="article">
-  <!-- <meta property="og:image" content="/chacha_v2/pic/setting/1920x1000-27-11.jpg"> -->
+  <meta property="og:image" content="./chacha_v2/pic/setting/capdien.png">
   <meta property="og:image:width" content="1920">
   <meta property="og:image:height" content="1000">
-  <meta property="og:image:alt" content="Website chính thức của Tập đoàn CHACHA - CHACHA GROUP">
+  <meta property="og:image:alt" content="Website 1 chính thức của Tập đoàn CHACHA - CHACHA GROUP">
   <!-- #endregion -->
   <!-- <link rel="icon" href="https://sunhouse.com.vn/favicon.ico"> -->
   <!-- #region Các thẻ meta tĩnh -->
