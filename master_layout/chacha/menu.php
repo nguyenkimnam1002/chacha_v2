@@ -22,6 +22,30 @@ foreach ($CategoryHome as $item)
     $data[$item['name']] =$ProductHome; 
    
 }
+
+// Post giới thiệu (id = 1) lấy 4 tin
+$sql1 = "SELECT * FROM posts WHERE category_id = 1 ORDER BY ID DESC LIMIT 4";
+$tuVan = $db->fetchsql($sql1);
+
+// Post Tin tức sự kiện (id = 2) lấy 1 tin
+$sql2 = "SELECT * FROM posts WHERE category_id = 2 ORDER BY ID DESC LIMIT 1";
+$tuVan2 = $db->fetchsql($sql2);
+
+// Post tư vấn sp (id = 3) lấy 1 tin
+$sql3 = "SELECT * FROM posts WHERE category_id = 3 ORDER BY ID DESC LIMIT 1";
+$tuVan3 = $db->fetchsql($sql3);
+
+// Post bảo hành (id = 5) lấy 1 tin
+$sql5 = "SELECT * FROM posts WHERE category_id = 5 ORDER BY ID DESC LIMIT 1";
+$tuVan5 = $db->fetchsql($sql5);
+
+// Post xuất khẩu (id = 6) lấy 1 tin
+$sql6 = "SELECT * FROM posts WHERE category_id = 6 ORDER BY ID DESC LIMIT 1";
+$tuVan6 = $db->fetchsql($sql6);
+
+// Post tuyển dụng (id = 7) lấy 1 tin
+$sql7 = "SELECT * FROM posts WHERE category_id = 7 ORDER BY ID DESC LIMIT 1";
+$tuVan7 = $db->fetchsql($sql7);
 ?>
 <head>
 <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
@@ -67,505 +91,6 @@ foreach ($CategoryHome as $item)
       <div class="menuResBtn">
         <span class="openMenuRes"></span>
       </div>
-      <div class="menuBoxRes">
-        <div class="nganhHang">
-          <div class="groupItem">
-            <?php foreach($category as $item) :?>
-              <!-- <li><a href="danh-muc-san-pham-new.php?id=<?php echo $item['id']?>"><?php echo $item['name']?></a></li> -->
-              <div class="itemBox" data-id="<?php echo $item['id']?>">
-                <div class="khungAnh">
-                  <a href="javascript:void(0)" class="khungAnhCrop0" title="<?php echo $item['name']?>">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/pic/thumb/thumb/product/bo-noi-inox-5-day-sh779-removebg-preview.png" alt="<?php echo $item['name']?>" class="lazyload">
-                  </a>
-                </div>
-                <div class="itemTitle">
-                  <a href="javascript:void(0)" title="<?php echo $item['name']?>"><?php echo $item['name']?></a>
-                </div>
-              </div>
-            <?php endforeach;?>
-            
-            <div class="itemBox" data-id="1091">
-              <div class="khungAnh">
-                <a href="javascript:void(0)" class="khungAnhCrop0" title="Đồ gia dụng 1">
-                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/pic/thumb/thumb/product/bo-noi-inox-5-day-sh779-removebg-preview.png" alt="Đồ gia dụng" class="lazyload">
-                </a>
-              </div>
-              <div class="itemTitle">
-                <a href="javascript:void(0)" title="Đồ gia dụng">Đồ gia dụng 1</a>
-              </div>
-            </div>
-            <div class="itemBox" data-id="1092">
-              <div class="khungAnh">
-                <a href="javascript:void(0)" class="khungAnhCrop0" title="Điện gia dụng">
-                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/pic/thumb/thumb/product/keyshot.566.png" alt="Điện  gia dụng" class="lazyload">
-                </a>
-              </div>
-              <div class="itemTitle">
-                <a href="javascript:void(0)" title="Điện gia dụng">Điện gia dụng</a>
-              </div>
-            </div>
-            <div class="itemBox" data-id="1244">
-              <div class="khungAnh">
-                <a href="javascript:void(0)" class="khungAnhCrop0" title="Điện tử Điện lạnh">
-                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/pic/thumb/thumb/product/sunhouse-sha76213ck_001-removebg-preview(1).png" alt="Điện tử - Điện lạnh" class="lazyload">
-                </a>
-              </div>
-              <div class="itemTitle">
-                <a href="javascript:void(0)" title="Điện tử Điện lạnh">Điện tử Điện lạnh</a>
-              </div>
-            </div>
-            <div class="itemBox" data-id="1093">
-              <div class="khungAnh">
-                <a href="javascript:void(0)" class="khungAnhCrop0" title="Thiết bị nhà bếp">
-                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/pic/thumb/thumb/product/MMB9208DIH-2-removebg.png" alt="Thiết bị  nhà bếp" class="lazyload">
-                </a>
-              </div>
-              <div class="itemTitle">
-                <a href="javascript:void(0)" title="Thiết bị nhà bếp">Thiết bị nhà bếp</a>
-              </div>
-            </div>
-            <div class="itemBox" data-id="1271">
-              <div class="khungAnh">
-                <a href="javascript:void(0)" class="khungAnhCrop0" title="Đồ dùng  nhà bếp">
-                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/pic/thumb/thumb/product/do-dung-nha-bep-removebg.png" alt="Đồ dùng nhà bếp" class="lazyload">
-                </a>
-              </div>
-              <div class="itemTitle">
-                <a href="javascript:void(0)" title="Đồ dùng  nhà bếp">Đồ dùng nhà bếp</a>
-              </div>
-            </div>
-            <div class="itemBox" data-id="2385">
-              <div class="khungAnh">
-                <a href="javascript:void(0)" class="khungAnhCrop0" title="Tủ nhựa">
-                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/pic/thumb/thumb/product/Đơn3T-xanh.0.png" alt="Tủ nhựa" class="lazyload">
-                </a>
-              </div>
-              <div class="itemTitle">
-                <a href="javascript:void(0)" title="Tủ nhựa">Tủ nhựa</a>
-              </div>
-            </div>
-            <div class="itemBox" data-id="2389">
-              <div class="khungAnh">
-                <a href="javascript:void(0)" class="khungAnhCrop0" title="Thiết bị âm thanh">
-                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/pic/thumb/thumb/product/LOA.png" alt="Thiết bị âm thanh" class="lazyload">
-                </a>
-              </div>
-              <div class="itemTitle">
-                <a href="javascript:void(0)" title="Thiết bị âm thanh">Thiết bị âm thanh</a>
-              </div>
-            </div>
-            <div class="itemBox" data-id="1094">
-              <div class="khungAnh">
-                <a href="javascript:void(0)" class="khungAnhCrop0" title="Điện dân dụng">
-                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/pic/thumb/thumb/product/_16A5054(1).png" alt="Điện dân dụng" class="lazyload">
-                </a>
-              </div>
-              <div class="itemTitle">
-                <a href="javascript:void(0)" title="Điện dân dụng">Điện dân dụng</a>
-              </div>
-            </div>
-            <div class="itemBox" data-id="1095">
-              <div class="khungAnh">
-                <a href="javascript:void(0)" class="khungAnhCrop0" title="Thiết bị  điện công nghiệp">
-                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/pic/thumb/thumb/product/thiet-bi-dien-cong-nghiep.png" alt="Thiết bị  điện công nghiệp" class="lazyload">
-                </a>
-              </div>
-              <div class="itemTitle">
-                <a href="javascript:void(0)" title="Thiết bị  điện công nghiệp">Thiết bị điện công nghiệp</a>
-              </div>
-            </div>
-            <div class="itemBox" data-id="2351">
-              <div class="khungAnh">
-                <a href="javascript:void(0)" class="khungAnhCrop0" title="Dây cáp điện">
-                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/pic/thumb/thumb/product/capdien.png" alt="Cáp điện" class="lazyload">
-                </a>
-              </div>
-              <div class="itemTitle">
-                <a href="javascript:void(0)" title="Dây cáp điện">Dây cáp điện</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <ul class="menuMainRes">
-          <li>
-            <a href="/gioi-thieu" title="Giới thiệu">Giới thiệu</a>
-          </li>
-          <li>
-            <a href="/xuat-khau" title="Xuất khẩu">Xuất khẩu</a>
-          </li>
-          <li>
-            <a href="/bao-hanh" title="Bảo hành">Bảo hành</a>
-          </li>
-          <li>
-            <a href="/dai-ly" title="Nhà phân phối, đại lý">Nhà phân phối, đại lý</a>
-          </li>
-          <li>
-            <a href="http://nhamay.sunhouse.com.vn/" title="Nhà máy">Nhà máy</a>
-          </li>
-          <li>
-            <a href="/tin-tuc" title="Tin tức &amp; Sự kiện">Tin tức &amp; Sự kiện</a>
-          </li>
-          <li>
-            <a href="/tuyen-dung/xem-toan-bo-tin" title="Tuyển dụng">Tuyển dụng</a>
-          </li>
-          <li>
-            <a href="/cau-hoi-thuong-gap" title="Câu hỏi thường gặp">Câu hỏi thường gặp</a>
-          </li>
-          <li>
-            <a href="/lien-he" title="Liên hệ">Liên hệ</a>
-          </li>
-        </ul>
-        <ul class="menuOther">
-          <li>
-            <a href="http://sunhouse.com.vn">
-              <i class="fa fa-globe" aria-hidden="true"></i> Tiếng Việt </a>
-          </li>
-          <li>
-            <a href="http://en.sunhouse.com.vn">
-              <i class="fa fa-globe" aria-hidden="true"></i> English </a>
-          </li>
-          <li class="accountShow" data-id="tai-khoan">
-            <a href="javascript:void(0);" title="Tài khoản">
-              <i class="fa fa-user" aria-hidden="true"></i> Tài khoản </a>
-          </li>
-        </ul>
-      </div>
-      <div class="menuBoxRes subMenuNganhHang">
-        <a class="back" href="javascript:void(0);" title="Quay lại">
-          <i class="fa fa-chevron-left" aria-hidden="true"></i> Quay lại </a>
-        <ul class="menuMainRes" data-parent-id="1091">
-          <li class="title">Đồ gia dụng <i class="fa fa-chevron-right" aria-hidden="true"></i>
-          </li>
-          <li>
-            <a href="/dong-san-pham-cao-cap-ultra-titanium" title="Dòng sản phẩm cao cấp Ultra Titanium">Dòng sản phẩm cao cấp Ultra Titanium</a>
-          </li>
-          <li>
-            <a href="/bo-noi-anod" title="Bộ nồi Anod">Bộ nồi Anod</a>
-          </li>
-          <li>
-            <a href="/chao-inox" title="Chảo Inox">Chảo Inox</a>
-          </li>
-          <li>
-            <a href="/bo-noi-inox" title="Bộ nồi Inox">Bộ nồi Inox</a>
-          </li>
-          <li>
-            <a href="/chao-chong-dinh" title="Chảo chống dính">Chảo chống dính</a>
-          </li>
-          <li>
-            <a href="/bo-noi-nhom" title="Nồi nhôm">Nồi nhôm</a>
-          </li>
-          <li>
-            <a href="/noi-ap-suat" title="Nồi áp suất">Nồi áp suất</a>
-          </li>
-          <li>
-            <a href="/noi-inox" title="Nồi Inox">Nồi Inox</a>
-          </li>
-          <li>
-            <a href="/noi-quay-bot" title="Nồi quấy bột">Nồi quấy bột</a>
-          </li>
-          <li>
-            <a href="/noi-anod" title="Nồi Anod">Nồi Anod</a>
-          </li>
-          <li>
-            <a href="/bo-noi-chao" title="Bộ nồi chảo">Bộ nồi chảo</a>
-          </li>
-        </ul>
-        <ul class="menuMainRes" data-parent-id="1092">
-          <li class="title">Điện gia dụng <i class="fa fa-chevron-right" aria-hidden="true"></i>
-          </li>
-          <li>
-            <a href="/noi-chien-khong-dau" title="Nồi chiên không dầu">Nồi chiên không dầu</a>
-          </li>
-          <li>
-            <a href="/noi-com-dien" title="Nồi cơm điện">Nồi cơm điện</a>
-          </li>
-          <li>
-            <a href="/may-xay-sinh-to" title="Máy xay sinh tố">Máy xay sinh tố</a>
-          </li>
-          <li>
-            <a href="/may-ep-trai-cay" title="Máy ép hoa quả">Máy ép hoa quả</a>
-          </li>
-          <li>
-            <a href="/quat-dung" title="Quạt đứng">Quạt đứng</a>
-          </li>
-          <li>
-            <a href="/quat-tran" title="Quạt trần">Quạt trần</a>
-          </li>
-          <li>
-            <a href="/bep-nuong-dien" title="Bếp nướng">Bếp nướng</a>
-          </li>
-          <li>
-            <a href="/quat-tich-dien" title="Quạt sạc">Quạt sạc</a>
-          </li>
-          <li>
-            <a href="/noi-ap-suat-dien" title="Nồi áp suất điện">Nồi áp suất điện</a>
-          </li>
-          <li>
-            <a href="/noi-lau-dien" title="Lẩu điện">Lẩu điện</a>
-          </li>
-          <li>
-            <a href="/bep-hong-ngoai" title="Bếp hồng ngoại">Bếp hồng ngoại</a>
-          </li>
-          <li>
-            <a href="/bep-tu" title="Bếp điện từ đơn">Bếp điện từ đơn</a>
-          </li>
-          <li>
-            <a href="/lo-nuong" title="Lò nướng">Lò nướng</a>
-          </li>
-          <li>
-            <a href="/lo-vi-song" title="Lò vi sóng">Lò vi sóng</a>
-          </li>
-          <li>
-            <a href="/am-sieu-toc" title="Ấm siêu tốc">Ấm siêu tốc</a>
-          </li>
-          <li>
-            <a href="/binh-thuy-dien" title="Bình thủy điện">Bình thủy điện</a>
-          </li>
-          <li>
-            <a href="/ban-la" title="Bàn là">Bàn là</a>
-          </li>
-          <li>
-            <a href="/may-say-toc" title="Máy sấy tóc">Máy sấy tóc</a>
-          </li>
-          <li>
-            <a href="/may-xay-thit" title="Máy xay thịt">Máy xay thịt</a>
-          </li>
-          <li>
-            <a href="/may-say-quan-ao" title="Máy sấy quần áo">Máy sấy quần áo</a>
-          </li>
-          <li>
-            <a href="/quat-suoi" title="Sưởi phòng tắm">Sưởi phòng tắm</a>
-          </li>
-          <li>
-            <a href="/suoi-dien" title="Sưởi phòng">Sưởi phòng</a>
-          </li>
-          <li>
-            <a href="/tam-nuoc" title="Tăm nước">Tăm nước</a>
-          </li>
-        </ul>
-        <ul class="menuMainRes" data-parent-id="1244">
-          <li class="title">Điện tử Điện lạnh <i class="fa fa-chevron-right" aria-hidden="true"></i>
-          </li>
-          <li>
-            <a href="/dieu-hoa" title="Điều hòa không khí">Điều hòa không khí</a>
-          </li>
-          <li>
-            <a href="/may-loc-nuoc" title="Máy lọc nước gia đình ">Máy lọc nước gia đình </a>
-          </li>
-          <li>
-            <a href="/may-lam-mat-khong-khi" title="Máy làm mát không khí - Quạt điều hòa">Máy làm mát không khí - Quạt điều hòa</a>
-          </li>
-          <li>
-            <a href="/mang-loc" title="Màng lọc không khí">Màng lọc không khí</a>
-          </li>
-          <li>
-            <a href="/may-loc-khong-khi" title="Máy lọc không khí ">Máy lọc không khí </a>
-          </li>
-          <li>
-            <a href="/tu-dong-tu-mat" title="Tủ đông">Tủ đông</a>
-          </li>
-          <li>
-            <a href="/cay-nuoc-nong-lanh" title="Cây nước nóng lạnh">Cây nước nóng lạnh</a>
-          </li>
-          <li>
-            <a href="/binh-nuoc-nong" title="Bình nước nóng">Bình nước nóng</a>
-          </li>
-          <li>
-            <a href="/loi-loc-nuoc" title="Lõi lọc nước">Lõi lọc nước</a>
-          </li>
-        </ul>
-        <ul class="menuMainRes" data-parent-id="1093">
-          <li class="title">Thiết bị nhà bếp <i class="fa fa-chevron-right" aria-hidden="true"></i>
-          </li>
-          <li>
-            <a href="/bo-thiet-bi-nha-bep-quoc-dan" title="Bộ Thiết bị nhà bếp quốc dân">Bộ Thiết bị nhà bếp quốc dân</a>
-          </li>
-          <li>
-            <a href="/bep-tu-doi" title="Bếp từ đôi">Bếp từ đôi</a>
-          </li>
-          <li>
-            <a href="/bep-doi-dien-tu-hong-ngoai" title="Bếp điện từ hồng ngoại">Bếp điện từ hồng ngoại</a>
-          </li>
-          <li>
-            <a href="/may-hut-mui" title="Máy hút mùi">Máy hút mùi</a>
-          </li>
-          <li>
-            <a href="/bep-hong-ngoai-doi" title="Bếp hồng ngoại đôi">Bếp hồng ngoại đôi</a>
-          </li>
-          <li>
-            <a href="/may-rua-bat" title="Máy rửa bát">Máy rửa bát</a>
-          </li>
-          <li>
-            <a href="/bep-gas" title="Bếp gas dương">Bếp gas dương</a>
-          </li>
-          <li>
-            <a href="/bep-gas-am" title="Bếp gas âm">Bếp gas âm</a>
-          </li>
-          <li>
-            <a href="/bep-gas-hong-ngoai" title="Bếp gas hồng ngoại">Bếp gas hồng ngoại</a>
-          </li>
-          <li>
-            <a href="/van-gas" title="Van gas">Van gas</a>
-          </li>
-        </ul>
-        <ul class="menuMainRes" data-parent-id="1271">
-          <li class="title">Đồ dùng nhà bếp <i class="fa fa-chevron-right" aria-hidden="true"></i>
-          </li>
-          <li>
-            <a href="/do-dung-sinh-hoat" title="Đồ dùng sinh hoạt">Đồ dùng sinh hoạt</a>
-          </li>
-          <li>
-            <a href="/bo-lau-nha" title="Bộ Lau Nhà">Bộ Lau Nhà</a>
-          </li>
-          <li>
-            <a href="/dung-cu-nau-an" title="Dụng cụ nấu ăn">Dụng cụ nấu ăn</a>
-          </li>
-          <li>
-            <a href="/hop-bao-quan" title="Hộp bảo quản thực phẩm">Hộp bảo quản thực phẩm</a>
-          </li>
-        </ul>
-        <ul class="menuMainRes" data-parent-id="2385">
-          <li class="title">Tủ nhựa <i class="fa fa-chevron-right" aria-hidden="true"></i>
-          </li>
-          <li>
-            <a href="/tu-nhua-tre-em" title="Tủ nhựa trẻ em">Tủ nhựa trẻ em</a>
-          </li>
-          <li>
-            <a href="/tu-nhua-so-sinh" title="Tủ nhựa sơ sinh">Tủ nhựa sơ sinh</a>
-          </li>
-          <li>
-            <a href="/tu-nhua-gia-dinh" title="Tủ nhựa gia đình">Tủ nhựa gia đình</a>
-          </li>
-          <li>
-            <a href="/tu-giay" title="Tủ giày">Tủ giày</a>
-          </li>
-        </ul>
-        <ul class="menuMainRes" data-parent-id="2389">
-          <li class="title">Thiết bị âm thanh <i class="fa fa-chevron-right" aria-hidden="true"></i>
-          </li>
-          <li>
-            <a href="/loa-keo-don" title="Loa kéo đơn">Loa kéo đơn</a>
-          </li>
-          <li>
-            <a href="/loa-keo-doi" title="Loa kéo đôi">Loa kéo đôi</a>
-          </li>
-          <li>
-            <a href="/loa-xach-tay" title="Loa xách tay">Loa xách tay</a>
-          </li>
-        </ul>
-        <ul class="menuMainRes" data-parent-id="1094">
-          <li class="title">Điện dân dụng <i class="fa fa-chevron-right" aria-hidden="true"></i>
-          </li>
-          <li>
-            <a href="/den-led-downlight" title="Đèn Led Downlight">Đèn Led Downlight</a>
-          </li>
-          <li>
-            <a href="/thiet-bi-dien" title="Thiết bị điện">Thiết bị điện</a>
-          </li>
-          <li>
-            <a href="/den-led-op-tuong" title="Đèn Led ốp tường">Đèn Led ốp tường</a>
-          </li>
-          <li>
-            <a href="/den-led-day" title="Đèn Led dây">Đèn Led dây</a>
-          </li>
-          <li>
-            <a href="/den-led-trang-tri" title="Đèn Led trang trí">Đèn Led trang trí</a>
-          </li>
-          <li>
-            <a href="/den-pha-led" title="Đèn pha Led">Đèn pha Led</a>
-          </li>
-          <li>
-            <a href="/den-duong" title="Đèn đường">Đèn đường</a>
-          </li>
-          <li>
-            <a href="/den-led-nam" title="Đèn Led nấm">Đèn Led nấm</a>
-          </li>
-          <li>
-            <a href="/den-led-bulb" title="Đèn Led Bulb">Đèn Led Bulb</a>
-          </li>
-          <li>
-            <a href="/den-led-tuyp" title="Đèn Led tuýp">Đèn Led tuýp</a>
-          </li>
-          <li>
-            <a href="/den-tuyp-ban-nguyet" title="Đèn tuýp bán nguyệt">Đèn tuýp bán nguyệt</a>
-          </li>
-          <li>
-            <a href="/den-ceiling" title="Đèn Led Ceiling">Đèn Led Ceiling</a>
-          </li>
-          <li>
-            <a href="/den-ban" title="Đèn bàn">Đèn bàn</a>
-          </li>
-          <li>
-            <a href="/den-pin" title="Đèn pin">Đèn pin</a>
-          </li>
-          <li>
-            <a href="/vot-muoi" title="Vợt muỗi">Vợt muỗi</a>
-          </li>
-          <li>
-            <a href="/o-cam-dien" title="Ổ cắm điện">Ổ cắm điện</a>
-          </li>
-          <li>
-            <a href="/den-tich-dien" title="Đèn tích điện">Đèn tích điện</a>
-          </li>
-          <li>
-            <a href="/bang-keo-cach-dien" title="Băng keo cách điện">Băng keo cách điện</a>
-          </li>
-          <li>
-            <a href="/den-compact" title="Đèn compact">Đèn compact</a>
-          </li>
-        </ul>
-        <ul class="menuMainRes" data-parent-id="1095">
-          <li class="title">Thiết bị điện công nghiệp <i class="fa fa-chevron-right" aria-hidden="true"></i>
-          </li>
-          <li>
-            <a href="/tu-dien-ha-the" title="Tủ điện hạ thế" target="_blank" rel="nofollow">Tủ điện hạ thế</a>
-          </li>
-          <li>
-            <a href="/thang-mang-cap" title="Thang máng cáp" target="_blank" rel="nofollow">Thang máng cáp</a>
-          </li>
-          <li>
-            <a href="/dau-cap-hop-noi" title="Đầu cáp hộp nối" target="_blank" rel="nofollow">Đầu cáp hộp nối</a>
-          </li>
-          <li>
-            <a href="/tu-trung-the" title="Tủ trung thế" target="_blank" rel="nofollow">Tủ trung thế</a>
-          </li>
-          <li>
-            <a href="/thiet-bi-dong-cat-dien" title="Thiết bị đóng cắt" target="_blank" rel="nofollow">Thiết bị đóng cắt</a>
-          </li>
-          <li>
-            <a href="/dcn-cap-dien" title="Cáp điện" target="_blank" rel="nofollow">Cáp điện</a>
-          </li>
-          <li>
-            <a href="/thiet-bi-do-dem" title="Thiết bị đo đếm" target="_blank" rel="nofollow">Thiết bị đo đếm</a>
-          </li>
-          <li>
-            <a href="/busway-dcn" title="Busway" target="_blank" rel="nofollow">Busway</a>
-          </li>
-          <li>
-            <a href="/may-bien-ap" title="Máy biến áp" target="_blank" rel="nofollow">Máy biến áp</a>
-          </li>
-          <li>
-            <a href="/may-phat-dien" title="Máy phát điện" target="_blank" rel="nofollow">Máy phát điện</a>
-          </li>
-        </ul>
-        <ul class="menuMainRes" data-parent-id="2351">
-          <li class="title">Dây cáp điện <i class="fa fa-chevron-right" aria-hidden="true"></i>
-          </li>
-          <li>
-            <a href="/nhom-hang-cap-dien" title="Nhóm hàng Cáp điện">Nhóm hàng Cáp điện</a>
-          </li>
-        </ul>
-        <ul class="menuMainRes" data-parent-id="tai-khoan">
-          <li class="title">Tài khoản <i class="fa fa-chevron-right" aria-hidden="true"></i>
-          </li>
-          <li>
-            <a href="/dang-nhap">Đăng nhập</a>
-          </li>
-          <li>
-            <a href="/dang-ky">Tạo tài khoản mới</a>
-          </li>
-        </ul>
-      </div>
       <style>
         /*css viết thêm để ẩn hiện submenu res*/
         .subMenuNganhHang .menuMainRes {
@@ -583,23 +108,16 @@ foreach ($CategoryHome as $item)
               <i class="fa fa-home" aria-hidden="true"></i>Trang chủ </a>
           </li>
           <li>
-            <a href="/gioi-thieu" title="Giới thiệu" rel="nofollow">Giới thiệu</a>
+            <a href="<?php echo base_url() ?>section-topic-details.php?id=1" title="Giới thiệu" rel="nofollow">Giới thiệu</a>
             <span class="openSub"></span>
             <ul class="subMenu">
+              <?php foreach($tuVan as $item) :?>
               <li>
-                <a href="/nha-la-bep-bep-la-sunhouse" title="Về tập đoàn SUNHOUSE" rel="nofollow">Về tập đoàn SUNHOUSE</a>
+                <a href="post-item-details-new.php?category_id=<?php echo  $item['category_id']?>&id=<?php echo $item['id']?>" title="<?php echo  $item['title']?>" rel="nofollow"><?php echo  $item['title']?></a>
               </li>
+              <?php endforeach ?>
               <li>
                 <a href="/thong-diep-cua-chu-tich-hoi-dong-quan-tri-tap-doan-sunhouse" title="Thông điệp của Chủ tịch HĐQT" rel="nofollow">Thông điệp của Chủ tịch HĐQT</a>
-              </li>
-              <li>
-                <a href="/co-cau-to-chuc" title="Cơ cấu tổ chức" rel="nofollow">Cơ cấu tổ chức</a>
-              </li>
-              <li>
-                <a href="/thanh-tich-giai-thuong" title="Thành tích giải thưởng" rel="nofollow">Thành tích giải thưởng</a>
-              </li>
-              <li>
-                <a href="/video" title="SUNHOUSE TV" rel="nofollow">SUNHOUSE TV</a>
               </li>
             </ul>
           </li>
@@ -691,10 +209,15 @@ foreach ($CategoryHome as $item)
             </div>
           </li>
           <li>
-            <a href="/xuat-khau" title="Xuất khẩu" rel="nofollow">Xuất khẩu</a>
+          <!-- <?php foreach($tuVan6 as $item) :?>
+            <a href="post-item-details-new.php?category_id=<?php echo  $item['category_id']?>&id=<?php echo $item['id']?>" title="Xuất khẩu" rel="nofollow">Xuất khẩu</a>
+          <?php endforeach ?> -->
+            <a href="<?php echo base_url() ?>section-topic-details.php?id=6" title="Xuất khẩu" rel="nofollow">Xuất khẩu</a>
           </li>
           <li>
-            <a href="/bao-hanh" title="Bảo hành" rel="nofollow">Bảo hành</a>
+          <?php foreach($tuVan5 as $item) :?>
+            <a href="post-item-details-new.php?category_id=<?php echo  $item['category_id']?>&id=<?php echo $item['id']?>" title="Bảo hành" rel="nofollow">Bảo hành</a>
+          <?php endforeach ?>
           </li>
         </ul>
       </div>
@@ -725,9 +248,9 @@ foreach ($CategoryHome as $item)
         //Chuyển vào viết ở NeededToAllModule.js
       </script>
       <div class="logo">
-        <a href="/" title="Logo SUNHOUSE" rel="nofollow">
-          <img src="https://sunhouse.com.vn/pic/banner/logo.png" alt="Logo SUNHOUSE" class="normal">
-          <img src="https://sunhouse.com.vn/pic/banner/logoScroll.png" data-src="https://sunhouse.com.vn/pic/banner/logoScroll.png" alt="Logo SUNHOUSE" class="scroll lazyloaded">
+        <a href="index.php" title="Logo CHACHA" rel="nofollow">
+          <img src="https://sunhouse.com.vn/pic/banner/logo.png" alt="Logo CHACHA" class="normal">
+          <img src="https://sunhouse.com.vn/pic/banner/logoScroll.png" data-src="https://sunhouse.com.vn/pic/banner/logoScroll.png" alt="Logo CHACHA" class="scroll lazyloaded">
         </a>
       </div>
       <div class="headerRight">
@@ -810,39 +333,30 @@ foreach ($CategoryHome as $item)
                 </ul>
                 <ul>
                   <li>
-                    <a href="/gioi-thieu" title="Câu chuyện SUNHOUSE" target="_blank" rel="nofollow">Câu chuyện SUNHOUSE</a>
+                    <a href="<?php echo base_url() ?>section-topic-details.php?id=1" title="Câu chuyện CHACHA" target="_blank" rel="nofollow">Câu chuyện CHACHA</a>
                   </li>
                   <li>
-                    <a href="/tin-tuc" title="Tin tức &amp; Sự kiện" target="_blank" rel="nofollow">Tin tức &amp; Sự kiện</a>
+                    <a href="<?php echo base_url() ?>section-topic-details.php?id=2" title="Tin tức &amp; Sự kiện" target="_blank" rel="nofollow">Tin tức &amp; Sự kiện</a>
                   </li>
                   <li>
-                    <a href="/dai-ly" title="Nhà phân phối, đại lý" target="_blank" rel="nofollow">Nhà phân phối, đại lý</a>
+                    <a href="index.php" title="Nhà phân phối, đại lý" target="_blank" rel="nofollow">Nhà phân phối, đại lý</a>
                   </li>
                   <li>
-                    <a href="/tuyen-dung/xem-toan-bo-tin" title="Tuyển dụng" target="_blank" rel="nofollow">Tuyển dụng</a>
+                  <!-- <?php foreach($tuVan7 as $item) :?>
+                    <a href="post-item-details-new.php?category_id=<?php echo  $item['category_id']?>&id=<?php echo $item['id']?>" title="Tuyển dụng" target="_blank" rel="nofollow">Tuyển dụng</a>
+                    <?php endforeach ?> -->
+                    <a href="<?php echo base_url() ?>section-topic-details.php?id=7" title="Tuyển dụng" target="_blank" rel="nofollow">Tuyển dụng</a>
                   </li>
                   <li>
-                    <a href="/thu-vien-anh" title="Thư viện ảnh sản phẩm" target="_blank" rel="nofollow">Thư viện ảnh sản phẩm</a>
-                  </li>
-                  <li>
-                    <a href="/video" title="Thư viện video" target="_blank" rel="nofollow">Thư viện video</a>
-                  </li>
-                  <li>
-                    <a href="/tai-lieu" title="Thư viện tài liệu" target="_blank" rel="nofollow">Thư viện tài liệu</a>
-                  </li>
-                  <li>
-                    <a href="/cau-hoi-thuong-gap" title="Câu hỏi thường gặp" target="_blank" rel="nofollow">Câu hỏi thường gặp</a>
-                  </li>
-                  <li>
-                    <a href="/lien-he" title="Liên hệ" target="_blank" rel="nofollow">Liên hệ</a>
+                    <a href="index.php" title="Liên hệ" target="_blank" rel="nofollow">Liên hệ</a>
                   </li>
                 </ul>
-                <ul>
+                <!-- <ul>
                   <li>
                     <a href="/thanh-vien">
                       <i class="fa fa-user" aria-hidden="true"></i>Tài khoản </a>
                   </li>
-                </ul>
+                </ul> -->
               </div>
             </div>
           </div>

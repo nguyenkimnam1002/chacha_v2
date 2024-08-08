@@ -1,5 +1,9 @@
 <?php include_once('./master_layout/chacha/header.php') ;
 require "connect.php";
+
+// Post Tin tức sự kiện (id = 2) lấy 5 tin mới nhất
+$sql2 = "SELECT * FROM posts WHERE category_id = 2 ORDER BY ID DESC LIMIT 1";
+$tuVan2 = $db->fetchsql($sql2);
 ?>
 <main id="main" class="">
   
@@ -228,23 +232,25 @@ require "connect.php";
           <div class="saleOff" style="width: 65% !important;">
             <div class="titleHome">
               <h2 class="reset">
-                <a href="https://sunhouse.com.vn/tin-hoat-dong" title="Tin tức - Sự kiện tập đoàn" class="name">Tin tức - Sự kiện tập đoàn</a>
+                <a href="<?php echo base_url() ?>section-topic-details.php?id=2" title="Tin tức - Sự kiện tập đoàn" class="name">Tin tức - Sự kiện tập đoàn</a>
               </h2>
             </div>
             <div class="listSale listSaleHome" role="toolbar">
+            <?php foreach($tuVan2 as $item) :?>
               <div class="item">
                 <div class="khungAnh">
-                  <a href="https://sunhouse.com.vn/tin-hoat-dong/kham-pha-noi-san-xuat-noi-chien-khong-dau-made-in-viet-nam.html" title="Khám phá nơi sản xuất nồi chiên không dầu Made in Việt Nam" class="khungAnhCrop">
-                    <img src="https://sunhouse.com.vn/pic/thumb/medium/news/2(6).jpg" data-src="https://sunhouse.com.vn/pic/thumb/medium/news/2(6).jpg" alt="Khám phá nơi sản xuất nồi chiên không dầu Made in Việt Nam" class="lazyloaded wide">
+                  <a href="post-item-details-new.php?category_id=<?php echo  $item['category_id']?>&id=<?php echo $item['id']?>" title="<?php echo $item['title']?>" class="khungAnhCrop">
+                    <img src="<?php echo base_url() ?>public/uploads/product/<?php echo $item['image']?>" data-src="<?php echo base_url() ?>public/uploads/product/<?php echo $item['image']?>" alt="<?php echo $item['title']?>" class="lazyloaded wide">
                   </a>
                 </div>
                 <div class="inner">
                   <h3 class="reset">
-                    <a href="https://sunhouse.com.vn/tin-hoat-dong/kham-pha-noi-san-xuat-noi-chien-khong-dau-made-in-viet-nam.html" title="Khám phá nơi sản xuất nồi chiên không dầu Made in Việt Nam" class="name">Khám phá nơi sản xuất nồi chiên không dầu Made in Việt Nam</a>
+                    <a href="post-item-details-new.php?category_id=<?php echo  $item['category_id']?>&id=<?php echo $item['id']?>" title="<?php echo $item['title']?>" class="name"><?php echo $item['title']?></a>
                   </h3>
-                  <div class="text">Tại nhà máy Sunhouse Việt Nam, từ những hạt nhựa, tấm kim loại thô, bằng bàn tay, khối óc của người Việt, sản phẩm nồi chiên không dầu Made in Việt Nam nhận được niềm tin của người tiêu dùng Mỹ. Có gì bên trong “đại bản doanh” sản xuất nồi chiên không dầu Made in Việt Nam đầu tiên và duy nhất tại Việt Nam đủ tiêu chuẩn xuất sang Mỹ.</div>
+                  <div class="text"><?php echo $item['content'] ?></div>
                 </div>
               </div>
+              <?php endforeach ?>
               <div class="item">
                 <div class="khungAnh">
                   <a href="https://sunhouse.com.vn/tin-hoat-dong/dai-dien-cap-cao-tap-doan-amazon-global-selling-tham-va-lam-viec-tai-nha-may-sunhouse.html" title="ĐẠI DIỆN CẤP CAO TẬP ĐOÀN AMAZON GLOBAL SELLING THĂM VÀ LÀM VIỆC TẠI NHÀ MÁY SUNHOUSE" class="khungAnhCrop">

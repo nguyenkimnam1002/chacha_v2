@@ -68,7 +68,7 @@ if(isset($_GET['id']) && isset($_GET['category_id'])){
       <div id="news_more">
         <h4><?php echo "<a>||</a>Tin liên quan"; ?></h4></br>
         <ul>
-          <li><?php echo"<a href='post-item-details.php?category_id=$category_id&id=$id'>$title</a>"?></li>
+          <li><?php echo"<a href='post-item-details-new.php?category_id=$category_id&id=$id'>$title</a>"?></li>
         </ul>
       </div>  
       <div class="well">

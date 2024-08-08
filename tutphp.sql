@@ -313,15 +313,6 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 
-CREATE TABLE `orders` (
-  `id` int(11) NOT NULL,
-  `transaction_id` int(11) DEFAULT NULL,
-  `product_id` int(11) DEFAULT NULL,
-  `qty` int(11) DEFAULT NULL,
-  `price` int(11) DEFAULT NULL,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
 -- --------------------------------------------------------
@@ -453,29 +444,10 @@ INSERT INTO `categories` (`id`, `name`, `slug`, `created_at`, `updated_at`, `sta
 (3, 'Tư vấn sản phẩm', 'tuvan', '2021-12-15 20:52:16', '2021-12-12 14:52:16', 'PUBLIC'),
 (4, 'Bí quyết mẹo vặt', 'thoitrang', '2021-12-24 13:02:10', NULL, 'PUBLIC'),
 (5, 'Bảo hành', 'baohanh', '2021-12-24 13:02:10', NULL, 'PUBLIC'),
-(6, 'Xuất khẩu', 'xuatkhau', '2021-12-24 13:02:10', NULL, 'PUBLIC');
+(6, 'Xuất khẩu', 'xuatkhau', '2021-12-24 13:02:10', NULL, 'PUBLIC'),
+(7, 'Tuyển dụng', 'tuyendung', '2021-12-24 13:02:10', NULL, 'PUBLIC');
 
-
-ALTER TABLE `posts`
-  ADD PRIMARY KEY (`id`);
-
-  ALTER TABLE `categories`
-  ADD PRIMARY KEY (`id`);
-
-  --
--- AUTO_INCREMENT for table `posts`
 --
-ALTER TABLE `posts`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
-
-    --
--- AUTO_INCREMENT for table `categories`
---
-ALTER TABLE `categories`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;  
-
-
-  --
 -- Cấu trúc bảng cho bảng `accounts`
 --
 
@@ -509,3 +481,24 @@ INSERT INTO `accounts` (`id`, `username`, `email`, `fullname`, `password`, `phon
 (16, 'Soncom', 'soncom2k1@gmail.com', 'Phạm Cao Thái Sơn', '369258147', '0911252147', 'Nam', '2001-12-12', 'Member', '2021-12-20 09:11:44', '0000-00-00 00:00:00', 'ACTIVE'),
 (18, 'Quy1987', 'quy1987@gmail.com', 'Phạm Văn Quý', '0147258369', '0564813794', 'Nam', '1987-05-05', 'Member', '2021-12-20 17:32:06', '0000-00-00 00:00:00', 'ACTIVE'),
 (19, 'nxlong', 'longnguyenxuan2000@gamil.com', 'Nguyễn Xuân Long', '12345678', '0355781234', 'Nam', '2000-06-28', 'Admin', '2021-12-25 18:34:20', '0000-00-00 00:00:00', 'ACTIVE');
+
+
+
+ALTER TABLE `posts`
+  ADD PRIMARY KEY (`id`);
+
+  ALTER TABLE `categories`
+  ADD PRIMARY KEY (`id`);
+
+  --
+-- AUTO_INCREMENT for table `posts`
+--
+ALTER TABLE `posts`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+
+    --
+-- AUTO_INCREMENT for table `categories`
+--
+ALTER TABLE `categories`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;  
+
