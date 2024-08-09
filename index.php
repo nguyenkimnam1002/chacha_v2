@@ -431,12 +431,22 @@ $tuVan2 = $db->fetchsql($sql2);
     <ul>
       <li>
         <a href="https://www.facebook.com/kimnam.nguyen.52493" target="_blank" rel="nofollow" title="Facebook DEMO TECH">
-          <img class=" lazyloaded" data-src="./themes/1000000/assets/css/images/fbImg1.png" src="./themes/1000000/assets/css/images/fbImg1.png" alt="Facebook SUNHOUSE GROUP">
+          <img class=" lazyloaded" data-src="./themes/1000000/assets/css/images/fbImg1.png" src="./themes/1000000/assets/css/images/fbImg1.png" alt="Facebook CHACHA GROUP">
         </a>
       </li>
       <li>
-        <a href="https://www.youtube.com/user/sunhousechanel" target="_blank" rel="nofollow" title="Youtube DEMO TECH">
-          <img class=" lazyloaded" data-src="./themes/1000000/assets/css/images/ytImg1.png" src="./themes/1000000/assets/css/images/ytImg1.png" alt="Youtube SUNHOUSE GROUP">
+        <a href="https://www.facebook.com/kimnam.nguyen.52493" target="_blank" rel="nofollow" title="Zalo DEMO TECH">
+          <img class=" lazyloaded" data-src="./themes/1000000/assets/css/images/zaloIcon.png" src="./themes/1000000/assets/css/images/zaloIcon.png" alt="Youtube CHACHA GROUP">
+        </a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/kimnam.nguyen.52493" target="_blank" rel="nofollow" title="Tiktok DEMO TECH">
+          <img class=" lazyloaded" data-src="./themes/1000000/assets/css/images/tiktokIcon.png" src="./themes/1000000/assets/css/images/tiktokIcon.png" alt="Youtube CHACHA GROUP">
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/user/CHACHAchanel" target="_blank" rel="nofollow" title="Youtube DEMO TECH">
+          <img class=" lazyloaded" data-src="./themes/1000000/assets/css/images/ytImg1.png" src="./themes/1000000/assets/css/images/ytImg1.png" alt="Youtube CHACHA GROUP">
         </a>
       </li>
     </ul>

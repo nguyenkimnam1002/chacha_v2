@@ -136,7 +136,7 @@
                   <a href="post-item-details-new.php?category_id=<?php echo  $item['category_id']?>&id=<?php echo $item['id']?>" title="<?php echo $item['title'] ?>"><?php echo $item['title'] ?></a>
                 </h2>
                 <div class="itemDescription"><?php echo $item['content'] ?></div>
-                <a class="itemMore" href="post-item-details-new.php?category_id=<?php echo  $item['category_id']?>&id=<?php echo $item['id']?>" title="Chi tiết">Chi tiết <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                <a class="itemMore" href="post-item-details-new.php?category_id=<?php echo  $item['category_id']?>&id=<?php echo $item['id']?>" title="Chi tiết">Chi tiết <?php echo $item['id']?><i class="fa fa-chevron-right" aria-hidden="true"></i>
                 </a>
               </div>
             <?php endforeach ?>
