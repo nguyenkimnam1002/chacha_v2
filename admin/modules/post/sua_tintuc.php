@@ -1,5 +1,5 @@
 <?php
-require('./connect.php'); ?>
+require_once __DIR__ ."/../../autoload/autoload.php"; ?>
 <?php
     $id = $_GET['id'];
 

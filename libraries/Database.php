@@ -95,6 +95,13 @@
             $num = mysqli_num_rows($result);
             return $num;
         }
+        // Count số bản ghi câu lệnh
+        public function countSql($sql)
+        {
+            $result = mysqli_query($this->link, $sql) or die("Lỗi Truy Vấn countTable----" .mysqli_error($this->link));
+            $num = mysqli_num_rows($result);
+            return $num;
+        }
 
         
         public function maxIdTable($table)
@@ -260,6 +267,18 @@
             $tien = mysqli_fetch_assoc($result);
             return $tien;
         }
+    }
+
+    $server = 'localhost';
+    $user = 'root';
+    $pass = '';
+    $database = 'tutphp';
+
+    $conn = mysqli_connect($server, $user, $pass, $database);
+    if ($conn) {
+        mysqLi_query($conn, "SET NAMES 'utf8' ");
+    } else {
+        exit('Lỗi kết nối: ' . mysqli_connect_error());
     }
    
 ?>

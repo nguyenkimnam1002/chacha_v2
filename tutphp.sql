@@ -121,6 +121,7 @@ INSERT INTO `orders` (`id`, `transaction_id`, `product_id`, `qty`, `price`, `cre
 
 CREATE TABLE `product` (
   `id` int(11) NOT NULL,
+  `ma` varchar(100) DEFAULT NULL,
   `name` varchar(100) DEFAULT NULL,
   `slug` varchar(100) DEFAULT NULL,
   `price` int(11) DEFAULT NULL,
@@ -141,16 +142,16 @@ CREATE TABLE `product` (
 -- Dumping data for table `product`
 --
 
-INSERT INTO `product` (`id`, `name`, `slug`, `price`, `sale`, `thunbar`, `category_id`, `content`, `number`, `head`, `view`, `hot`, `pay`, `created_at`, `updated_at`) VALUES
-(15, 'MSI GV62 7RD-1882XVN', 'msi-gv62-7rd-1882xvn', 7000000, 11, 'asus rog scar gl703vd ee057t_lager.png', 18, 'Tại triển lãm Computex 2017 đang diễn ra ở Đài Loan, bên cạnh các dòng gaming laptop cao cấp, MSI còng tung ra dòng Series mới là GV62 ở phân khúc tầm trung, dễ dàng tiếp cận game thủ hơn.', 600, 0, 0, 0, 0, NULL, '2018-04-11 08:44:25'),
-(16, 'HERO GL503VD-GZ119T', 'hero-gl503vd-gz119t', 5000000, 10, 'asus ux430ua gv261t_lager.png', 16, 'à một trong những Series mới và ấn tượng nhất lấp đầy vào khoảng trống của những dòng Laptop Gaming Trung cho tới Cao cấp của ASUS. ROG Strix GL503/GL703 sẽ là những ứng cử viên sáng giá trong phân khúc Laptop Gaming từ nay cho đến tận năm sau bởi những nâng cấp ấn tượng không chỉ về ngoại hình bên ngoài, mà cả cấu hình, sức mạnh và nội thất bên trong. Thật sự mà nói trong bài viết này, chúng ta sẽ phải đi rất nhiều qua những vấn đề nổi cộm của các dòng sản phẩm GL503 / GL703 mới. Nên người viết bài sẽ cố gắng tóm tắt và lướt nhanh nhất có thể để đỡ rối..', 56, 0, 0, 0, 0, NULL, '2018-04-12 07:26:12'),
-(19, 'x557', 'x557', 70000, 0, 'dell vostro 7570 70138771_lager.png', 16, 'ok', 80, 0, 0, 0, 0, NULL, '2018-04-11 08:44:39'),
-(20, 'cv12', 'cv12', 40000, 0, 'msi gv62 7rd 1882xvn_lager.png', 16, 'ok', 56, 0, 0, 0, 0, NULL, '2018-04-11 08:44:46'),
-(21, 'ccv', 'ccv', 677777, 0, 'asus rog hero gl503vd gz119t_lager.png', 16, 'ok', 67, 0, 0, 0, 0, NULL, '2018-04-11 08:45:28'),
-(22, 'Dell XPS 13 9370 (415PX2)', 'dell-xps-13-9370-415px2', 53990000, 0, 'dell xps 13 9370 415px2_lager.png', 14, 'CPU	Intel Core i7-8550U 1.8GHz up to 4.0GHz 8MB\r\nRAM	16GB LPDDR3 1866MHz\r\nĐĩa cứng	512GB SSD\r\nCard đồ họa	Intel UHD Graphics 620\r\nMàn hình	13.3 inch UHD (3840 x 2160) IPS + Touch\r\nCổng giao tiếp USB	2x Thunderbolt 3 with PowerShare, DC-in & DisplayPort; 1x USB-C 3.1 with DC-in & DisplayPort', 80, 0, 0, 0, 0, NULL, '2018-04-13 15:27:38'),
-(23, 'Dell Inspiron 7570', 'dell-inspiron-7570', 28990000, 0, 'dell inspiron 7570 782p81_lager.png', 14, 'ok', 56, 0, 0, 0, 0, NULL, '2018-04-13 15:29:06'),
-(24, 'Dell Inspiron 7373', 'dell-inspiron-7373', 28490000, 0, 'dell inspiron 7373 t7373a_lager.png', 14, 'Hãng CPU	Intel\r\nCông nghệ CPU	Core i7\r\nLoại CPU	8550U\r\nTốc độ CPU	1.8GHz up to 4.0GHz', 67, 0, 0, 0, 0, NULL, NULL),
-(25, 'Dell Inspiron 7577', 'dell-inspiron-7577', 22990000, 0, 'dell inspiron 7577 70138769_lager.png', 14, 'Tóm tắt thông số Dell Inspiron 7577 (70138769)', 56, 0, 0, 0, 0, NULL, NULL);
+INSERT INTO `product` (`id`,`ma`, `name`, `slug`, `price`, `sale`, `thunbar`, `category_id`, `content`, `number`, `head`, `view`, `hot`, `pay`, `created_at`, `updated_at`) VALUES
+(15, 'MSI GV62 7RD-1882XVN','MSI GV62 7RD-1882XVN', 'msi-gv62-7rd-1882xvn', 7000000, 11, 'asus rog scar gl703vd ee057t_lager.png', 18, 'Tại triển lãm Computex 2017 đang diễn ra ở Đài Loan, bên cạnh các dòng gaming laptop cao cấp, MSI còng tung ra dòng Series mới là GV62 ở phân khúc tầm trung, dễ dàng tiếp cận game thủ hơn.', 600, 0, 0, 0, 0, NULL, '2018-04-11 08:44:25'),
+(16, 'HERO GL503VD-GZ119T','HERO GL503VD-GZ119T', 'hero-gl503vd-gz119t', 5000000, 10, 'asus ux430ua gv261t_lager.png', 16, 'à một trong những Series mới và ấn tượng nhất lấp đầy vào khoảng trống của những dòng Laptop Gaming Trung cho tới Cao cấp của ASUS. ROG Strix GL503/GL703 sẽ là những ứng cử viên sáng giá trong phân khúc Laptop Gaming từ nay cho đến tận năm sau bởi những nâng cấp ấn tượng không chỉ về ngoại hình bên ngoài, mà cả cấu hình, sức mạnh và nội thất bên trong. Thật sự mà nói trong bài viết này, chúng ta sẽ phải đi rất nhiều qua những vấn đề nổi cộm của các dòng sản phẩm GL503 / GL703 mới. Nên người viết bài sẽ cố gắng tóm tắt và lướt nhanh nhất có thể để đỡ rối..', 56, 0, 0, 0, 0, NULL, '2018-04-12 07:26:12'),
+(19, 'x557', 'x557', 'x557', 70000, 0, 'dell vostro 7570 70138771_lager.png', 16, 'ok', 80, 0, 0, 0, 0, NULL, '2018-04-11 08:44:39'),
+(20, 'cv12', 'cv12', 'cv12', 40000, 0, 'msi gv62 7rd 1882xvn_lager.png', 16, 'ok', 56, 0, 0, 0, 0, NULL, '2018-04-11 08:44:46'),
+(21, 'ccv', 'ccv', 'ccv', 677777, 0, 'asus rog hero gl503vd gz119t_lager.png', 16, 'ok', 67, 0, 0, 0, 0, NULL, '2018-04-11 08:45:28'),
+(22, 'Dell XPS 13 9370 (415PX2)','415PX2', 'dell-xps-13-9370-415px2', 53990000, 0, 'dell xps 13 9370 415px2_lager.png', 14, 'CPU	Intel Core i7-8550U 1.8GHz up to 4.0GHz 8MB\r\nRAM	16GB LPDDR3 1866MHz\r\nĐĩa cứng	512GB SSD\r\nCard đồ họa	Intel UHD Graphics 620\r\nMàn hình	13.3 inch UHD (3840 x 2160) IPS + Touch\r\nCổng giao tiếp USB	2x Thunderbolt 3 with PowerShare, DC-in & DisplayPort; 1x USB-C 3.1 with DC-in & DisplayPort', 80, 0, 0, 0, 0, NULL, '2018-04-13 15:27:38'),
+(23, 'Dell Inspiron 7570','7570', 'dell-inspiron-7570', 28990000, 0, 'dell inspiron 7570 782p81_lager.png', 14, 'ok', 56, 0, 0, 0, 0, NULL, '2018-04-13 15:29:06'),
+(24, 'Dell Inspiron 7373','7373', 'dell-inspiron-7373', 28490000, 0, 'dell inspiron 7373 t7373a_lager.png', 14, 'Hãng CPU	Intel\r\nCông nghệ CPU	Core i7\r\nLoại CPU	8550U\r\nTốc độ CPU	1.8GHz up to 4.0GHz', 67, 0, 0, 0, 0, NULL, NULL),
+(25, 'Dell Inspiron 7577','7577', 'dell-inspiron-7577', 22990000, 0, 'dell inspiron 7577 70138769_lager.png', 14, 'Tóm tắt thông số Dell Inspiron 7577 (70138769)', 56, 0, 0, 0, 0, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -208,6 +209,8 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`id`, `name`, `email`, `phone`, `address`, `password`, `avatar`, `status`, `token`, `created_at`, `updated_at`) VALUES
 (1, 'Nam1', 'namnk9999@gmail.com', '0848172333', 'vpc', '57837a14c1abe81ebf0100ffd577255e', NULL, 1, NULL, NULL, NULL),
 (2, 'Nam2', 'admin@gmail.com', '0898485597', 'sài gòn', '25d55ad283aa400af464c76d713c07ad', NULL, 1, NULL, NULL, NULL);
+
+-- pass: 12345678
 
 
 --

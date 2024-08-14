@@ -1,8 +1,4 @@
 <?php
-require('./connect.php'); 
-?>
-
-<?php
 
     $open = "posts";
     require_once __DIR__ ."/../../autoload/autoload.php";
