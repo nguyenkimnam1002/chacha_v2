@@ -1,9 +1,6 @@
-<?php include_once('./master_layout/header.php') ?>
-<?php
-      require "connect.php";
-?> 
+<?php  
+  require_once __DIR__ ."/master_layout/chacha/header.php";
 
-<?php
   $search = "";
   $limit = 15;
   $page = 1;
@@ -77,7 +74,10 @@
       echo "<a href = 'search-result-found.php?p=$i' style='margin: 0px 2px;'> $i </a>";
     }
   ?>  
-  <?php  include_once('./master_layout/footer.php') ?>
+<?php  
+include_once('./master_layout/chacha/footer.php') 
+?>
+
 <style>
   
 .btn {

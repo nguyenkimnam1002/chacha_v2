@@ -15,38 +15,35 @@
       $result = mysqli_query($conn, $query);
     }
   }
-?>
+  if(isset($_GET['id']) && isset($_GET['category_id'])){
+    $id=$_GET['id'];
+    $category_id=$_GET['category_id'];
+    
+    // Chi tiết bản tin
+    $sql = "SELECT * FROM posts WHERE id='$id'"; // Câu lệnh select
+    $query = mysqli_query($conn, $sql); // thực hiện câu lệnh query - select. Kết quả trả về là 1 mảng collection (các row)
+    $rn = $query->fetch_array(MYSQLI_ASSOC); // Lấy bản ghi đầu tiên của kết quả
+    if(mysqli_num_rows($query)  == 0) {
+      header('Location: index.php');
+    }
 
-<?php
-if(isset($_GET['id']) && isset($_GET['category_id'])){
-  $id=$_GET['id'];
-  $category_id=$_GET['category_id'];
-  
-  // Chi tiết bản tin
-  $sql = "SELECT * FROM posts WHERE id='$id'"; // Câu lệnh select
-  $query = mysqli_query($conn, $sql); // thực hiện câu lệnh query - select. Kết quả trả về là 1 mảng collection (các row)
-  $rn = $query->fetch_array(MYSQLI_ASSOC); // Lấy bản ghi đầu tiên của kết quả
-  if(mysqli_num_rows($query)  == 0) {
+    // Lấy tất cả nhóm tin tức 
+    $sql = "SELECT * FROM categories ORDER BY ID";
+    $nhomTin = $db->fetchsql($sql);
+
+    // Tin liên quan 
+    $sql = "SELECT * FROM posts WHERE category_id='$category_id' AND id <> '$id'  ORDER BY id DESC LIMIT 3";
+    $query_post = $db->fetchsql($sql);
+
+    // Tin mới nhất
+    $sql = "SELECT * FROM posts ORDER BY id DESC LIMIT 5";
+    $query_post_new = $db->fetchsql($sql);
+
+    // $sql_comments = "SELECT c.content, c.post_id, a.username FROM `comments` as C join `accounts` as A on c.account_id = a.id where c.post_id = '$id'";
+    // $query_comments = mysqli_query($conn, $sql_comments);
+  } else {
     header('Location: index.php');
   }
-
-  // Lấy tất cả nhóm tin tức 
-  $sql = "SELECT * FROM categories ORDER BY ID";
-  $nhomTin = $db->fetchsql($sql);
-
-  // Tin liên quan 
-  $sql = "SELECT * FROM posts WHERE category_id='$category_id' AND id <> '$id'  ORDER BY id DESC LIMIT 3";
-  $query_post = $db->fetchsql($sql);
-
-  // Tin mới nhất
-  $sql = "SELECT * FROM posts ORDER BY id DESC LIMIT 5";
-  $query_post_new = $db->fetchsql($sql);
-
-  $sql_comments = "SELECT c.content, c.post_id, a.username FROM `comments` as C join `accounts` as A on c.account_id = a.id where c.post_id = '$id'";
-  $query_comments = mysqli_query($conn, $sql_comments);
-} else {
-  header('Location: index.php');
-}
 
 ?>
 <style>

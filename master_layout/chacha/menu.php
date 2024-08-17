@@ -248,7 +248,7 @@ $tuVan7 = $db->fetchsql($sql7);
         //Chuyển vào viết ở NeededToAllModule.js
       </script>
       <div class="logo">
-        <a href="index.php" title="Logo CHACHA" rel="nofollow">
+        <a href="/" title="Logo CHACHA" rel="nofollow">
           <img src="https://sunhouse.com.vn/pic/banner/logo.png" alt="Logo CHACHA" class="normal">
           <img src="https://sunhouse.com.vn/pic/banner/logoScroll.png" data-src="https://sunhouse.com.vn/pic/banner/logoScroll.png" alt="Logo CHACHA" class="scroll lazyloaded">
         </a>
@@ -272,7 +272,7 @@ $tuVan7 = $db->fetchsql($sql7);
 
           function PostSearchOnMenu() {
             var searchKeyword = $("#tbSearchKeywordsOnMenu").val();
-            if (searchKeyword.length > 0) window.location = "/search/" + searchKeyword;
+            if (searchKeyword.length > 0) window.location = "<?php echo base_url() ?>search-result-found.php?txtsearch=" + searchKeyword;
           }
         </script>
         <script>
