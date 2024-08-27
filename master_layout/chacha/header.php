@@ -1193,6 +1193,13 @@ session_start();
         display: none
       }
     }
+
+    @media (min-width: 1200px) {
+      .menuResBtn,
+      .menuBoxRes {
+        display: none;
+      }
+    }
   </style>
   <!-- <link rel="stylesheet" href="./assets/css/custom/flatsome.css"> -->
 </head>
