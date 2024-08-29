@@ -275,6 +275,18 @@
       right: auto;
       left: 0
     }
+    .hotineBottom1 {
+      border-radius: 0 8px 0 0;
+      right: auto;
+      left: 0
+    }
+    .hinh_binh_hanh{
+      width: 200px;
+      height: 30px;
+      transform: skew(-20deg);
+      background: #ffa800;
+      margin-left: 5px;
+    }
 
     .btn_top {
       bottom: 100px
@@ -301,9 +313,28 @@
         margin-top: 5px;
       }
     }
+    .col-sm-5{
+      height: 600px; width: 48%;
+    }
 
     @media (max-width: 767px) {
+      .col-sm-5{
+        height: 500px;
+        width: 100%;
+      }
+      .hinh_binh_hanh{
+        height: 30px;
+        transform: skew(-20deg);
+        background: #ffa800;
+        margin-left: 5px;
+      }
       .hotineBottom {
+        border-radius: 50%;
+        right: 10px;
+        left: auto;
+        bottom: 100px
+      }
+      .hotineBottom1 {
         border-radius: 50%;
         right: 10px;
         left: auto;

@@ -1,9 +1,21 @@
 <?php include_once('./master_layout/chacha/header.php') ;
-require "connect.php";
+  require "connect.php";
 
-// Post Tin tức sự kiện (id = 2) lấy 5 tin mới nhất
-$sql2 = "SELECT * FROM posts WHERE category_id = 2 ORDER BY ID DESC LIMIT 1";
-$tuVan2 = $db->fetchsql($sql2);
+  // Post Tin tức sự kiện (id = 2) lấy 5 tin mới nhất
+  $sql2 = "SELECT * FROM posts WHERE category_id = 2 ORDER BY ID DESC LIMIT 1";
+  $tuVan2 = $db->fetchsql($sql2);
+
+  //Danh mục sản phẩm
+  $sqlNew= "SELECT * FROM category WHERE 1 ORDER BY ID ASC LIMIT 4";
+  $categoryHome= $db->fetchsql($sqlNew);
+
+  // Get sản phẩm mới
+  $sql1 = "SELECT p.*, ifnull(p.thunbar, img.thunbar) as image  FROM product p 
+  LEFT JOIN (select DISTINCT product_id, thunbar from image_file img LIMIT 1) img on p.id = img.product_id
+  where 
+  ifnull(p.thunbar, img.thunbar) IS NOT NULL
+  ORDER BY ID LIMIT 3";
+  $spNew = $db->fetchsql($sql1);
 ?>
 <main id="main" class="">
   
@@ -126,79 +138,106 @@ $tuVan2 = $db->fetchsql($sql2);
             </h2>
             <div class="description"> Với mạng lưới 60.000 điểm bán, sản xuất kinh doanh hơn 500 nhóm sản phẩm gia dụng thiết yếu, sản phẩm SUNHOUSE đã có mặt tại toàn bộ hệ thống siêu thị, trung tâm thương mại, các cửa hàng truyền thống </div>
           </div>
-          <div class="listProduct">
-            <div class="item">
-              <div class="wrapper">
-                <div class="khungAnh">
-                  <a href="https://sunhouse.com.vn/dien-tu-dien-lanh/may-loc-nuoc/may-loc-nuoc-r-o-ultrapure-sunhouse-10-loi-sha76210kl.html" title="MÁY LỌC NƯỚC RO ULTRAPURE SUNHOUSE 10 LÕI SHA76210KL" class="khungAnhCrop0">
-                    <img src="https://sunhouse.com.vn/pic/thumb/compact/product/500x600(176).jpg" data-src="https://sunhouse.com.vn/pic/thumb/compact/product/500x600(176).jpg" alt="Máy lọc nước R.O UltraPURE SUNHOUSE 10 LÕI SHA76210KL" class=" lazyloaded">
-                  </a>
+          <div class="col-sm-5" style="">
+            <div style="background-color: #f3f3f3;margin: 0 -1.5px;">
+              <div class="hinh_binh_hanh"><span> Sản phẩm</span></div>
+            </div>
+            <div class="cateProductD doGiaDung" style="background-color: #f3f3f3;">
+              <?php foreach($categoryHome as $item) :?> 
+              <div class="item" style="width: 50% !important; padding: 13px 13px 13px !important;">
+                <div class="wrapper" style=" background: #ffffff !important; border-radius: 6%; ">
+                  <div class="khungAnh">
+                    <a href="<?php echo base_url() ?>danh-muc-san-pham-new.php?id=<?php echo $item['id']?>" title="<?php echo $item['name']?>" class="khungAnhCrop0">
+                    <img src="<?php echo base_url() ?>public/uploads/product/<?php echo $item['image']?>" data-src="<?php echo base_url() ?>public/uploads/product/<?php echo $item['image']?>" alt="<?php echo $item['id']?>" class=" lazyloaded">
+                    </a>
+                  </div>
+                  <div class="inner">
+                    <h3 class="reset">
+                      <a href="<?php echo base_url() ?>danh-muc-san-pham-new.php?id=<?php echo $item['id']?>" title="<?php echo $item['name']?>" class="name"><?php echo $item['name']?></a>
+                    </h3>
+                    <div class="text"></div>
+                  </div>
                 </div>
-                <div class="inner">
-                  <h3 class="reset">
-                    <a href="https://sunhouse.com.vn/dien-tu-dien-lanh/may-loc-nuoc/may-loc-nuoc-r-o-ultrapure-sunhouse-10-loi-sha76210kl.html" title="MÁY LỌC NƯỚC RO ULTRAPURE SUNHOUSE 10 LÕI SHA76210KL" class="name">MÁY LỌC NƯỚC RO ULTRAPURE SUNHOUSE 10 LÕI SHA76210KL</a>
-                  </h3>
-                  <div class="text"></div>
+              </div>
+              <?php endforeach ?>
+            </div>
+          </div>
+          <div class="col-sm-5" style="background-color: #f3f3f3;">
+            <div class="row" style="height: 200px;">
+              <div style="background-color: #f3f3f3;margin: 0 -1.5px;">
+                <div class="hinh_binh_hanh"><span> Dell</span></div>
+              </div>
+              <div class="newsProductDetail" style="padding-top: 0px; padding-bottom: 0px;background-color: #f3f3f3;">
+                <div class="itemProductCTHome" role="toolbar">
+                  <?php foreach($spNew as $item) :?> 
+                    <div class="item" data-slick-index="-5" aria-hidden="true" style="width: 381px; padding: 13px 13px 13px !important;" tabindex="-1">
+                      <div class="wrapper" style="background-color: #ffff;">
+                        <div class="khungAnh">
+                          <a href="chi-tiet-san-pham-new.php?id=<?php echo $item['id']?>" title="<?php echo $item['name'] ?>" class="khungAnhCrop0" tabindex="-1">
+                            <img src="<?php echo base_url() ?>public/uploads/product/<?php echo $item['image']?>" data-src="<?php echo base_url() ?>public/uploads/product/<?php echo $item['image']?>" alt="<?php echo $item['name'] ?>" class="lazyload">
+                          </a>
+                        </div>
+                        <div class="outer">
+                          <h3 class="reset">
+                            <a href="chi-tiet-san-pham-new.php?id=<?php echo $item['id']?>" title="<?php echo $item['name'] ?>" class="name" tabindex="-1"><?php echo $item['name'] ?></a>
+                          </h3>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  <?php endforeach ?>
                 </div>
               </div>
             </div>
-            <div class="item">
-              <div class="wrapper">
-                <div class="khungAnh">
-                  <a href="https://sunhouse.com.vn/dien-gia-dung/may-ep-trai-cay/may-ep-cham-sunhouse-shd5503.html" title="MÁY ÉP CHẬM SUNHOUSE SHD5503" class="khungAnhCrop0">
-                    <img src="https://sunhouse.com.vn/pic/thumb/compact/product/SHD5503 thumb new.jpg" data-src="https://sunhouse.com.vn/pic/thumb/compact/product/SHD5503 thumb new.jpg" alt="MÁY ÉP CHẬM SUNHOUSE SHD5503" class=" lazyloaded">
-                  </a>
-                </div>
-                <div class="inner">
-                  <h3 class="reset">
-                    <a href="https://sunhouse.com.vn/dien-gia-dung/may-ep-trai-cay/may-ep-cham-sunhouse-shd5503.html" title="MÁY ÉP CHẬM SUNHOUSE SHD5503" class="name">MÁY ÉP CHẬM SUNHOUSE SHD5503</a>
-                  </h3>
-                  <div class="text"></div>
+            <div class="row" style="height: 200px;">
+              <div style="background-color: #f3f3f3;margin: 0 -1.5px;">
+                <div class="hinh_binh_hanh"><span> Assus</span></div>
+              </div>
+              <div class="newsProductDetail" style="padding-top: 0px; padding-bottom: 0px;background-color: #f3f3f3;">
+                <div class="itemProductCTHome" role="toolbar">
+                  <?php foreach($spNew as $item) :?> 
+                    <div class="item" data-slick-index="-5" aria-hidden="true" style="width: 381px; padding: 13px 13px 13px !important;" tabindex="-1">
+                      <div class="wrapper" style="background-color: #ffff;">
+                        <div class="khungAnh">
+                          <a href="chi-tiet-san-pham-new.php?id=<?php echo $item['id']?>" title="<?php echo $item['name'] ?>" class="khungAnhCrop0" tabindex="-1">
+                            <img src="<?php echo base_url() ?>public/uploads/product/<?php echo $item['image']?>" data-src="<?php echo base_url() ?>public/uploads/product/<?php echo $item['image']?>" alt="<?php echo $item['name'] ?>" class="lazyload">
+                          </a>
+                        </div>
+                        <div class="outer">
+                          <h3 class="reset">
+                            <a href="chi-tiet-san-pham-new.php?id=<?php echo $item['id']?>" title="<?php echo $item['name'] ?>" class="name" tabindex="-1"><?php echo $item['name'] ?></a>
+                          </h3>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  <?php endforeach ?>
                 </div>
               </div>
             </div>
-            <div class="item">
-              <div class="wrapper">
-                <div class="khungAnh">
-                  <a href="https://sunhouse.com.vn/thiet-bi-nha-bep/bep-doi-dien-tu-hong-ngoai/sunhouse-mama-mmb9200mix.html" title="BẾP ĐÔI ĐIỆN TỪ HỒNG NGOẠI SUNHOUSE MAMA MMB9200MIX" class="khungAnhCrop0">
-                    <img src="https://sunhouse.com.vn/pic/thumb/compact/product/MMB9200MIX_02.jpg" data-src="https://sunhouse.com.vn/pic/thumb/compact/product/MMB9200MIX_02.jpg" alt="BẾP ĐÔI ĐIỆN TỪ HỒNG NGOẠI SUNHOUSE MAMA MMB9200MIX" class=" lazyloaded">
-                  </a>
-                </div>
-                <div class="inner">
-                  <h3 class="reset">
-                    <a href="https://sunhouse.com.vn/thiet-bi-nha-bep/bep-doi-dien-tu-hong-ngoai/sunhouse-mama-mmb9200mix.html" title="BẾP ĐÔI ĐIỆN TỪ HỒNG NGOẠI SUNHOUSE MAMA MMB9200MIX" class="name">BẾP ĐÔI ĐIỆN TỪ HỒNG NGOẠI SUNHOUSE MAMA MMB9200MIX</a>
-                  </h3>
-                  <div class="text"></div>
-                </div>
+            <div class="row" style="height: 200px;">
+              <div style="background-color: #f3f3f3;margin: 0 -1.5px;">
+                <div class="hinh_binh_hanh"><span> Assus</span></div>
               </div>
-            </div>
-            <div class="item">
-              <div class="wrapper">
-                <div class="khungAnh">
-                  <a href="https://sunhouse.com.vn/do-gia-dung/dong-san-pham-cao-cap-ultra-titanium/bo-noi-chao-chong-dinh-ultra-titanium-sunhouse-st2204b.html" title="BỘ NỒI CHẢO CHỐNG DÍNH ULTRA TITANIUM SUNHOUSE ST2204B" class="khungAnhCrop0">
-                    <img src="https://sunhouse.com.vn/pic/thumb/compact/product/500x670(1).png" data-src="https://sunhouse.com.vn/pic/thumb/compact/product/500x670(1).png" alt="Bộ nồi chảo chống dính Ultra Titanium SUNHOUSE ST2204B" class=" lazyloaded">
-                  </a>
-                </div>
-                <div class="inner">
-                  <h3 class="reset">
-                    <a href="https://sunhouse.com.vn/do-gia-dung/dong-san-pham-cao-cap-ultra-titanium/bo-noi-chao-chong-dinh-ultra-titanium-sunhouse-st2204b.html" title="BỘ NỒI CHẢO CHỐNG DÍNH ULTRA TITANIUM SUNHOUSE ST2204B" class="name">BỘ NỒI CHẢO CHỐNG DÍNH ULTRA TITANIUM SUNHOUSE ST2204B</a>
-                  </h3>
-                  <div class="text"></div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="wrapper">
-                <div class="khungAnh">
-                  <a href="https://sunhouse.com.vn/dien-tu-dien-lanh/may-lam-mat-khong-khi/sunhouse-shd7727.html" title="MÁY LÀM MÁT KHÔNG KHÍ SUNHOUSE SHD7727" class="khungAnhCrop0">
-                    <img src="https://sunhouse.com.vn/pic/thumb/compact/product/quat-dieu-hoa-sunhouse-shd7727_002.png" data-src="https://sunhouse.com.vn/pic/thumb/compact/product/quat-dieu-hoa-sunhouse-shd7727_002.png" alt="Máy làm mát không khí SUNHOUSE SHD7727" class=" lazyloaded">
-                  </a>
-                </div>
-                <div class="inner">
-                  <h3 class="reset">
-                    <a href="https://sunhouse.com.vn/dien-tu-dien-lanh/may-lam-mat-khong-khi/sunhouse-shd7727.html" title="MÁY LÀM MÁT KHÔNG KHÍ SUNHOUSE SHD7727" class="name">MÁY LÀM MÁT KHÔNG KHÍ SUNHOUSE SHD7727</a>
-                  </h3>
-                  <div class="text"></div>
+              <div class="newsProductDetail" style="padding-top: 0px; padding-bottom: 0px;background-color: #f3f3f3;">
+                <div class="itemProductCTHome" role="toolbar">
+                  <?php foreach($spNew as $item) :?> 
+                    <div class="item" data-slick-index="-5" aria-hidden="true" style="width: 381px; padding: 13px 13px 13px !important;" tabindex="-1">
+                      <div class="wrapper" style="background-color: #ffff;">
+                        <div class="khungAnh">
+                          <a href="chi-tiet-san-pham-new.php?id=<?php echo $item['id']?>" title="<?php echo $item['name'] ?>" class="khungAnhCrop0" tabindex="-1">
+                            <img src="<?php echo base_url() ?>public/uploads/product/<?php echo $item['image']?>" data-src="<?php echo base_url() ?>public/uploads/product/<?php echo $item['image']?>" alt="<?php echo $item['name'] ?>" class="lazyload">
+                          </a>
+                        </div>
+                        <div class="outer">
+                          <h3 class="reset">
+                            <a href="chi-tiet-san-pham-new.php?id=<?php echo $item['id']?>" title="<?php echo $item['name'] ?>" class="name" tabindex="-1"><?php echo $item['name'] ?></a>
+                          </h3>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  <?php endforeach ?>
                 </div>
               </div>
             </div>
@@ -459,6 +498,7 @@ $tuVan2 = $db->fetchsql($sql2);
   
   
 </main>
+<script src="./Theme/1000000/Assets/js/ProductDetail.min.js" defer=""></script>
 <?php  
 include_once('./master_layout/chacha/footer.php') 
 ?>

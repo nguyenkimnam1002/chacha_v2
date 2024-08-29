@@ -11644,6 +11644,13 @@ a.more,
   position: relative;
   margin-bottom: 26px;
 }
+.featureProduct .listProduct .item1 {
+  width: 50%;
+  float: left;
+  padding: 0 15px;
+  position: relative;
+  margin-bottom: 26px;
+}
 .featureProduct .listProduct .item:nth-child(5),
 .featureProduct .listProduct .item:nth-child(4) {
   width: 50%;
@@ -35705,6 +35712,37 @@ body {
   -moz-filter: brightness(120%);
   -o-filter: brightness(120%);
 }
+.hotineBottom1 {
+  height: 44px;
+  background: #da2128;
+  padding: 0 15px;
+  border-radius: 8px 0 0 0;
+  /* position: fixed; */
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+}
+.hotineBottom1 span {
+  background: url(images/phoneIcon2.png) no-repeat left center;
+  padding-left: 36px;
+  font: 20px/48px StagSansVUSemibold;
+  color: #fff;
+  display: inline-block;
+}
+.hinh_binh_hanh span {
+  /* background: url(images/phoneIcon2.png) no-repeat left center; */
+  padding-left: 36px;
+  font: 20px/30px StagSansVUSemibold;
+  color: #fff;
+  display: inline-block;
+}
+.hotineBottom1:hover {
+  -webkit-filter: brightness(120%);
+  filter: brightness(120%);
+  -ms-filter: brightness(120%);
+  -moz-filter: brightness(120%);
+  -o-filter: brightness(120%);
+}
 .masterPage {
   padding: 35px 0 60px;
 }
@@ -45764,7 +45802,7 @@ a.more,
     left: 20px;
   }
   .featureProduct {
-    margin-bottom: 25px;
+    /* margin-bottom: 25px; */
   }
   .featureProduct .titleHome {
     margin-bottom: 30px;
@@ -45814,6 +45852,11 @@ a.more,
     padding-top: 35px;
   }
   .featureProduct .listProduct .item {
+    margin-bottom: 10px;
+    width: 50%;
+    padding: 0 5px;
+  }
+  .featureProduct .listProduct .item1 {
     margin-bottom: 10px;
     width: 50%;
     padding: 0 5px;
@@ -45952,6 +45995,9 @@ a.more,
     left: auto;
   }
   .featureProduct .listProduct .item {
+    width: 100% !important;
+  }
+  .featureProduct .listProduct .item1 {
     width: 100% !important;
   }
   .featureProduct .listProduct .item .wrapper {
@@ -67116,6 +67162,23 @@ a.more,
     right: 10px;
   }
   .hotineBottom span {
+    font-size: 0;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-position: center;
+    padding: 0;
+  }
+  .hotineBottom1 {
+    font-size: 0;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    padding: 0;
+    bottom: 65px;
+    right: 10px;
+  }
+  .hotineBottom1 span {
     font-size: 0;
     width: 45px;
     height: 45px;
