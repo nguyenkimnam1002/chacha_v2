@@ -103,6 +103,11 @@
                             Sản phẩm
                             </a>
                         </li>
+                        <li class="<?php echo isset($open) && $open == 'product' ? 'active' : '' ?>">
+                            <a href="<?php echo modules("warranty")?>"><i class="fa fa-calendar"></i>
+                            Bảo hành điện tử
+                            </a>
+                        </li>
                         <li class="<?php echo isset($open) && $open == 'admin' ? 'active' : '' ?>">
                             <a href="<?php echo modules("admin")?>"><i class="fa fa-user"></i>
                             Admin

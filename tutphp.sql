@@ -505,3 +505,32 @@ ALTER TABLE `posts`
 ALTER TABLE `categories`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;  
 
+
+  --
+-- Cấu trúc bảng cho bảng `warranty`
+--
+CREATE TABLE `warranty` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `cus_name` varchar(100) NOT NULL,
+  `cus_phone` varchar(100) NOT NULL,
+  `cus_add` varchar(300) NOT NULL,
+  `pro_name` varchar(200) NOT NULL,
+  `pro_seri` varchar(200) NOT NULL,
+  `pro_date` datetime NOT NULL DEFAULT current_timestamp(),
+  `pro_active` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Đang đổ dữ liệu cho bảng `warranty`
+--
+
+INSERT INTO `warranty` (`id`, `cus_name`, `cus_phone`, `cus_add`, `pro_name`, `pro_seri`, `pro_date`, `pro_active`) VALUES
+(1, 'Nguyễn Văn XYZ', '0211.3.333.111', 'Liên Bảo, Vĩnh Yên, Vĩnh Phúc','Dell XPS 9350','Dell_XPS_9350', '2023-12-19 14:38:21', '1'),
+(2, 'Nguyễn Văn C', '0211.3.333.222', 'Khai Quang, Vĩnh Yên, Vĩnh Phúc','Thinkpad X1','Thinkpad_X1', '2023-12-22 14:38:21', '1'),
+(3, 'Nguyễn Văn B', '0211.3.333.333', 'Ngô Quyền, Vĩnh Yên, Vĩnh Phúc','HP Probook','HP_1', '2023-12-24 14:38:21', '1'),
+(4, 'Nguyễn Văn A', '0211.3.333.666', 'Tích Sơn, Vĩnh Yên, Vĩnh Phúc','Thinkpad X280','Thinkpad_X280', '2023-12-27 14:38:21', '1');
+
+-- AUTO_INCREMENT for table `categories`
+--
+-- ALTER TABLE `warranty`
+--   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;  

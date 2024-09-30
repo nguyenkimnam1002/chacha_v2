@@ -216,9 +216,8 @@ $tuVan7 = $db->fetchsql($sql7);
             <a href="<?php echo base_url() ?>section-topic-details-new.php?id=6" title="Xuất khẩu" rel="nofollow">Xuất khẩu</a>
           </li>
           <li>
-          <?php foreach($tuVan5 as $item) :?>
-            <a href="post-item-details-new.php?category_id=<?php echo  $item['category_id']?>&id=<?php echo $item['id']?>" title="Bảo hành" rel="nofollow">Bảo hành</a>
-          <?php endforeach ?>
+            <a href="warranty.php" title="Bảo hành" rel="nofollow">Bảo hành</a>
+          
           </li>
         </ul>
       </div>
